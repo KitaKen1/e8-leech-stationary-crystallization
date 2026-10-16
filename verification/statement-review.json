@@ -1,0 +1,23 @@
+{
+  "date_jst": "2026-10-16",
+  "success": true,
+  "review_kind": "clause-by-clause mathematical review of the published natural-language statements against the explicit Lean definitions and 13 target types",
+  "reviewer": "OpenAI Codex",
+  "correspondence": "lean/comparator/TARGET-CORRESPONDENCE.md",
+  "constants_precede_process_law_and_excess": true,
+  "ordered_energy_no_half_factor_and_global_inner_sum": true,
+  "all_original_points_in_closed_observation_ball": true,
+  "both_directions_of_finite_subset_matching": true,
+  "general_gamma_strictly_between_zero_and_one_twelfth": true,
+  "positive_mixture_nonzero_mass_and_finite_lattice_energy_retained": true,
+  "all_positive_gaussian_parameters_including_pi": true,
+  "probability_stationarity_intensity_hypotheses_retained": true,
+  "arbitrary_orientation_mixing_and_uniform_fundamental_domain_phase": true,
+  "extra_orientation_map_selection_or_disintegration_hypothesis": false,
+  "full_success_event_Borelness_proved": false,
+  "published_statement_explicitly_uses_measurable_subevent": true,
+  "manuscript_scope_difference_disclosed": true,
+  "automatic_natural_language_equivalence_theorem_claimed": false,
+  "formal_target_and_definition_comparison": "see local-comparator-apis.json and later Linux CI receipts",
+  "fc_upstream_acceptance_claimed": false
+}

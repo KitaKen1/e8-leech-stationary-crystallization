@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "controls": [
+    {
+      "changed_file": "lean/Challenge.lean",
+      "rejected": true,
+      "exit_code": 1,
+      "message": "Pinned file changed: lean/Challenge.lean\n"
+    },
+    {
+      "changed_file": "FClikelean/E8Leech.lean",
+      "rejected": true,
+      "exit_code": 1,
+      "message": "Pinned file changed: FClikelean/E8Leech.lean\n"
+    },
+    {
+      "changed_file": "leanWithoutComparator/FCSolution.lean",
+      "rejected": true,
+      "exit_code": 1,
+      "message": "Pinned file changed: leanWithoutComparator/FCSolution.lean\n"
+    }
+  ]
+}

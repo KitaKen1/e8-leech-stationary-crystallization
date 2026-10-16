@@ -1,0 +1,7 @@
+**/.lake/
+**/__pycache__/
+.DS_Store
+*.tmp
+build-receipt/
+comparator-receipt/
+replay-receipt/

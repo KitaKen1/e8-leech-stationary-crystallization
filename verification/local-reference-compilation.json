@@ -1,0 +1,138 @@
+[
+  {
+    "module": "FCDefinitions.Configuration",
+    "exit_code": 0,
+    "elapsed_seconds": 23.978902167,
+    "source_sha256": "7698167abd0d43b260822bf701ef2c93aec97eaffce29eb49e828c3cc34af3bf",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCDefinitions.StationaryProcess",
+    "exit_code": 0,
+    "elapsed_seconds": 5.453699667000002,
+    "source_sha256": "ecf56520d50a8d94ffb57294c08a4bce9e3105a31e54e1f43f517db2f3a5df7b",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCDefinitions.Energy",
+    "exit_code": 0,
+    "elapsed_seconds": 5.289698542,
+    "source_sha256": "803e3e24ceeb3739352788784dc5dfa00aa2f07cb0d27fe2173a443a7e37c3d3",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCDefinitions.E8Coordinates",
+    "exit_code": 0,
+    "elapsed_seconds": 4.850165457999999,
+    "source_sha256": "9378ce6296f786c485024fdfd1c7c02d8702158a9c7aefb585ed9599a38ab407",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCDefinitions.Golay",
+    "exit_code": 0,
+    "elapsed_seconds": 5.009888124999996,
+    "source_sha256": "11487acf0278b07a1fcde3e991e72a6c03d582035c94839e70b666ae783f3741",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCDefinitions.LeechCoordinates",
+    "exit_code": 0,
+    "elapsed_seconds": 5.921313542,
+    "source_sha256": "6241ede8b1a9a1d908d55dd7acb9d411e9ecec3817821158fb8dd86e0d97f654",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCDefinitions.Target",
+    "exit_code": 0,
+    "elapsed_seconds": 6.905790584000002,
+    "source_sha256": "478c6d8ad78c342c196260e271c88ea3bc406a8a84636a88339a473f5ea579c1",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCDefinitions.PotentialMixtures",
+    "exit_code": 0,
+    "elapsed_seconds": 7.692356416999999,
+    "source_sha256": "c6df102c953593eff60c75b7f58cc05c094be686d6909370ae858bd3704f538f",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCDefinitions.GaussianPairIntegrals",
+    "exit_code": 0,
+    "elapsed_seconds": 8.59253383299999,
+    "source_sha256": "086612ce223b193c954124597d9ca1435ecef0539581d32576c2306f8a2d4cb2",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCDefinitions.GaussianPotentialMixtures",
+    "exit_code": 0,
+    "elapsed_seconds": 4.465077042000004,
+    "source_sha256": "2c7656a965495ff76dd60f598f7783a7d93bd53b2928814b247a15f216ca2fa6",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCDefinitions.PotentialCrystallization",
+    "exit_code": 0,
+    "elapsed_seconds": 3.935114542000008,
+    "source_sha256": "481ac171808acf68e8b1c90d86c989015ebacf91dd39b933775edd854f3c0b20",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCDefinitions.GeneralGammaPotentialTransfer",
+    "exit_code": 0,
+    "elapsed_seconds": 4.225105124999999,
+    "source_sha256": "22abd9a81233f6cc65e173efc5fa5178247eabfeb9ec45837319d5d1edc857ce",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCDefinitions.LatticeShiftLaw",
+    "exit_code": 0,
+    "elapsed_seconds": 5.005487000000002,
+    "source_sha256": "28ae1d14ce218d29742656d7d3ab827668dc26e371a5d473ef295ce32f87fe55",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCDefinitions.RotatedLatticeLaw",
+    "exit_code": 0,
+    "elapsed_seconds": 5.323799249999993,
+    "source_sha256": "30bb9c3b1390ae11749c0fed0dcd464c2f591127939bab43533a6d2322a2f05f",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCDefinitions.OrientationMixtureLaw",
+    "exit_code": 0,
+    "elapsed_seconds": 4.511425375000002,
+    "source_sha256": "168e6c8c4475dd7883463728b3e964db5819a1bde5610f4e079b603ad97ab399",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "FCTargetDefinitions",
+    "exit_code": 0,
+    "elapsed_seconds": 5.081855207999993,
+    "source_sha256": "640e7086cb5c43c916e5bcdb1d2635e1301e9863507fe340d38c24ee058dd0ef",
+    "proof_outputs_reused": false,
+    "output": ""
+  },
+  {
+    "module": "Challenge",
+    "exit_code": 0,
+    "elapsed_seconds": 5.503084791999996,
+    "source_sha256": "1ce7c25d47f98f431baf01363ef0ef37126b140b9a8c9a5ca5abde49df732477",
+    "proof_outputs_reused": false,
+    "output": "/Users/kenta/Dropbox/Intellectual Moonshine/?AI\u6570\u5b66/E8Leach/githubpublication/lean/Challenge.lean:8:8: warning: declaration uses `sorry`\n/Users/kenta/Dropbox/Intellectual Moonshine/?AI\u6570\u5b66/E8Leach/githubpublication/lean/Challenge.lean:20:8: warning: declaration uses `sorry`\n/Users/kenta/Dropbox/Intellectual Moonshine/?AI\u6570\u5b66/E8Leach/githubpublication/lean/Challenge.lean:24:8: warning: declaration uses `sorry`\n/Users/kenta/Dropbox/Intellectual Moonshine/?AI\u6570\u5b66/E8Leach/githubpublication/lean/Challenge.lean:30:8: warning: declaration uses `sorry`\n/Users/kenta/Dropbox/Intellectual Moonshine/?AI\u6570\u5b66/E8Leach/githubpublication/lean/Challenge.lean:37:8: warning: declaration uses `sorry`\n/Users/kenta/Dropbox/Intellectual Moonshine/?AI\u6570\u5b66/E8Leach/githubpublication/lean/Challenge.lean:44:8: warning: declaration uses `sorry`\n/Users/kenta/Dropbox/Intellectual Moonshine/?AI\u6570\u5b66/E8Leach/githubpublication/lean/Challenge.lean:54:8: warning: declaration uses `sorry`\n/Users/kenta/Dropbox/Intellectual Moonshine/?AI\u6570\u5b66/E8Leach/githubpublication/lean/Challenge.lean:66:8: warning: declaration uses `sorry`\n/Users/kenta/Dropbox/Intellectual Moonshine/?AI\u6570\u5b66/E8Leach/githubpublication/lean/Challenge.lean:70:8: warning: declaration uses `sorry`\n/Users/kenta/Dropbox/Intellectual Moonshine/?AI\u6570\u5b66/E8Leach/githubpublication/lean/Challenge.lean:76:8: warning: declaration uses `sorry`\n/Users/kenta/Dropbox/Intellectual Moonshine/?AI\u6570\u5b66/E8Leach/githubpublication/lean/Challenge.lean:83:8: warning: declaration uses `sorry`\n/Users/kenta/Dropbox/Intellectual Moonshine/?AI\u6570\u5b66/E8Leach/githubpublication/lean/Challenge.lean:90:8: warning: declaration uses `sorry`\n/Users/kenta/Dropbox/Intellectual Moonshine/?AI\u6570\u5b66/E8Leach/githubpublication/lean/Challenge.lean:100:8: warning: declaration uses `sorry`\n"
+  }
+]

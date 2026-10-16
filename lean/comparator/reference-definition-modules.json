@@ -1,0 +1,17 @@
+[
+  "FCDefinitions.Configuration",
+  "FCDefinitions.StationaryProcess",
+  "FCDefinitions.Energy",
+  "FCDefinitions.E8Coordinates",
+  "FCDefinitions.Golay",
+  "FCDefinitions.LeechCoordinates",
+  "FCDefinitions.Target",
+  "FCDefinitions.PotentialMixtures",
+  "FCDefinitions.GaussianPairIntegrals",
+  "FCDefinitions.GaussianPotentialMixtures",
+  "FCDefinitions.PotentialCrystallization",
+  "FCDefinitions.GeneralGammaPotentialTransfer",
+  "FCDefinitions.LatticeShiftLaw",
+  "FCDefinitions.RotatedLatticeLaw",
+  "FCDefinitions.OrientationMixtureLaw"
+]

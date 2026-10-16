@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "exit_code": 0,
+  "expected_sorry_warnings": 13,
+  "actual_sorry_warnings": 13,
+  "elapsed_seconds": 12.286607542,
+  "source_sha256": "de2f513b1590e62626ecb8881162977d120e7d0ef5e529ff6eea8d87b1bac911",
+  "imports_development_proof": false
+}

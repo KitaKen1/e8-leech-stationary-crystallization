@@ -1,0 +1,300 @@
+name: E8 Leech publication verification
+on:
+  push:
+    branches: [main, publication-test]
+    paths: ['lean/**', 'leanWithoutComparator/**', 'FClikelean/**', '.github/workflows/comparator.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: e8leech-publication-${{ github.ref }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+env:
+  LEAN_NUM_THREADS: '1'
+  PYTHONOPTIMIZE: '0'
+jobs:
+  build_0:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - run: python3 lean/comparator/check-inputs.py
+      - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
+      - run: lake exe cache get
+        working-directory: lean
+      - name: Compile dependency-ordered proof stage 0
+        run: python3 -u lean/comparator/build-stage.py 0
+      - name: Archive successful stage outputs
+        run: tar --zstd -cf proof.tar.zst lean/.lake/build build-receipt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: proof-stage-0
+          path: proof.tar.zst
+          compression-level: 0
+          retention-days: 2
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: build-stage-0-receipts
+          path: build-receipt/
+          retention-days: 90
+  build_1:
+    needs: build_0
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - run: python3 lean/comparator/check-inputs.py
+      - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
+      - run: lake exe cache get
+        working-directory: lean
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: proof-stage-0
+          path: incoming
+      - run: tar --zstd -xf incoming/proof.tar.zst
+      - name: Compile dependency-ordered proof stage 1
+        run: python3 -u lean/comparator/build-stage.py 1
+      - name: Archive successful stage outputs
+        run: tar --zstd -cf proof.tar.zst lean/.lake/build build-receipt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: proof-stage-1
+          path: proof.tar.zst
+          compression-level: 0
+          retention-days: 2
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: build-stage-1-receipts
+          path: build-receipt/
+          retention-days: 90
+  build_2:
+    needs: build_1
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - run: python3 lean/comparator/check-inputs.py
+      - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
+      - run: lake exe cache get
+        working-directory: lean
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: proof-stage-1
+          path: incoming
+      - run: tar --zstd -xf incoming/proof.tar.zst
+      - name: Compile dependency-ordered proof stage 2
+        run: python3 -u lean/comparator/build-stage.py 2
+      - name: Archive successful stage outputs
+        run: tar --zstd -cf proof.tar.zst lean/.lake/build build-receipt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: proof-stage-2
+          path: proof.tar.zst
+          compression-level: 0
+          retention-days: 2
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: build-stage-2-receipts
+          path: build-receipt/
+          retention-days: 90
+  build_3:
+    needs: build_2
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - run: python3 lean/comparator/check-inputs.py
+      - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
+      - run: lake exe cache get
+        working-directory: lean
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: proof-stage-2
+          path: incoming
+      - run: tar --zstd -xf incoming/proof.tar.zst
+      - name: Compile dependency-ordered proof stage 3
+        run: python3 -u lean/comparator/build-stage.py 3
+      - name: Archive successful stage outputs
+        run: tar --zstd -cf proof.tar.zst lean/.lake/build build-receipt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: proof-stage-3
+          path: proof.tar.zst
+          compression-level: 0
+          retention-days: 2
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: build-stage-3-receipts
+          path: build-receipt/
+          retention-days: 90
+  build_4:
+    needs: build_3
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - run: python3 lean/comparator/check-inputs.py
+      - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
+      - run: lake exe cache get
+        working-directory: lean
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: proof-stage-3
+          path: incoming
+      - run: tar --zstd -xf incoming/proof.tar.zst
+      - name: Compile dependency-ordered proof stage 4
+        run: python3 -u lean/comparator/build-stage.py 4
+      - name: Archive successful stage outputs
+        run: tar --zstd -cf proof.tar.zst lean/.lake/build build-receipt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: proof-stage-4
+          path: proof.tar.zst
+          compression-level: 0
+          retention-days: 2
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: build-stage-4-receipts
+          path: build-receipt/
+          retention-days: 90
+  build_5:
+    needs: build_4
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - run: python3 lean/comparator/check-inputs.py
+      - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
+      - run: lake exe cache get
+        working-directory: lean
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: proof-stage-4
+          path: incoming
+      - run: tar --zstd -xf incoming/proof.tar.zst
+      - name: Compile dependency-ordered proof stage 5
+        run: python3 -u lean/comparator/build-stage.py 5
+      - name: Archive successful stage outputs
+        run: tar --zstd -cf proof.tar.zst lean/.lake/build build-receipt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: proof-stage-5
+          path: proof.tar.zst
+          compression-level: 0
+          retention-days: 2
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: build-stage-5-receipts
+          path: build-receipt/
+          retention-days: 90
+  comparator:
+    needs: build_5
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - run: python3 lean/comparator/check-inputs.py
+      - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
+      - run: lake exe cache get
+        working-directory: lean
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+      - name: Independently build trusted mathematical definitions and Challenge
+        working-directory: lean
+        run: |
+          lake build Challenge
+          mkdir -p ../comparator-receipt
+          lake env lean ../FClikelean/E8Leech.lean > ../comparator-receipt/fc-style-statements.log
+          mkdir -p "$RUNNER_TEMP/trusted-challenge"
+          find .lake/build -type f \( -name 'Challenge.*' -o -name 'FCTargetDefinitions.*' -o -path '*/FCDefinitions/*' \) -print0 | tar --null -T - -cf "$RUNNER_TEMP/trusted-challenge/reference.tar"
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: proof-stage-5
+          path: incoming
+      - run: |
+          tar --zstd -xf incoming/proof.tar.zst
+          cd lean
+          tar -xf "$RUNNER_TEMP/trusted-challenge/reference.tar"
+      - name: Build pinned upstream Comparator, exporter and Linux sandbox
+        env:
+          COMPARATOR_TOOLS: ${{ runner.temp }}/comparator-tools
+        run: bash lean/comparator/install-tools.sh
+      - name: Compare all 13 targets, audit permitted axioms and replay the builtin kernel
+        env:
+          COMPARATOR_TOOLS: ${{ runner.temp }}/comparator-tools
+        run: bash lean/comparator/run-check.sh
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: comparator-receipt
+          path: comparator-receipt/
+          retention-days: 90
+  replay:
+    needs: build_5
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - run: python3 lean/comparator/check-inputs.py
+      - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
+      - run: lake exe cache get
+        working-directory: lean
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: proof-stage-5
+          path: incoming
+      - run: tar --zstd -xf incoming/proof.tar.zst
+      - name: Fresh Lean kernel replay of the full solution environment
+        working-directory: lean
+        run: |
+          mkdir -p ../replay-receipt
+          /usr/bin/time -v lake env leanchecker --fresh FCSolution > ../replay-receipt/replay.log 2> ../replay-receipt/time.log
+          grep -q 'Exit status: 0' ../replay-receipt/time.log
+          printf 'PASS\n' > ../replay-receipt/status.txt
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: replay-receipt
+          path: replay-receipt/
+          retention-days: 90
+  verification_status:
+    needs: [build_0, build_1, build_2, build_3, build_4, build_5, comparator, replay]
+    if: always()
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Require every build stage, Comparator and fresh replay
+        env:
+          RESULTS: ${{ toJSON(needs) }}
+        run: |
+          python3 - <<'PYCODE'
+          import json,os
+          r=json.loads(os.environ['RESULTS'])
+          assert len(r)==8 and all(v['result']=='success' for v in r.values()),r
+          PYCODE

@@ -1,0 +1,1 @@
+Comparator setup scripts adapted from KitaKen1/entropic-rogers-shephard, commit 8f34cf8cde22aeca2ac0ae3300592548e212a6b3, Apache-2.0. The reference mathematical theorem is not copied.

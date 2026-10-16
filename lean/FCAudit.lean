@@ -1,0 +1,15 @@
+import FCSolution
+
+#print axioms E8LeechFC.e8_quantitative_crystallization
+#print axioms E8LeechFC.e8_gaussian_crystallization
+#print axioms E8LeechFC.e8_positiveGaussianMixture_crystallization
+#print axioms E8LeechFC.e8_riesz_zero_excess_iff_ae_isometric_lattice
+#print axioms E8LeechFC.e8_gaussian_zero_excess_iff_ae_isometric_lattice
+#print axioms E8LeechFC.e8_positiveGaussianMixture_zero_excess_iff_ae_isometric_lattice
+#print axioms E8LeechFC.leech_quantitative_crystallization
+#print axioms E8LeechFC.leech_gaussian_crystallization
+#print axioms E8LeechFC.leech_positiveGaussianMixture_crystallization
+#print axioms E8LeechFC.leech_riesz_zero_excess_iff_ae_isometric_lattice
+#print axioms E8LeechFC.leech_gaussian_zero_excess_iff_ae_isometric_lattice
+#print axioms E8LeechFC.leech_positiveGaussianMixture_zero_excess_iff_ae_isometric_lattice
+#print axioms E8LeechFC.stationary_exact_lattice_law

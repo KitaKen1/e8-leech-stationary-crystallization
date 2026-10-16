@@ -1,0 +1,28 @@
+FCTargetDefinitions 0 51.836436708
+Challenge 0 9.773207667000001
+FCSolution 0 80.846710875
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/E8Leach/githubpublication/lean/FCSolution.lean:20:60: warning: Variable name `hγ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hγ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/E8Leach/githubpublication/lean/FCSolution.lean:26:13: warning: Variable name `hγ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hγ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/E8Leach/githubpublication/lean/FCSolution.lean:66:63: warning: Variable name `hγ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hγ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/E8Leach/githubpublication/lean/FCSolution.lean:72:13: warning: Variable name `hγ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hγ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+

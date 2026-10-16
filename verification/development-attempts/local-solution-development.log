@@ -1,0 +1,7 @@
+FCSolution 0 47.605316625
+FCAudit 0 15.964105334000003
+FClikelean 1
+Traceback (most recent call last):
+  File "/private/tmp/check_e8_pub_local.py", line 19, in <module>
+    (pub/'verification/local-FClikelean.log').write_text(r.stdout);print('FClikelean',r.returncode,flush=True);assert r.returncode==0
+AssertionError

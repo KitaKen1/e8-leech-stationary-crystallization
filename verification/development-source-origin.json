@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "scope": "715 current E8Leech source hashes matched the locally compiled development record; this is not a new clean build",
+  "modules": 715,
+  "source_hashes_match": true,
+  "source_record_sha256": "98e57d86752284c8650f5274b5db57ae1d6992f55f3886d23a1683aa7438e112",
+  "proof_sources_copied_byte_for_byte": true,
+  "clean_build": false
+}
