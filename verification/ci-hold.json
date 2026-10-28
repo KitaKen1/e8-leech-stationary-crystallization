@@ -1,0 +1,17 @@
+{
+  "user_requested_ci_stop": true,
+  "cancellation_requested": true,
+  "private_ci_run": {
+    "id": 38909799120,
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/38909799120",
+    "head_sha": "c53432c21099328eba3dba19f24fccafb699c89b",
+    "status": "completed",
+    "conclusion": "cancelled",
+    "run_attempt": 1
+  },
+  "public_main": "57cd06a0056a7d9c83e16ef6153fdad469160100",
+  "public_unchanged": true,
+  "cancellation_confirmed": true,
+  "formal_ci_resumed_by_user": "2026-10-28",
+  "authorization": "verification/ci-authorization-20261028.json"
+}

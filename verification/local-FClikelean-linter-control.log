@@ -1,0 +1,6 @@
+/private/tmp/fc-upstream-review-20261017/FormalConjectures/Paper/E8LeechLinterControl.lean:19:14: warning: Direct imports from 'Mathlib' (such as 'Mathlib.Data.Nat.Basic') are disallowed in 'FormalConjectures'. Use 'import FormalConjecturesUtil' instead.
+
+Note: This linter can be disabled with `set_option linter.style.imports false`
+/private/tmp/fc-upstream-review-20261017/FormalConjectures/Paper/E8LeechLinterControl.lean:35:0: warning: Missing AMS attribute.
+
+Note: This linter can be disabled with `set_option linter.style.ams_attribute false`

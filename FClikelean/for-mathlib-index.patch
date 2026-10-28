@@ -1,0 +1,10 @@
+--- a/FormalConjecturesForMathlib.lean
++++ b/FormalConjecturesForMathlib.lean
+@@ -222,6 +222,7 @@
+ public import FormalConjecturesForMathlib.Order.Nat
+ public import FormalConjecturesForMathlib.Order.Unimodular
+ public import FormalConjecturesForMathlib.Probability.FiniteMethod
++public import FormalConjecturesForMathlib.Probability.SimplePointProcess
+ public import FormalConjecturesForMathlib.RepresentationTheory.CharacterDegree
+ public import FormalConjecturesForMathlib.RepresentationTheory.Homological.ContCohomology.Sha
+ public import FormalConjecturesForMathlib.RingTheory.Bialgebra.Cohomology

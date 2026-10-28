@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Check immutable targets, definition isolation and byte-identical proof distributions."""
 from pathlib import Path
-import argparse,hashlib,json,re,sys
+import argparse,hashlib,json,re,subprocess,sys
 ROOT=Path(__file__).resolve().parents[2]
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def require(p,msg):
@@ -26,12 +26,12 @@ def main():
  require(re.findall(r'^import (\S+)',law,re.M)==[modules[-1]],'Reference aggregate import changed')
  require(re.findall(r'^import (\S+)',challenge,re.M)==['FCTargetDefinitions'],'Challenge import changed')
  require('FCTargetDefinitions' not in solution and 'Challenge' not in solution,'Solution imports trusted statement environment')
- require(headers(challenge)==headers(solution)==headers(draft),'The 13 mathematical statements differ')
- require(all(re.sub(r'\s+',' ',strip(re.sub(r'^import \S+\n','',x,flags=re.M))).strip() in re.sub(r'\s+',' ',strip(draft)).strip() for x in refs),'FC-like draft definitions differ from independent reference')
+ require(headers(challenge)==headers(solution),'The 13 canonical mathematical statements differ')
+ subprocess.run([sys.executable,str(ROOT/'lean/comparator/check-fc-draft.py'),'--root',str(ROOT)],check=True)
  require(not re.search(r'\b(sorry|admit|axiom|native_decide)\b',strip(reference)),'Hole or custom axiom in reference definitions')
  require(not re.search(r'\b(sorry|admit|axiom|native_decide)\b',strip(solution)),'Hole or custom axiom in solution')
  require(len(re.findall(r'\bsorry\b',strip(challenge)))==13,'Unexpected challenge holes')
- require(len(re.findall(r'\bsorry\b',strip(draft)))==13,'Unexpected FC-like draft holes')
+ require(len(re.findall(r'\bsorry\b',strip(draft)))==2,'Unexpected FC-like draft holes')
  shared=json.loads((ROOT/'lean/comparator/shared-proof-sources.json').read_text())
  for name,h in shared.items():
   for folder in ['lean','leanWithoutComparator']:require(sha(ROOT/folder/name)==h,'Shared proof source changed: '+folder+'/'+name)
@@ -39,7 +39,7 @@ def main():
  require(actual==set(shared),'Supplementary proof source coverage differs')
  require((ROOT/'lean/lean-toolchain').read_bytes()==(ROOT/'leanWithoutComparator/lean-toolchain').read_bytes(),'Toolchain mismatch')
  require((ROOT/'lean/lake-manifest.json').read_bytes()==(ROOT/'leanWithoutComparator/lake-manifest.json').read_bytes(),'Dependency mismatch')
- result=dict(success=True,targets=cfg['theorem_names'],target_count=13,shared_proof_sources=len(shared),independent_reference_imports_mathlib_only=True,fc_draft_matches_reference=True,proof_bridge_does_not_import_challenge=True,pins_sha256=sha(ROOT/'lean/comparator/pins.json'))
+ result=dict(success=True,targets=cfg['theorem_names'],target_count=13,shared_proof_sources=len(shared),independent_reference_imports_mathlib_only=True,fc_draft_primary_statement_count=2,fc_draft_semantic_check_script='lean/comparator/check-fc-draft.py --compile',proof_bridge_does_not_import_challenge=True,pins_sha256=sha(ROOT/'lean/comparator/pins.json'))
  if a.receipt_dir:a.receipt_dir.mkdir(parents=True,exist_ok=True);(a.receipt_dir/'input-check.json').write_text(json.dumps(result,indent=2)+'\n')
  print(json.dumps(result))
 if __name__=='__main__':main()

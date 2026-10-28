@@ -1,0 +1,14 @@
+{
+  "date_jst": "2026-10-28",
+  "user_instruction": "とりあえず、githubもやって、ciまで",
+  "formal_ci_authorized": true,
+  "github_update_authorized": true,
+  "manuscript_review_may_remain_incomplete": true,
+  "statement_equivalence_review_complete": false,
+  "execution_order": [
+    "private CI for the exact candidate",
+    "public repository and CI after private success"
+  ],
+  "issue_posting_authorized": false,
+  "scope": "Build the actual completed main-theorem proof environment and run formal checks. CI success does not certify correspondence to the entire manuscript."
+}

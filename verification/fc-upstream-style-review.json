@@ -1,0 +1,95 @@
+{
+  "date_jst": "2026-10-17",
+  "repository": "google-deepmind/formal-conjectures",
+  "commit": "c77fdd446d23539302aa73bcfae4a9fa962b8382",
+  "references": [
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "168e0b1c46810cfa785e610afa1bb26461190995008fc0006eb3b3906549eb49",
+      "lines": 434
+    },
+    {
+      "path": "STATEMENTS.md",
+      "sha256": "382a6c9aa1e6af67ad97e04a74cb95fe5a921abc1b495499bada95fd4cd1c5f3",
+      "lines": 57
+    },
+    {
+      "path": "PROOFS.md",
+      "sha256": "1c61237105db2e4654c0684fac2d8e9ed339b18f2e53596d407b2bb2845d60ba",
+      "lines": 43
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "lines": 1
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "738c804c3de5a7e7146e87ae08e0274dd117d52f477e08cd3dd9f3260cdc579c",
+      "lines": 72
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "c8ffc0d59f492007162fe54c68396e4b9f2f305fcf69210a7fbaf0b18fcd8cd9",
+      "lines": 96
+    },
+    {
+      "path": "FormalConjecturesUtil.lean",
+      "sha256": "3a73749a2b247a1ad08820de102f0d32353bf6e519eb954de53e08553cdbc663",
+      "lines": 38
+    },
+    {
+      "path": "FormalConjectures/Wikipedia/SquarePacking.lean",
+      "sha256": "f8fcb1e9a322b116b41e45abdf47cababf58d1c3147e5ea977573fe61663082b",
+      "lines": 233
+    },
+    {
+      "path": "FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean",
+      "sha256": "20ac901271a993c880108323115af4bb875a3b53acafcc1f5d279fccde997d89",
+      "lines": 118
+    },
+    {
+      "path": "FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean",
+      "sha256": "31c5c5f49f6bbc5d81cbc59548e2cc93a80f0328007e76f78058491b131f50dc",
+      "lines": 97
+    },
+    {
+      "path": "FormalConjectures/Paper/CourtadeKumar.lean",
+      "sha256": "7e4779b8af2ff16cb66bf2589077d146458d31075ee338878613ff4b1fec3a91",
+      "lines": 399
+    },
+    {
+      "path": "FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean",
+      "sha256": "875cfaec17445322b04e52942517e08348226618895f07bd42770137e52c49ec",
+      "lines": 115
+    },
+    {
+      "path": "FormalConjectures/Wikipedia/Kakeya.lean",
+      "sha256": "c4056235989637f4240e0e9b7c61b8753fd1748480e8e4224611bf5138783c1e",
+      "lines": 112
+    },
+    {
+      "path": "FormalConjectures/Paper/DeGiorgi.lean",
+      "sha256": "95580d41b9d9c350d7e1985d28d4a9e562faa8221ce246bccdea2efbd174321f",
+      "lines": 173
+    }
+  ],
+  "findings": [
+    "No fixed maximum definition count: meaningful named properties and variants are common",
+    "Problem modules publicly import FormalConjecturesUtil and expose their declarations",
+    "Reusable mathematical definitions belong in FormalConjecturesForMathlib with full proofs",
+    "Problem docstrings identify the exact source and mathematical formulation",
+    "Research statements carry category and AMS attributes; questions use question metadata only when appropriate",
+    "Small API or boundary tests accompany bespoke mathematical models"
+  ],
+  "original_manuscript_review_complete": false,
+  "ci_resumed": false,
+  "actual_fc_project_linter_check_passed": true,
+  "linter_negative_controls_passed": true,
+  "canonical_primary_correspondence_passed": true,
+  "actual_fc_compile_receipt": "verification/local-FClikelean.json",
+  "linter_control_receipt": "verification/local-FClikelean-linter-control.json",
+  "correspondence_receipt": "verification/fc-style-correspondence.json",
+  "problem_source_sha256": "859983d06dd533193296afbee06a85d7c6ea65baf84607034b6ed1cd7c887d44",
+  "generic_support_sha256": "3827fe54fe1821cb0e6173ca3eb9651e579300223fc72754e0aad805eed64d01"
+}

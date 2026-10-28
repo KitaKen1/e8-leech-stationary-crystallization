@@ -229,7 +229,6 @@ jobs:
         run: |
           lake build Challenge
           mkdir -p ../comparator-receipt
-          lake env lean ../FClikelean/E8Leech.lean > ../comparator-receipt/fc-style-statements.log
           mkdir -p "$RUNNER_TEMP/trusted-challenge"
           find .lake/build -type f \( -name 'Challenge.*' -o -name 'FCTargetDefinitions.*' -o -path '*/FCDefinitions/*' \) -print0 | tar --null -T - -cf "$RUNNER_TEMP/trusted-challenge/reference.tar"
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
@@ -240,6 +239,9 @@ jobs:
           tar --zstd -xf incoming/proof.tar.zst
           cd lean
           tar -xf "$RUNNER_TEMP/trusted-challenge/reference.tar"
+      - name: Check actual FC linters and primary statement correspondence
+        working-directory: lean
+        run: lake env python3 comparator/check-fc-draft.py --compile --receipt-dir ../comparator-receipt/fc-style
       - name: Build pinned upstream Comparator, exporter and Linux sandbox
         env:
           COMPARATOR_TOOLS: ${{ runner.temp }}/comparator-tools

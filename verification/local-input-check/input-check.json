@@ -18,7 +18,8 @@
   "target_count": 13,
   "shared_proof_sources": 1537,
   "independent_reference_imports_mathlib_only": true,
-  "fc_draft_matches_reference": true,
+  "fc_draft_primary_statement_count": 2,
+  "fc_draft_semantic_check_script": "lean/comparator/check-fc-draft.py --compile",
   "proof_bridge_does_not_import_challenge": true,
-  "pins_sha256": "0a8ef0967afd29657c74541386699f152049fa6410cc17458519ecc50c11299c"
+  "pins_sha256": "177af7218dc77d357937323cc1cd09f9ae2968b776ea2dea9942544d2dd958ec"
 }

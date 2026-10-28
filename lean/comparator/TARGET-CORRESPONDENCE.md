@@ -1,6 +1,10 @@
 # Natural-language statement and Lean correspondence
 
-Reviewed locally on 2026-10-16 (JST). This is an explicit mathematical review,
+**Status: preliminary; original-statement review is incomplete. Formal CI was
+reauthorized by the author on 28 October 2026; it does not complete this review.** The table below compares the package wording
+and formal targets; its matching rows are not a completed manuscript audit.
+
+Prepared locally on 2026-10-16 (JST). This is a scoped mathematical review,
 not a claim that software can prove an English sentence equivalent to Lean.
 Comparator separately checks the formal statements and their dependent definitions.
 
@@ -46,7 +50,20 @@ primitives in a separate Lean environment, using the same names and bodies.
 Comparator recursively compares the two environments. This avoids using an
 opaque proposition imported from the submitted proof as the trusted target.
 
-`FClikelean/E8Leech.lean` is a self-contained proposed statement bundle, not an
-accepted Formal Conjectures contribution. Its 13 `sorry` slots are intentional
-statement-only placeholders. They are absent from the solution and reference
-definitions. No FC issue or pull request is submitted by this package.
+`FClikelean/E8Leech.lean` contains the two primary quantitative Riesz statements.
+It keeps four problem-specific definitions, including a named quantitative
+crystallization predicate. Reusable configuration, stationarity, intensity,
+energy and local-matching definitions are in the accompanying
+`FormalConjecturesForMathlib/Probability/SimplePointProcess.lean` overlay.
+Gaussian, positive-mixture and equality-law results remain among the 13 Comparator targets.
+
+`check-fc-draft.py --compile` builds the genuine pinned FC utility closure and
+checks the problem with FC's own project linters and two proved coordinate tests.
+It also checks the identical configuration fields and the counting sigma algebra,
+proves equality of the compact definitions, then changes
+the two draft conclusions to the exact canonical target types and supplies the
+existing proofs. The generated proof bridge uses none of the draft's two `sorry`
+slots. This check does not complete the original-manuscript review above.
+
+The file is a proposed local FC-style draft, not an accepted Formal Conjectures
+contribution. No FC issue or pull request is submitted by this package.

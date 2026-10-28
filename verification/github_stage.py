@@ -6,6 +6,8 @@ from pathlib import Path
 import argparse,hashlib,json,os,subprocess,urllib.request,urllib.error
 ROOT=Path(__file__).resolve().parents[1];OWNER='KitaKen1';PUBLIC='e8-leech-stationary-crystallization';PRIVATE='e8-leech-crystallization-ci-20261016'
 p=argparse.ArgumentParser();p.add_argument('stage',choices=['private','status','jobs','public','public-status','public-jobs']);a=p.parse_args()
+manifest=ROOT/'PUBLICATION-MANIFEST.json';state=json.loads(manifest.read_text())
+if a.stage in ['private','public'] and state.get('ci_resume_requires_user_instruction',False):raise SystemExit('CI/publication are on hold at the user request. Do not resume without a new user instruction.')
 env=os.environ.copy();env['GIT_TERMINAL_PROMPT']='0'
 r=subprocess.run(['git','credential','fill'],input='protocol=https\nhost=github.com\n\n',env=env,text=True,capture_output=True,timeout=20)
 if r.returncode:raise SystemExit('No noninteractive GitHub credential')
@@ -22,10 +24,17 @@ def api(path,data=None,method=None):
 if api('user')['login']!=OWNER:raise SystemExit('Authenticated account does not match the intended owner')
 def git(*args):return subprocess.check_output(['git','-C',str(ROOT),*args],env=env,text=True).strip()
 if git('remote','get-url','origin')!='https://github.com/'+OWNER+'/'+PUBLIC+'.git':raise SystemExit('Unexpected public remote')
-commit=git('rev-parse','HEAD');manifest=ROOT/'PUBLICATION-MANIFEST.json';state=json.loads(manifest.read_text())
+commit=git('rev-parse','HEAD')
 if a.stage=='private':
  local=json.loads((ROOT/'verification/local-comparator-apis.json').read_text());review=json.loads((ROOT/'verification/statement-review.json').read_text())
- if not local['success'] or not review['success']:raise SystemExit('Local verification gates have not passed')
+ if not local['success']:raise SystemExit('Local formal comparison has not passed')
+ if not review['success']:
+  # The author explicitly resumed formal CI before completion of the manuscript
+  # review. Keep that review incomplete instead of treating a build as its proof.
+  authorization_path=state.get('ci_authorization')
+  authorization=json.loads((ROOT/authorization_path).read_text()) if authorization_path else {}
+  if not (authorization.get('formal_ci_authorized') and authorization.get('manuscript_review_may_remain_incomplete')):
+   raise SystemExit('Manuscript review incomplete and no explicit formal-CI authorization recorded')
  for name,h in local['source_sha256'].items():
   if hashlib.sha256((ROOT/name).read_bytes()).hexdigest()!=h:raise SystemExit('Source changed after local comparison: '+name)
  subprocess.run(['git','-C',str(ROOT),'diff','--quiet','HEAD','--','lean','leanWithoutComparator','FClikelean','.github'],check=True)
@@ -34,7 +43,7 @@ if a.stage=='private':
  if repo is None:repo=api('user/repos',dict(name=PRIVATE,private=True,description='Private CI staging for E8/Leech stationary crystallization, 2026-10-16'))
  if not repo['private']:raise SystemExit('Private CI repository is not private')
  subprocess.run(['git','-C',str(ROOT),'push','https://github.com/'+OWNER+'/'+PRIVATE+'.git','HEAD:refs/heads/publication-test'],env=env,check=True)
- state.update(status='private CI candidate pushed; awaiting exact-commit result',private_repository=OWNER+'/'+PRIVATE,private_tested_commit=commit,private_candidate_pushed=True,public_candidate_pushed=False)
+ state.update(status='private CI candidate pushed; awaiting exact-commit result',private_repository=OWNER+'/'+PRIVATE,private_tested_commit=commit,private_candidate_pushed=True,public_candidate_pushed=False,private_ci_run=None)
  manifest.write_text(json.dumps(state,indent=2)+'\n');print(json.dumps({k:state[k] for k in ['status','private_repository','private_tested_commit']}))
 else:
  public_check=a.stage.startswith('public-')

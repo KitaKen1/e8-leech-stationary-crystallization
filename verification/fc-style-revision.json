@@ -1,0 +1,40 @@
+{
+  "date_jst": "2026-10-17",
+  "canonical_comparator_targets_retained": 13,
+  "primary_fc_targets": 2,
+  "original_manuscript_review_complete": false,
+  "ci_resumed": false,
+  "correspondence_receipt": "verification/fc-style-correspondence.json",
+  "historical_single_reference_revision": {
+    "reference_url": "https://github.com/KitaKen1/entropic-rogers-shephard/blob/main/FClikelean/EntropicRogersShephard.lean",
+    "reference_blob_sha": "8a2694183d74f5293d960dd54cb1ce8631ea0a31",
+    "before": {
+      "lines": 511,
+      "definitions": 39,
+      "structures": 2,
+      "abbreviations": 1,
+      "theorems": 13
+    },
+    "after": {
+      "lines": 142,
+      "definitions": 8,
+      "structures": 1,
+      "abbreviations": 1,
+      "theorems": 2
+    },
+    "fc_source_sha256": "40ebecc11f67410737852b92ebc0feb3d63b1c10688386885c96661c670486ad",
+    "compact_statement_correspondence_passed": true
+  },
+  "current_revision": "Multiple upstream FC examples and official conventions",
+  "current_problem_source_sha256": "859983d06dd533193296afbee06a85d7c6ea65baf84607034b6ed1cd7c887d44",
+  "current_problem_definitions": 4,
+  "current_generic_definitions": 6,
+  "current_primary_statements": 2,
+  "current_proved_tests": 2,
+  "upstream_style_review": "verification/fc-upstream-style-review.json",
+  "current_checks_pending": false,
+  "current_problem_lines": 111,
+  "actual_fc_project_linters_passed": true,
+  "actual_fc_linter_negative_controls_passed": true,
+  "current_statement_correspondence_passed": true
+}

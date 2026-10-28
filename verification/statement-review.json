@@ -1,7 +1,7 @@
 {
   "date_jst": "2026-10-16",
-  "success": true,
-  "review_kind": "clause-by-clause mathematical review of the published natural-language statements against the explicit Lean definitions and 13 target types",
+  "success": false,
+  "review_kind": "Preliminary comparison of package README and explicit Lean targets; not a completed review of the original manuscript statements",
   "reviewer": "OpenAI Codex",
   "correspondence": "lean/comparator/TARGET-CORRESPONDENCE.md",
   "constants_precede_process_law_and_excess": true,
@@ -19,5 +19,19 @@
   "manuscript_scope_difference_disclosed": true,
   "automatic_natural_language_equivalence_theorem_claimed": false,
   "formal_target_and_definition_comparison": "see local-comparator-apis.json and later Linux CI receipts",
-  "fc_upstream_acceptance_claimed": false
+  "fc_upstream_acceptance_claimed": false,
+  "status": "incomplete",
+  "original_statement_to_lean_review_complete": false,
+  "prior_completion_claim_withdrawn": true,
+  "ci_ready": false,
+  "ci_and_publication_on_hold_by_user": false,
+  "pending_checks": [
+    "Review manuscript Theorem 1, general-gamma theorem, positive-mixture theorem and equality-law theorem directly against Lean, not merely the new README",
+    "Resolve or document the full geometric success event Borelness claim, including its inheritance by the mixture statement",
+    "Compare O(d)/Aut(Lambda) in the original equality-law statement with the Lean parameter space of linear isometries, including phase and quotient interpretation",
+    "Review bounded-Borel window conventions versus all-Borel Lean sigma-algebra/intensity definitions",
+    "Review exactly which equality-law statements are comparison targets and which only occur in the imported proof library"
+  ],
+  "formal_ci_reauthorized": true,
+  "ci_authorization": "verification/ci-authorization-20261028.json"
 }

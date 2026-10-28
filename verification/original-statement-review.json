@@ -1,0 +1,52 @@
+{
+  "status": "in_progress",
+  "success": false,
+  "complete": false,
+  "ci_ready": false,
+  "original_statement_sha256": "7c43652d04444b79b24c28a6538ad463190dd3ca3a4ca47d7924c2461a2f2779",
+  "findings": [
+    {
+      "id": "S1",
+      "status": "unresolved_difference",
+      "statement_source": "manuscript/e8-leech-stationary-crystallization.tex",
+      "statement_line": 441,
+      "claim": "The full geometric success event is Borel; the mixture theorem inherits this conclusion by referring to the general-gamma theorem.",
+      "lean_source": "lean/E8Leech/GeneralGammaCrystallization.lean",
+      "lean_declaration": "e8_crystallization_of_energy_le_general / leech_crystallization_of_energy_le_general",
+      "finding": "Lean guarantees an existential measurable high-probability subevent contained in the success event. This does not assert Borelness of the entire success event. Changing only the package README does not settle equivalence with the original statement."
+    },
+    {
+      "id": "S2",
+      "status": "representation_bridge_to_review",
+      "statement_source": "manuscript/e8-leech-stationary-crystallization.tex",
+      "statement_line": 499,
+      "claim": "The equality-law mixing measure lives on O(d)/Aut(Lambda), with Haar-uniform torus phase.",
+      "lean_source": "lean/E8Leech/RotatedLatticeLaw.lean",
+      "lean_declaration": "LatticeOrientation / orientationMixtureLaw",
+      "finding": "Lean uses full linear isometric equivalences and Lebesgue phase on a fundamental domain. The quotient-parameter and torus-phase interpretation must be checked explicitly. No contradiction is inferred from the difference in presentation."
+    },
+    {
+      "id": "S3",
+      "status": "model_convention_bridge_to_review",
+      "statement_source": "manuscript/e8-leech-stationary-crystallization.tex",
+      "statement_line": 45,
+      "claim": "The configuration sigma algebra and intensity are specified using bounded Borel sets.",
+      "lean_source": "lean/E8Leech/Configuration.lean; lean/E8Leech/StationaryProcess.lean",
+      "lean_declaration": "Configuration.instMeasurableSpace / HasIntensity",
+      "finding": "Lean uses all Borel-window counting maps and intensity identities for all Borel windows. The Euclidean bounded-window reduction and equivalence of these conventions need explicit review."
+    },
+    {
+      "id": "S4",
+      "status": "target_coverage_to_review",
+      "statement_source": "manuscript/e8-leech-stationary-crystallization.tex",
+      "statement_line": 502,
+      "claim": "Zero excess iff a mixture of lattice laws with uniform phase, including the reverse direction.",
+      "lean_source": "lean/Challenge.lean; lean/E8Leech/ZeroExcessLawClassification.lean",
+      "lean_declaration": "six *_zero_excess_iff_orientationMixture theorems",
+      "finding": "The 13 comparison targets include six zero-excess/exact-lattice equivalences and one generic forward classification theorem. The six direct mixture iff declarations are in the proof library but are not themselves direct comparison targets. Coverage of the full original statement has not been certified."
+    }
+  ],
+  "formal_target_equality_result": "The successful 13-target comparison receipt remains valid for its recorded source commit; it does not establish natural-language equivalence.",
+  "user_instruction": "Hold private CI and public publication while statement-to-Lean review is incomplete; do not resume CI without new user instruction.",
+  "ci_authorization_update": "2026-10-28: author instructed GitHub update and CI execution; formal CI may proceed while manuscript review remains incomplete. Issue posting is not authorized by this instruction."
+}

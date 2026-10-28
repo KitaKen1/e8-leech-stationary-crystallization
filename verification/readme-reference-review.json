@@ -1,0 +1,68 @@
+{
+  "date_jst": "2026-10-17",
+  "reference_repository": "KitaKen1/entropic-rogers-shephard",
+  "reference_commit": "8f34cf8cde22aeca2ac0ae3300592548e212a6b3",
+  "reference_readme_sha256": "59ec24331081593f50d9fcec2f6059410a8a4c7e76013ac4135b5c47041619be",
+  "review": "Compared full reference README and component READMEs; aligned theorem-first introduction, two main components, FC/Comparator targets, mathematical explanation, files, verification, timeline and CI appendices",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "ee65d8fcc4ba6aabc86bec3c7a2fd254fa5a396001db9b1416d5070fd290b76a",
+      "headings": [
+        "Lean proofs of quantitative stationary crystallization for E\u2088 and Leech lattices",
+        "Formal Conjectures like targets",
+        "FClikelean",
+        "Comparator target",
+        "Mathematical explanation (AI generated)",
+        "Files",
+        "Verification",
+        "Lean execution results",
+        "Lean Comparator check",
+        "Statement correspondence",
+        "Appendix: timeline (AI generated)",
+        "Appendix: Verification by Lean Comparator on GitHub CI runner",
+        "Certification Within 90 days: CI results",
+        "Certification After 90 days: archive",
+        "Reproduce the verification"
+      ],
+      "relative_links_checked": 40,
+      "lines": 259
+    },
+    {
+      "path": "lean/README.md",
+      "sha256": "9bca0b07eb119751122a0a9d264bb4ce927cf8037cebcdffd4fb039055c73476",
+      "headings": [
+        "Canonical Lean proof"
+      ],
+      "relative_links_checked": 9,
+      "lines": 35
+    },
+    {
+      "path": "leanWithoutComparator/README.md",
+      "sha256": "8ffb54a0c559ce6c2002f3ebf05a5671a45bc8780864e7e678d6a99bf84cbf71",
+      "headings": [
+        "Supplementary copy of the same proof"
+      ],
+      "relative_links_checked": 5,
+      "lines": 16
+    },
+    {
+      "path": "lean/comparator/README.md",
+      "sha256": "cc8f8ea676ae9a4f16a5ff8d2bdee25c6a909d0a30340cd37589d2080f68963d",
+      "headings": [
+        "Reproducible target verification",
+        "Local checks",
+        "Linux verification",
+        "Actual status"
+      ],
+      "relative_links_checked": 7,
+      "lines": 57
+    }
+  ],
+  "relative_links_valid": true,
+  "markdown_delimiters_valid": true,
+  "lean_sources_changed": false,
+  "original_statement_review_complete": false,
+  "ci_resumed": false,
+  "github_push_performed": false
+}

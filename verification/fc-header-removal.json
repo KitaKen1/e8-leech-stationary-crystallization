@@ -1,0 +1,13 @@
+{
+  "date_jst": "2026-10-17",
+  "change": "Removed only the opening copyright/license comment; restored the explanatory module docstring",
+  "previous_source_sha256": "859983d06dd533193296afbee06a85d7c6ea65baf84607034b6ed1cd7c887d44",
+  "source_sha256": "56b19d7de9b31a0e66b0b96446698b5df1c4bb639bda8c347c35009e8df060f8",
+  "mathematical_tokens_unchanged": true,
+  "previous_kernel_checked_proof_bridge_unchanged": true,
+  "comment_only_change": true,
+  "lean_recompiled": false,
+  "copyright_header_linter_enabled": false,
+  "ci_resumed": false,
+  "github_push_performed": false
+}
