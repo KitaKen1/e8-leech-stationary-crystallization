@@ -1,0 +1,28 @@
+{
+  "run_id": 40647149094,
+  "run_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094",
+  "candidate_commit": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+  "jobs": [
+    {
+      "name": "build_0",
+      "status": "in_progress",
+      "conclusion": null,
+      "current_steps": [
+        "Run lake exe cache get"
+      ],
+      "failed_steps": []
+    }
+  ],
+  "success_claimed": false,
+  "superseded_run": {
+    "run_id": 40646749471,
+    "candidate_commit": "88eb27d2aef38da7e17d20613509d79615fcab0e",
+    "reason": "README math rendering correction",
+    "cancellation_requested": true,
+    "status": "completed",
+    "conclusion": "cancelled"
+  },
+  "status": "in_progress",
+  "readme_only_followup_commit": "7af0d21e85519b4d764c49ba05dc7fd50c052857",
+  "readme_followup_not_tested_by_this_run": true
+}

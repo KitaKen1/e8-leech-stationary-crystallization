@@ -1,0 +1,884 @@
+[
+  {
+    "id": 122678940870,
+    "run_id": 40647149094,
+    "workflow_name": "E8 Leech publication verification",
+    "head_branch": "publication-test",
+    "run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094",
+    "run_attempt": 1,
+    "node_id": "CR_kwDOVMVJhM8AAAAckDwUxg",
+    "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/jobs/122678940870",
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094/job/122678940870",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-28T07:00:10Z",
+    "started_at": "2026-10-28T07:00:13Z",
+    "completed_at": "2026-10-28T07:15:58Z",
+    "name": "build_0",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-28T07:00:14Z",
+        "completed_at": "2026-10-28T07:00:15Z"
+      },
+      {
+        "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-28T07:00:15Z",
+        "completed_at": "2026-10-28T07:00:18Z"
+      },
+      {
+        "name": "Run python3 lean/comparator/check-inputs.py",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-28T07:00:18Z",
+        "completed_at": "2026-10-28T07:00:18Z"
+      },
+      {
+        "name": "Run bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-28T07:00:18Z",
+        "completed_at": "2026-10-28T07:01:47Z"
+      },
+      {
+        "name": "Run lake exe cache get",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-28T07:01:47Z",
+        "completed_at": "2026-10-28T07:04:37Z"
+      },
+      {
+        "name": "Compile dependency-ordered proof stage 0",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-28T07:04:37Z",
+        "completed_at": "2026-10-28T07:15:49Z"
+      },
+      {
+        "name": "Archive successful stage outputs",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-28T07:15:49Z",
+        "completed_at": "2026-10-28T07:15:49Z"
+      },
+      {
+        "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-10-28T07:15:49Z",
+        "completed_at": "2026-10-28T07:15:52Z"
+      },
+      {
+        "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9,
+        "started_at": "2026-10-28T07:15:52Z",
+        "completed_at": "2026-10-28T07:15:55Z"
+      },
+      {
+        "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 18,
+        "started_at": "2026-10-28T07:15:55Z",
+        "completed_at": "2026-10-28T07:15:55Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 19,
+        "started_at": "2026-10-28T07:15:55Z",
+        "completed_at": "2026-10-28T07:15:55Z"
+      }
+    ],
+    "check_run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/check-runs/122678940870",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner_id": 1000000899,
+    "runner_name": "GitHub Actions 1000000899",
+    "runner_group_id": 0,
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "id": 122684267517,
+    "run_id": 40647149094,
+    "workflow_name": "E8 Leech publication verification",
+    "head_branch": "publication-test",
+    "run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094",
+    "run_attempt": 1,
+    "node_id": "CR_kwDOVMVJhM8AAAAckI1b_Q",
+    "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/jobs/122684267517",
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094/job/122684267517",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-28T07:15:59Z",
+    "started_at": "2026-10-28T07:16:01Z",
+    "completed_at": "2026-10-28T10:04:36Z",
+    "name": "build_1",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-28T07:16:01Z",
+        "completed_at": "2026-10-28T07:16:02Z"
+      },
+      {
+        "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-28T07:16:02Z",
+        "completed_at": "2026-10-28T07:16:04Z"
+      },
+      {
+        "name": "Run python3 lean/comparator/check-inputs.py",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-28T07:16:04Z",
+        "completed_at": "2026-10-28T07:16:05Z"
+      },
+      {
+        "name": "Run bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-28T07:16:05Z",
+        "completed_at": "2026-10-28T07:18:39Z"
+      },
+      {
+        "name": "Run lake exe cache get",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-28T07:18:39Z",
+        "completed_at": "2026-10-28T08:47:43Z"
+      },
+      {
+        "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-28T08:47:43Z",
+        "completed_at": "2026-10-28T08:47:44Z"
+      },
+      {
+        "name": "Run tar --zstd -xf incoming/proof.tar.zst",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-28T08:47:44Z",
+        "completed_at": "2026-10-28T08:47:44Z"
+      },
+      {
+        "name": "Compile dependency-ordered proof stage 1",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-10-28T08:47:44Z",
+        "completed_at": "2026-10-28T10:04:28Z"
+      },
+      {
+        "name": "Archive successful stage outputs",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9,
+        "started_at": "2026-10-28T10:04:28Z",
+        "completed_at": "2026-10-28T10:04:30Z"
+      },
+      {
+        "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10,
+        "started_at": "2026-10-28T10:04:30Z",
+        "completed_at": "2026-10-28T10:04:33Z"
+      },
+      {
+        "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 11,
+        "started_at": "2026-10-28T10:04:33Z",
+        "completed_at": "2026-10-28T10:04:34Z"
+      },
+      {
+        "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 22,
+        "started_at": "2026-10-28T10:04:34Z",
+        "completed_at": "2026-10-28T10:04:35Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 23,
+        "started_at": "2026-10-28T10:04:35Z",
+        "completed_at": "2026-10-28T10:04:35Z"
+      }
+    ],
+    "check_run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/check-runs/122684267517",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner_id": 1000000900,
+    "runner_name": "GitHub Actions 1000000900",
+    "runner_group_id": 0,
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "id": 122751439627,
+    "run_id": 40647149094,
+    "workflow_name": "E8 Leech publication verification",
+    "head_branch": "publication-test",
+    "run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094",
+    "run_attempt": 1,
+    "node_id": "CR_kwDOVMVJhM8AAAAclI5TCw",
+    "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/jobs/122751439627",
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094/job/122751439627",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-28T10:04:36Z",
+    "started_at": "2026-10-28T10:04:38Z",
+    "completed_at": "2026-10-28T11:15:27Z",
+    "name": "build_2",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-28T10:04:39Z",
+        "completed_at": "2026-10-28T10:04:41Z"
+      },
+      {
+        "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-28T10:04:41Z",
+        "completed_at": "2026-10-28T10:04:44Z"
+      },
+      {
+        "name": "Run python3 lean/comparator/check-inputs.py",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-28T10:04:44Z",
+        "completed_at": "2026-10-28T10:04:44Z"
+      },
+      {
+        "name": "Run bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-28T10:04:44Z",
+        "completed_at": "2026-10-28T10:08:00Z"
+      },
+      {
+        "name": "Run lake exe cache get",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-28T10:08:00Z",
+        "completed_at": "2026-10-28T10:11:09Z"
+      },
+      {
+        "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-28T10:11:09Z",
+        "completed_at": "2026-10-28T10:11:13Z"
+      },
+      {
+        "name": "Run tar --zstd -xf incoming/proof.tar.zst",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-28T10:11:13Z",
+        "completed_at": "2026-10-28T10:11:15Z"
+      },
+      {
+        "name": "Compile dependency-ordered proof stage 2",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-10-28T10:11:15Z",
+        "completed_at": "2026-10-28T11:15:15Z"
+      },
+      {
+        "name": "Archive successful stage outputs",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9,
+        "started_at": "2026-10-28T11:15:15Z",
+        "completed_at": "2026-10-28T11:15:19Z"
+      },
+      {
+        "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10,
+        "started_at": "2026-10-28T11:15:19Z",
+        "completed_at": "2026-10-28T11:15:22Z"
+      },
+      {
+        "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 11,
+        "started_at": "2026-10-28T11:15:22Z",
+        "completed_at": "2026-10-28T11:15:24Z"
+      },
+      {
+        "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 22,
+        "started_at": "2026-10-28T11:15:24Z",
+        "completed_at": "2026-10-28T11:15:24Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 23,
+        "started_at": "2026-10-28T11:15:24Z",
+        "completed_at": "2026-10-28T11:15:25Z"
+      }
+    ],
+    "check_run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/check-runs/122751439627",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner_id": 1000000901,
+    "runner_name": "GitHub Actions 1000000901",
+    "runner_group_id": 0,
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "id": 122782986825,
+    "run_id": 40647149094,
+    "workflow_name": "E8 Leech publication verification",
+    "head_branch": "publication-test",
+    "run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094",
+    "run_attempt": 1,
+    "node_id": "CR_kwDOVMVJhM8AAAAclm-ySQ",
+    "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/jobs/122782986825",
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094/job/122782986825",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-28T11:15:27Z",
+    "started_at": "2026-10-28T11:15:29Z",
+    "completed_at": "2026-10-28T13:06:15Z",
+    "name": "build_3",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-28T11:15:30Z",
+        "completed_at": "2026-10-28T11:15:31Z"
+      },
+      {
+        "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-28T11:15:31Z",
+        "completed_at": "2026-10-28T11:15:33Z"
+      },
+      {
+        "name": "Run python3 lean/comparator/check-inputs.py",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-28T11:15:33Z",
+        "completed_at": "2026-10-28T11:15:33Z"
+      },
+      {
+        "name": "Run bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-28T11:15:33Z",
+        "completed_at": "2026-10-28T11:20:18Z"
+      },
+      {
+        "name": "Run lake exe cache get",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-28T11:20:18Z",
+        "completed_at": "2026-10-28T11:23:05Z"
+      },
+      {
+        "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-28T11:23:05Z",
+        "completed_at": "2026-10-28T11:23:09Z"
+      },
+      {
+        "name": "Run tar --zstd -xf incoming/proof.tar.zst",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-28T11:23:09Z",
+        "completed_at": "2026-10-28T11:23:11Z"
+      },
+      {
+        "name": "Compile dependency-ordered proof stage 3",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-10-28T11:23:11Z",
+        "completed_at": "2026-10-28T13:05:59Z"
+      },
+      {
+        "name": "Archive successful stage outputs",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9,
+        "started_at": "2026-10-28T13:05:59Z",
+        "completed_at": "2026-10-28T13:06:06Z"
+      },
+      {
+        "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10,
+        "started_at": "2026-10-28T13:06:06Z",
+        "completed_at": "2026-10-28T13:06:10Z"
+      },
+      {
+        "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 11,
+        "started_at": "2026-10-28T13:06:10Z",
+        "completed_at": "2026-10-28T13:06:12Z"
+      },
+      {
+        "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 22,
+        "started_at": "2026-10-28T13:06:12Z",
+        "completed_at": "2026-10-28T13:06:13Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 23,
+        "started_at": "2026-10-28T13:06:13Z",
+        "completed_at": "2026-10-28T13:06:13Z"
+      }
+    ],
+    "check_run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/check-runs/122782986825",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner_id": 1000000902,
+    "runner_name": "GitHub Actions 1000000902",
+    "runner_group_id": 0,
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "id": 122833757686,
+    "run_id": 40647149094,
+    "workflow_name": "E8 Leech publication verification",
+    "head_branch": "publication-test",
+    "run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094",
+    "run_attempt": 1,
+    "node_id": "CR_kwDOVMVJhM8AAAAcmXZl9g",
+    "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/jobs/122833757686",
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094/job/122833757686",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-28T13:06:15Z",
+    "started_at": "2026-10-28T13:06:17Z",
+    "completed_at": "2026-10-28T15:06:50Z",
+    "name": "build_4",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-28T13:06:18Z",
+        "completed_at": "2026-10-28T13:06:19Z"
+      },
+      {
+        "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-28T13:06:19Z",
+        "completed_at": "2026-10-28T13:06:21Z"
+      },
+      {
+        "name": "Run python3 lean/comparator/check-inputs.py",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-28T13:06:21Z",
+        "completed_at": "2026-10-28T13:06:21Z"
+      },
+      {
+        "name": "Run bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-28T13:06:21Z",
+        "completed_at": "2026-10-28T13:08:57Z"
+      },
+      {
+        "name": "Run lake exe cache get",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-28T13:08:57Z",
+        "completed_at": "2026-10-28T13:11:17Z"
+      },
+      {
+        "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-28T13:11:17Z",
+        "completed_at": "2026-10-28T13:11:22Z"
+      },
+      {
+        "name": "Run tar --zstd -xf incoming/proof.tar.zst",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-28T13:11:22Z",
+        "completed_at": "2026-10-28T13:11:26Z"
+      },
+      {
+        "name": "Compile dependency-ordered proof stage 4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-10-28T13:11:26Z",
+        "completed_at": "2026-10-28T15:06:32Z"
+      },
+      {
+        "name": "Archive successful stage outputs",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9,
+        "started_at": "2026-10-28T15:06:32Z",
+        "completed_at": "2026-10-28T15:06:42Z"
+      },
+      {
+        "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10,
+        "started_at": "2026-10-28T15:06:42Z",
+        "completed_at": "2026-10-28T15:06:46Z"
+      },
+      {
+        "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 11,
+        "started_at": "2026-10-28T15:06:46Z",
+        "completed_at": "2026-10-28T15:06:48Z"
+      },
+      {
+        "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 22,
+        "started_at": "2026-10-28T15:06:48Z",
+        "completed_at": "2026-10-28T15:06:48Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 23,
+        "started_at": "2026-10-28T15:06:48Z",
+        "completed_at": "2026-10-28T15:06:48Z"
+      }
+    ],
+    "check_run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/check-runs/122833757686",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner_id": 1000000903,
+    "runner_name": "GitHub Actions 1000000903",
+    "runner_group_id": 0,
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "id": 122901751833,
+    "run_id": 40647149094,
+    "workflow_name": "E8 Leech publication verification",
+    "head_branch": "publication-test",
+    "run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094",
+    "run_attempt": 1,
+    "node_id": "CR_kwDOVMVJhM8AAAAcnYPoGQ",
+    "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/jobs/122901751833",
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094/job/122901751833",
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-10-28T15:06:50Z",
+    "started_at": "2026-10-28T15:06:52Z",
+    "completed_at": "2026-10-28T16:45:59Z",
+    "name": "build_5",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-28T15:06:53Z",
+        "completed_at": "2026-10-28T15:06:55Z"
+      },
+      {
+        "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-28T15:06:55Z",
+        "completed_at": "2026-10-28T15:06:57Z"
+      },
+      {
+        "name": "Run python3 lean/comparator/check-inputs.py",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-28T15:06:57Z",
+        "completed_at": "2026-10-28T15:06:57Z"
+      },
+      {
+        "name": "Run bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-28T15:06:57Z",
+        "completed_at": "2026-10-28T15:10:37Z"
+      },
+      {
+        "name": "Run lake exe cache get",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-28T15:10:37Z",
+        "completed_at": "2026-10-28T15:13:46Z"
+      },
+      {
+        "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-28T15:13:46Z",
+        "completed_at": "2026-10-28T15:13:53Z"
+      },
+      {
+        "name": "Run tar --zstd -xf incoming/proof.tar.zst",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-28T15:13:53Z",
+        "completed_at": "2026-10-28T15:14:07Z"
+      },
+      {
+        "name": "Compile dependency-ordered proof stage 5",
+        "status": "completed",
+        "conclusion": "failure",
+        "number": 8,
+        "started_at": "2026-10-28T15:14:07Z",
+        "completed_at": "2026-10-28T16:45:54Z"
+      },
+      {
+        "name": "Archive successful stage outputs",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 9,
+        "started_at": "2026-10-28T16:45:55Z",
+        "completed_at": "2026-10-28T16:45:55Z"
+      },
+      {
+        "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 10,
+        "started_at": "2026-10-28T16:45:55Z",
+        "completed_at": "2026-10-28T16:45:55Z"
+      },
+      {
+        "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 11,
+        "started_at": "2026-10-28T16:45:55Z",
+        "completed_at": "2026-10-28T16:45:58Z"
+      },
+      {
+        "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 22,
+        "started_at": "2026-10-28T16:45:58Z",
+        "completed_at": "2026-10-28T16:45:58Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 23,
+        "started_at": "2026-10-28T16:45:58Z",
+        "completed_at": "2026-10-28T16:45:58Z"
+      }
+    ],
+    "check_run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/check-runs/122901751833",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner_id": 1000000904,
+    "runner_name": "GitHub Actions 1000000904",
+    "runner_group_id": 0,
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "id": 122960519001,
+    "run_id": 40647149094,
+    "workflow_name": "E8 Leech publication verification",
+    "head_branch": "publication-test",
+    "run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094",
+    "run_attempt": 1,
+    "node_id": "CR_kwDOVMVJhM8AAAAcoQSfWQ",
+    "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/jobs/122960519001",
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094/job/122960519001",
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-10-28T16:46:00Z",
+    "started_at": "2026-10-28T16:46:03Z",
+    "completed_at": "2026-10-28T16:46:06Z",
+    "name": "verification_status",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-28T16:46:03Z",
+        "completed_at": "2026-10-28T16:46:03Z"
+      },
+      {
+        "name": "Require every build stage, Comparator and fresh replay",
+        "status": "completed",
+        "conclusion": "failure",
+        "number": 2,
+        "started_at": "2026-10-28T16:46:03Z",
+        "completed_at": "2026-10-28T16:46:04Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-28T16:46:04Z",
+        "completed_at": "2026-10-28T16:46:04Z"
+      }
+    ],
+    "check_run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/check-runs/122960519001",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner_id": 1000000905,
+    "runner_name": "GitHub Actions 1000000905",
+    "runner_group_id": 0,
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "id": 122960521224,
+    "run_id": 40647149094,
+    "workflow_name": "E8 Leech publication verification",
+    "head_branch": "publication-test",
+    "run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094",
+    "run_attempt": 1,
+    "node_id": "CR_kwDOVMVJhM8AAAAcoQSoCA",
+    "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/jobs/122960521224",
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094/job/122960521224",
+    "status": "completed",
+    "conclusion": "skipped",
+    "created_at": "2026-10-28T16:46:00Z",
+    "started_at": "2026-10-28T16:46:00Z",
+    "completed_at": "2026-10-28T16:46:00Z",
+    "name": "comparator",
+    "steps": [],
+    "check_run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/check-runs/122960521224",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner_id": null,
+    "runner_name": null,
+    "runner_group_id": null,
+    "runner_group_name": null
+  },
+  {
+    "id": 122960521250,
+    "run_id": 40647149094,
+    "workflow_name": "E8 Leech publication verification",
+    "head_branch": "publication-test",
+    "run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094",
+    "run_attempt": 1,
+    "node_id": "CR_kwDOVMVJhM8AAAAcoQSoIg",
+    "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/jobs/122960521250",
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094/job/122960521250",
+    "status": "completed",
+    "conclusion": "skipped",
+    "created_at": "2026-10-28T16:46:00Z",
+    "started_at": "2026-10-28T16:46:00Z",
+    "completed_at": "2026-10-28T16:46:00Z",
+    "name": "replay",
+    "steps": [],
+    "check_run_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/check-runs/122960521250",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "runner_id": null,
+    "runner_name": null,
+    "runner_group_id": null,
+    "runner_group_name": null
+  }
+]

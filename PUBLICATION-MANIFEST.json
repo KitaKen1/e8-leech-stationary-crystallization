@@ -1,17 +1,19 @@
 {
-  "status": "Preparing README rendering fix and a new exact-commit private CI run",
+  "status": "CI parser bug repaired; preparing source-hash-verified stage-5 resume",
   "publication_repository": "KitaKen1/e8-leech-stationary-crystallization",
   "private_repository": "KitaKen1/e8-leech-crystallization-ci-20261016",
   "existing_public_main_before_private_test": "57cd06a0056a7d9c83e16ef6153fdad469160100",
   "private_candidate_pushed": true,
   "public_candidate_pushed": false,
   "private_ci_run": {
-    "id": 40646749471,
-    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40646749471",
-    "head_sha": "88eb27d2aef38da7e17d20613509d79615fcab0e",
-    "status": "in_progress",
-    "conclusion": null,
-    "run_attempt": 1
+    "id": 40647149094,
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094",
+    "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+    "status": "completed",
+    "conclusion": "failure",
+    "run_attempt": 1,
+    "created_at": "2026-10-28T06:58:47Z",
+    "updated_at": "2026-10-28T16:46:07Z"
   },
   "public_ci_run": null,
   "required_order": [
@@ -44,7 +46,7 @@
   "local_upstream_api_comparison_passed": true,
   "local_comparison_uses_direct_constant_maps": true,
   "local_exported_json_parser_claimed": false,
-  "private_tested_commit": "88eb27d2aef38da7e17d20613509d79615fcab0e",
+  "private_tested_commit": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
   "ci_resume_requires_user_instruction": false,
   "statement_to_lean_review_complete": false,
   "private_ci_cancellation_requested": true,
@@ -78,11 +80,30 @@
       "id": 40646749471,
       "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40646749471",
       "head_sha": "88eb27d2aef38da7e17d20613509d79615fcab0e",
-      "status": "in_progress",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "cancelled",
       "run_attempt": 1,
       "reason": "README math rendering fix; superseded before the proof build",
-      "cancellation_requested": true
+      "cancellation_requested": true,
+      "cancellation_confirmed": true
     }
-  ]
+  ],
+  "private_repository_head": "7af0d21e85519b4d764c49ba05dc7fd50c052857",
+  "readme_only_followup_commit": "7af0d21e85519b4d764c49ba05dc7fd50c052857",
+  "readme_followup_proof_source_difference": false,
+  "latest_repository_head_itself_ci_verified": false,
+  "latest_readme_render_check": "verification/readme-render-verification-20261028.json",
+  "failed_private_ci_run": {
+    "id": 40647149094,
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094",
+    "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+    "status": "completed",
+    "conclusion": "failure",
+    "run_attempt": 1,
+    "created_at": "2026-10-28T06:58:47Z",
+    "updated_at": "2026-10-28T16:46:07Z"
+  },
+  "ci_failure_diagnosis": "verification/private-ci-failure-20261029/diagnosis.json",
+  "ci_resume_source_run": 40647149094,
+  "ci_resume_stage": 5
 }

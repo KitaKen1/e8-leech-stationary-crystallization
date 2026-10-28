@@ -61,8 +61,8 @@
     "lean/comparator/CompareExports.lean": "a8f0029135cb9fa8e090ca38f9659e7e90e44f55b37d2586bc101b801acf403f",
     "lean/comparator/TARGET-CORRESPONDENCE.md": "4c97b59f2acdeda6a31c858d8ef23bb691a9d92e51cbcfe4576148814951f847",
     "lean/comparator/run-check.sh": "006a4b6656ebeb55157ff5c84cdf7889fd270ce41648904e3adac1ea4a9998cf",
-    "lean/comparator/check-all-axioms.py": "48e4cfcb5ebca9217cdf8a7c7770fc64857a87353f054907fae85a76e3cbad70",
-    "lean/comparator/check-axioms.py": "3f5069559586abd29e00f2f54af351cadb15b76cc63a55b3d71afb6ac34b5459",
+    "lean/comparator/check-all-axioms.py": "99f5cbdf5be3756e9249ff5c3377e362fbfb88f26b7a085c61a20d1f55d70fd0",
+    "lean/comparator/check-axioms.py": "4b3ad5309965aaafa5b618716f91d63584cea098d6fb1cb8ab5b012ae7c9443a",
     "lean/comparator/check-inputs.py": "27799648f5dcad61ed92af960b975746a685b8e9c1ece1427dbc0efa285350ca",
     "lean/comparator/reference-definition-modules.json": "3e7c6a46b162faacb3f8c8f8a32f040d17df2b5d45056652aee4fb32ee05115b",
     "lean/comparator/add-swap.sh": "560dbc6aa8f8039264fd7bd1715cde5ba338486a3e675ea23f352e9fcf8680ae",
@@ -3167,13 +3167,16 @@
     "leanWithoutComparator/SpherePacking/Dim8/E8/Basic.lean": "bd618a53e13d778a430b73903abcb0f756f68c0a5be95cc6613522df8224066d",
     "FClikelean/E8Leech.lean": "56b19d7de9b31a0e66b0b96446698b5df1c4bb639bda8c347c35009e8df060f8",
     "FClikelean/README.md": "283963dd8c718ada33c43c90539637ed825e861395c99eaf806a7354a7ac3c4c",
-    ".github/workflows/comparator.yml": "e949c60edeb9c605f151c65de0e0bcd3e6f7b08b9f9f6705a8ffdc0a90284d76",
+    ".github/workflows/comparator.yml": "dc0f4e5d486e6759f768941f2625a360e1feffca45a8642dc558bf17829a64f7",
     "lean/comparator/check-fc-draft.py": "2830fa9349b20f1b68e984bd5cff324996e4139123d90e1e966f75a6d54281f7",
     "FClikelean/FormalConjecturesForMathlib/Probability/SimplePointProcess.lean": "3827fe54fe1821cb0e6173ca3eb9651e579300223fc72754e0aad805eed64d01",
     "FClikelean/for-mathlib-index.patch": "085e76c7af62b035e122a0f17d68001052b283d045e0a902495484fc7d67aaaa",
     "lean/comparator/prepare-fc.py": "5a87649c4f3c3eaf8ccfab8fd38527205e15ce648c70b8a410c31fc9dc8daf39",
     "lean/comparator/fc-upstream.json": "74a8ff2c13649ace97eaa367c41a100248b712b8bbd49b2f05e8401ed060ac9a",
-    "lean/comparator/README.md": "ae424441c015496ed2c2f3abb1d0489febabdef47c23e26c95a72ad68b0adcd9"
+    "lean/comparator/README.md": "70436875c45fa9620f872362f9f38723d97f2f30713e5e3b610db16f95fd16d1",
+    "lean/comparator/axiom_log.py": "8e0f5fe19cc6eef3a06168651b49e0d8b5e5bbf3a8236b2c9586ef0ef655c04b",
+    "lean/comparator/verify-resume.py": "7729efe6434de655e1b16fce83a12ea0b8c3b6d0ef31816448dc22521419bc81",
+    "lean/comparator/test_axiom_log.py": "00f8ffcd8a1c250a4bb7c809b4c4955e8be010ba6dbe630db17d72bfe9a86dba"
   },
   "formal_conjectures_commit": "c77fdd446d23539302aa73bcfae4a9fa962b8382"
 }

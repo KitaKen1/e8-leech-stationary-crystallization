@@ -42,6 +42,22 @@ Lean4export and Landrun binaries, builds six proof stages and runs
 It also performs a separate `leanchecker --fresh FCSolution` replay.
 Intermediate proof artifacts are retained for two days and receipts for 90 days.
 
+## Resume successful source stages
+
+The workflow-dispatch input `resume_run_id` can reuse `proof-stage-4` from an
+older run of this same repository. It requires successful source stages 0-4,
+matching toolchain/dependency/build-plan inputs, and matching hashes for every
+restored source and compiled object. Stage 5 is rebuilt from source, and the full
+axiom audit, Comparator and fresh replay remain required. The new receipt records
+the source run, artifact and commit; reuse is not described as a new clean build.
+
+The 29 October 2026 repair fixes apostrophes in the axiom-log parser. In the
+previous run all 928 modules compiled; the final Python audit rejected 50 report
+names containing apostrophes. Rechecking its actual logs with the corrected
+parser covered all 9,582 audit declarations and all 13 comparison targets with
+only the three permitted axioms. That local repair check is not a successful CI
+run; the revised workflow must still complete.
+
 ## Actual status
 
 Local independent-reference compilation, all 13 direct upstream API comparisons,

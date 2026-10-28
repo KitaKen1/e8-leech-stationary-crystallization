@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "method": "GitHub Markdown API in GFM mode; verified the math-renderer payload after Markdown escaping",
+  "source_sha256": "8d4c302c9e7a2670f6409b3ada5951650f62c8329ef9386fc7b809627c10463c",
+  "count_formula_payload": "$$|\\Xi\\cap\\overline B_R|\\ge(1-CR^{-1/2})\\mathrm{vol}(\\overline B_R).$$",
+  "forbidden_operatorname_absent": true,
+  "unescaped_hash_absent": true,
+  "proof_sources_changed": false,
+  "existing_ci_interrupted": false
+}

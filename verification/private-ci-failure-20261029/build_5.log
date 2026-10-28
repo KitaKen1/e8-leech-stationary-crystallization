@@ -1,0 +1,501 @@
+﻿2026-10-28T15:06:53.7476255Z Current runner version: '2.338.0'
+2026-10-28T15:06:53.7555132Z ##[group]Runner Image Provisioner
+2026-10-28T15:06:53.7556212Z Hosted Compute Agent
+2026-10-28T15:06:53.7556870Z Version: 20261021.618
+2026-10-28T15:06:53.7557569Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-28T15:06:53.7558519Z Build Date: 2026-10-21T00:45:21Z
+2026-10-28T15:06:53.7559600Z Worker ID: {b4d438c0-9a9e-49f1-b695-fdb7ddbf9ff8}
+2026-10-28T15:06:53.7560642Z Region: centralus
+2026-10-28T15:06:53.7561291Z Cloud: Azure
+2026-10-28T15:06:53.7561893Z ##[endgroup]
+2026-10-28T15:06:53.7563683Z ##[group]Operating System
+2026-10-28T15:06:53.7564404Z Ubuntu
+2026-10-28T15:06:53.7565395Z 24.04.5
+2026-10-28T15:06:53.7566021Z LTS
+2026-10-28T15:06:53.7566602Z ##[endgroup]
+2026-10-28T15:06:53.7567285Z ##[group]Runner Image
+2026-10-28T15:06:53.7567979Z Image: ubuntu-24.04
+2026-10-28T15:06:53.7583741Z Version: 20261012.334.1
+2026-10-28T15:06:53.7585585Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-28T15:06:53.7587716Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-28T15:06:53.7589404Z ##[endgroup]
+2026-10-28T15:06:53.7590929Z ##[group]GITHUB_TOKEN Permissions
+2026-10-28T15:06:53.7593810Z Contents: read
+2026-10-28T15:06:53.7594698Z Metadata: read
+2026-10-28T15:06:53.7595433Z ##[endgroup]
+2026-10-28T15:06:53.7597993Z Secret source: Actions
+2026-10-28T15:06:53.7599658Z Cache mode: write
+2026-10-28T15:06:53.7600868Z Prepare workflow directory
+2026-10-28T15:06:53.8510708Z Prepare all required actions
+2026-10-28T15:06:53.8641243Z Getting action download info
+2026-10-28T15:06:54.1133352Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-28T15:06:54.2585919Z Download action repository 'actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093' (SHA:d3f86a106a0bac45b974a628896c90dbdf5c8093)
+2026-10-28T15:06:54.9085574Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-28T15:06:55.3414082Z Complete job name: build_5
+2026-10-28T15:06:55.4310867Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-10-28T15:06:55.4312638Z with:
+2026-10-28T15:06:55.4313618Z   persist-credentials: false
+2026-10-28T15:06:55.4314914Z   repository: KitaKen1/e8-leech-crystallization-ci-20261016
+2026-10-28T15:06:55.4322965Z   token: ***
+2026-10-28T15:06:55.4323885Z   ssh-strict: true
+2026-10-28T15:06:55.4324830Z   ssh-user: git
+2026-10-28T15:06:55.4325742Z   clean: true
+2026-10-28T15:06:55.4326735Z   sparse-checkout-cone-mode: true
+2026-10-28T15:06:55.4327889Z   fetch-depth: 1
+2026-10-28T15:06:55.4328911Z   fetch-tags: false
+2026-10-28T15:06:55.4329901Z   show-progress: true
+2026-10-28T15:06:55.4330873Z   lfs: false
+2026-10-28T15:06:55.4331801Z   submodules: false
+2026-10-28T15:06:55.4332809Z   set-safe-directory: true
+2026-10-28T15:06:55.4333925Z   allow-unsafe-pr-checkout: false
+2026-10-28T15:06:55.4335189Z env:
+2026-10-28T15:06:55.4336070Z   LEAN_NUM_THREADS: 1
+2026-10-28T15:06:55.4337104Z   PYTHONOPTIMIZE: 0
+2026-10-28T15:06:55.4338122Z ##[endgroup]
+2026-10-28T15:06:55.6957191Z Syncing repository: KitaKen1/e8-leech-crystallization-ci-20261016
+2026-10-28T15:06:55.6961097Z ##[group]Getting Git version info
+2026-10-28T15:06:55.6963206Z Working directory is '/home/runner/work/e8-leech-crystallization-ci-20261016/e8-leech-crystallization-ci-20261016'
+2026-10-28T15:06:55.7080326Z [command]/usr/bin/git version
+2026-10-28T15:06:55.7081816Z git version 2.55.0
+2026-10-28T15:06:55.7086755Z ##[endgroup]
+2026-10-28T15:06:55.7104140Z Temporarily overriding HOME='/home/runner/work/_temp/26fa701d-d348-4bc4-b143-48adbbe31697' before making global git config changes
+2026-10-28T15:06:55.7109244Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-28T15:06:55.7114720Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/e8-leech-crystallization-ci-20261016/e8-leech-crystallization-ci-20261016
+2026-10-28T15:06:55.7149456Z Deleting the contents of '/home/runner/work/e8-leech-crystallization-ci-20261016/e8-leech-crystallization-ci-20261016'
+2026-10-28T15:06:55.7154243Z ##[group]Initializing the repository
+2026-10-28T15:06:55.7158944Z [command]/usr/bin/git init /home/runner/work/e8-leech-crystallization-ci-20261016/e8-leech-crystallization-ci-20261016
+2026-10-28T15:06:55.7248379Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-28T15:06:55.7255284Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-28T15:06:55.7260075Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-28T15:06:55.7262567Z hint: call:
+2026-10-28T15:06:55.7265095Z hint:
+2026-10-28T15:06:55.7266855Z hint: 	git config --global init.defaultBranch <name>
+2026-10-28T15:06:55.7269152Z hint:
+2026-10-28T15:06:55.7271119Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-28T15:06:55.7273845Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-28T15:06:55.7276224Z hint:
+2026-10-28T15:06:55.7277574Z hint: 	git branch -m <name>
+2026-10-28T15:06:55.7279397Z hint:
+2026-10-28T15:06:55.7281428Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-28T15:06:55.7285299Z Initialized empty Git repository in /home/runner/work/e8-leech-crystallization-ci-20261016/e8-leech-crystallization-ci-20261016/.git/
+2026-10-28T15:06:55.7291206Z [command]/usr/bin/git remote add origin https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016
+2026-10-28T15:06:55.7316076Z ##[endgroup]
+2026-10-28T15:06:55.7319133Z ##[group]Disabling automatic garbage collection
+2026-10-28T15:06:55.7321563Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-28T15:06:55.7353271Z ##[endgroup]
+2026-10-28T15:06:55.7355716Z ##[group]Setting up auth
+2026-10-28T15:06:55.7359681Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-28T15:06:55.7387383Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-28T15:06:55.7811237Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-28T15:06:55.7851936Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-28T15:06:55.8152787Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-28T15:06:55.8166478Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-28T15:06:55.8389698Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-28T15:06:55.8425719Z ##[endgroup]
+2026-10-28T15:06:55.8427956Z ##[group]Fetching the repository
+2026-10-28T15:06:55.8438930Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +ef18101969e8c2edfc44c2230e090f0f13cea5be:refs/remotes/origin/publication-test
+2026-10-28T15:06:56.8703408Z From https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016
+2026-10-28T15:06:56.8720759Z  * [new ref]         ef18101969e8c2edfc44c2230e090f0f13cea5be -> origin/publication-test
+2026-10-28T15:06:56.8735785Z ##[endgroup]
+2026-10-28T15:06:56.8736818Z ##[group]Determining the checkout info
+2026-10-28T15:06:56.8737886Z ##[endgroup]
+2026-10-28T15:06:56.8738855Z [command]/usr/bin/git sparse-checkout disable
+2026-10-28T15:06:56.8775315Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-28T15:06:56.8802476Z ##[group]Checking out the ref
+2026-10-28T15:06:56.8805953Z [command]/usr/bin/git checkout --progress --force -B publication-test refs/remotes/origin/publication-test
+2026-10-28T15:06:57.1184573Z Switched to a new branch 'publication-test'
+2026-10-28T15:06:57.1194852Z branch 'publication-test' set up to track 'origin/publication-test'.
+2026-10-28T15:06:57.1199942Z ##[endgroup]
+2026-10-28T15:06:57.1240329Z [command]/usr/bin/git log -1 --format=%H
+2026-10-28T15:06:57.1262580Z ef18101969e8c2edfc44c2230e090f0f13cea5be
+2026-10-28T15:06:57.1271995Z ##[group]Removing auth
+2026-10-28T15:06:57.1276945Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-28T15:06:57.1302618Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-28T15:06:57.1489443Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-28T15:06:57.1510089Z http.https://github.com/.extraheader
+2026-10-28T15:06:57.1515985Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-28T15:06:57.1543415Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-28T15:06:57.1715617Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-28T15:06:57.1740314Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-28T15:06:57.1908497Z ##[endgroup]
+2026-10-28T15:06:57.2142669Z ##[group]Run python3 lean/comparator/check-inputs.py
+2026-10-28T15:06:57.2143304Z [36;1mpython3 lean/comparator/check-inputs.py[0m
+2026-10-28T15:06:57.2308092Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-28T15:06:57.2308811Z env:
+2026-10-28T15:06:57.2309289Z   LEAN_NUM_THREADS: 1
+2026-10-28T15:06:57.2309698Z   PYTHONOPTIMIZE: 0
+2026-10-28T15:06:57.2310062Z ##[endgroup]
+2026-10-28T15:06:57.4286095Z {"success": true, "static_checks_passed": true, "problem_definition_count": 4, "generic_definition_count": 6, "primary_theorems": ["e8_quantitative_crystallization", "leech_quantitative_crystallization"], "proved_boundary_tests": ["zero_mem_e8Set", "zero_mem_leechSet"], "source_sha256": "56b19d7de9b31a0e66b0b96446698b5df1c4bb639bda8c347c35009e8df060f8", "support_sha256": "3827fe54fe1821cb0e6173ca3eb9651e579300223fc72754e0aad805eed64d01", "canonical_challenge_sha256": "1ce7c25d47f98f431baf01363ef0ef37126b140b9a8c9a5ca5abde49df732477", "configuration_reference_sha256": "7698167abd0d43b260822bf701ef2c93aec97eaffce29eb49e828c3cc34af3bf", "checker_sha256": "2830fa9349b20f1b68e984bd5cff324996e4139123d90e1e966f75a6d54281f7", "semantic_correspondence_checked": false, "original_manuscript_review_complete": false, "actual_fc_linter_checked": false}
+2026-10-28T15:06:57.6456695Z {"success": true, "targets": ["E8LeechFC.e8_quantitative_crystallization", "E8LeechFC.e8_gaussian_crystallization", "E8LeechFC.e8_positiveGaussianMixture_crystallization", "E8LeechFC.e8_riesz_zero_excess_iff_ae_isometric_lattice", "E8LeechFC.e8_gaussian_zero_excess_iff_ae_isometric_lattice", "E8LeechFC.e8_positiveGaussianMixture_zero_excess_iff_ae_isometric_lattice", "E8LeechFC.leech_quantitative_crystallization", "E8LeechFC.leech_gaussian_crystallization", "E8LeechFC.leech_positiveGaussianMixture_crystallization", "E8LeechFC.leech_riesz_zero_excess_iff_ae_isometric_lattice", "E8LeechFC.leech_gaussian_zero_excess_iff_ae_isometric_lattice", "E8LeechFC.leech_positiveGaussianMixture_zero_excess_iff_ae_isometric_lattice", "E8LeechFC.stationary_exact_lattice_law"], "target_count": 13, "shared_proof_sources": 1537, "independent_reference_imports_mathlib_only": true, "fc_draft_primary_statement_count": 2, "fc_draft_semantic_check_script": "lean/comparator/check-fc-draft.py --compile", "proof_bridge_does_not_import_challenge": true, "pins_sha256": "51619745ee5cb4f1f8076c377c0ece0258deac87b04e69ec72b9ff38dac32fce"}
+2026-10-28T15:06:57.6552107Z ##[group]Run bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
+2026-10-28T15:06:57.6552806Z [36;1mbash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3[0m
+2026-10-28T15:06:57.6591069Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-28T15:06:57.6591446Z env:
+2026-10-28T15:06:57.6591756Z   LEAN_NUM_THREADS: 1
+2026-10-28T15:06:57.6592040Z   PYTHONOPTIMIZE: 0
+2026-10-28T15:06:57.6592329Z ##[endgroup]
+2026-10-28T15:10:37.2079226Z info: downloading installer
+2026-10-28T15:10:37.6450559Z 2
+2026-10-28T15:10:37.6466906Z                total        used        free      shared  buff/cache   available
+2026-10-28T15:10:37.6467535Z Mem:           7.8Gi       865Mi       4.4Gi        46Mi       2.8Gi       6.9Gi
+2026-10-28T15:10:37.6467961Z Swap:          3.0Gi          0B       3.0Gi
+2026-10-28T15:10:37.6590767Z Filesystem      Size  Used Avail Use% Mounted on
+2026-10-28T15:10:37.6591910Z /dev/root        72G   23G   50G  32% /
+2026-10-28T15:10:37.6593709Z /dev/root        72G   23G   50G  32% /
+2026-10-28T15:10:37.7004573Z added 12 GB of swap on /
+2026-10-28T15:10:37.7031704Z                total        used        free      shared  buff/cache   available
+2026-10-28T15:10:37.7033870Z Mem:               7           0           4           0           2           6
+2026-10-28T15:10:37.7046462Z Swap:             14           0          14
+2026-10-28T15:10:37.7047281Z NAME              TYPE SIZE USED PRIO
+2026-10-28T15:10:37.7047872Z /swapfile         file   3G   0B   -2
+2026-10-28T15:10:37.7050307Z /swap-extra-29502 file  12G   0B   -3
+2026-10-28T15:10:37.7102528Z ##[group]Run lake exe cache get
+2026-10-28T15:10:37.7102934Z [36;1mlake exe cache get[0m
+2026-10-28T15:10:37.7148514Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-28T15:10:37.7149285Z env:
+2026-10-28T15:10:37.7149608Z   LEAN_NUM_THREADS: 1
+2026-10-28T15:10:37.7149914Z   PYTHONOPTIMIZE: 0
+2026-10-28T15:10:37.7150270Z ##[endgroup]
+2026-10-28T15:10:38.2617756Z info: downloading https://releases.lean-lang.org/lean4/v4.33.1/lean-4.33.1-linux.tar.zst
+2026-10-28T15:10:46.5070449Z info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1
+2026-10-28T15:11:06.5096381Z info: mathlib: cloning https://github.com/leanprover-community/mathlib4
+2026-10-28T15:11:50.2291337Z info: mathlib: checking out revision '0df444a360eaa60ab8c11dca51a86af692955474'
+2026-10-28T15:11:52.0513146Z info: plausible: cloning https://github.com/leanprover-community/plausible
+2026-10-28T15:11:53.3650882Z info: plausible: checking out revision 'b7eb3304aeae834b12dda98993a37f6a41f6f0bb'
+2026-10-28T15:11:53.3743598Z info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+2026-10-28T15:11:53.7626798Z info: LeanSearchClient: checking out revision '5f4d51b81cbd3f6b32b156bfad9056621a040404'
+2026-10-28T15:11:53.7729381Z info: importGraph: cloning https://github.com/leanprover-community/import-graph
+2026-10-28T15:11:54.2937475Z info: importGraph: checking out revision '16f02aa7642864af59f1ff0e384a015994db9118'
+2026-10-28T15:11:54.3087788Z info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+2026-10-28T15:11:55.4980008Z info: proofwidgets: checking out revision '4be2e3d5087eeb272cf5a8853b8f9dd025ef5957'
+2026-10-28T15:11:56.0777186Z info: aesop: cloning https://github.com/leanprover-community/aesop
+2026-10-28T15:11:56.9717591Z info: aesop: checking out revision '3448c0bcc5ce01b2d1546e483ec3620e32df3d0e'
+2026-10-28T15:11:56.9862931Z info: Qq: cloning https://github.com/leanprover-community/quote4
+2026-10-28T15:11:57.4999590Z info: Qq: checking out revision '92c15be17b7caf78c2ad767ec40f89052d908d81'
+2026-10-28T15:11:57.5117092Z info: batteries: cloning https://github.com/leanprover-community/batteries
+2026-10-28T15:12:01.1200141Z info: batteries: checking out revision '4488d40d070b9700d4d5a6aa342f0d40c31b2a2d'
+2026-10-28T15:12:01.1481169Z info: Cli: cloning https://github.com/leanprover/lean4-cli
+2026-10-28T15:12:01.6196715Z info: Cli: checking out revision '6130a47896ce867c6a4a55373441e59e565bad0f'
+2026-10-28T15:12:02.3314731Z ✔ [2/6] Built Cache.Cli (227ms)
+2026-10-28T15:12:02.6320976Z ✔ [3/11] Built Cache.Lean (297ms)
+2026-10-28T15:12:03.3337575Z ✔ [6/12] Built Batteries.Tactic.OpenPrivate (689ms)
+2026-10-28T15:12:03.6327126Z ✔ [7/12] Built Cache.Infra (295ms)
+2026-10-28T15:12:04.7348755Z ✔ [8/13] Built Cache.IO (1.2s)
+2026-10-28T15:12:05.4364372Z ✔ [10/27] Built Cache.Hashing (618ms)
+2026-10-28T15:12:05.5370444Z ✔ [11/27] Built Cache.Cli:c.o (103ms)
+2026-10-28T15:12:05.6371657Z ✔ [12/27] Built Cache.Lean:c.o (124ms)
+2026-10-28T15:12:06.6391824Z ✔ [13/27] Built Batteries.Tactic.OpenPrivate:c.o (1.0s)
+2026-10-28T15:12:07.9410696Z ✔ [14/27] Built Cache.IO:c.o (1.3s)
+2026-10-28T15:12:08.1393820Z ✔ [15/27] Built Cache.Infra:c.o (171ms)
+2026-10-28T15:12:08.4401653Z ✔ [16/27] Built Cache.Hashing:c.o (363ms)
+2026-10-28T15:12:10.3450448Z ✔ [17/27] Built Cache.Requests (1.9s)
+2026-10-28T15:12:12.7463326Z ✔ [18/27] Built Cache.Requests:c.o (2.4s)
+2026-10-28T15:12:13.1472153Z ✔ [19/27] Built Cache.Marker (433ms)
+2026-10-28T15:12:13.2473968Z ✔ [20/27] Built Cache.Marker:c.o (91ms)
+2026-10-28T15:12:13.7488447Z ✔ [21/27] Built Cache.Query (542ms)
+2026-10-28T15:12:14.0482557Z ✔ [22/27] Built Cache.Query:c.o (249ms)
+2026-10-28T15:12:14.5489655Z ✔ [23/27] Built Cache.Warning (514ms)
+2026-10-28T15:12:14.7492254Z ✔ [24/27] Built Cache.Warning:c.o (211ms)
+2026-10-28T15:12:15.6502297Z ✔ [25/27] Built Cache.Main (913ms)
+2026-10-28T15:12:16.4554214Z ✔ [26/27] Built Cache.Main:c.o (820ms)
+2026-10-28T15:12:17.2580392Z ✔ [27/27] Built cache:exe (767ms)
+2026-10-28T15:12:19.0407757Z Current branch: HEAD
+2026-10-28T15:12:19.0409025Z Using cache from origin: (some leanprover-community/mathlib4)
+2026-10-28T15:12:19.0410587Z Attempting to download 8690 file(s) from leanprover-community/mathlib4 cache at https://lakecache.blob.core.windows.net/mathlib4-master
+2026-10-28T15:12:20.0542516Z 
+2026-10-28T15:12:20.1583601Z Downloaded: 1 file(s) [attempted 1/8690 = 0%, 18 KB/s], Decompressed: 0
+2026-10-28T15:12:20.2572623Z Downloaded: 222 file(s) [attempted 222/8690 = 2%, 2338 KB/s], Decompressed: 12
+2026-10-28T15:12:20.3619450Z Downloaded: 531 file(s) [attempted 531/8690 = 6%, 2478 KB/s], Decompressed: 12
+2026-10-28T15:12:20.4630121Z Downloaded: 853 file(s) [attempted 853/8690 = 9%, 7715 KB/s], Decompressed: 12
+2026-10-28T15:12:20.5640021Z Downloaded: 1168 file(s) [attempted 1168/8690 = 13%, 2316 KB/s], Decompressed: 12
+2026-10-28T15:12:20.6628292Z Downloaded: 1489 file(s) [attempted 1489/8690 = 17%, 5097 KB/s], Decompressed: 12
+2026-10-28T15:12:20.7620587Z Downloaded: 1769 file(s) [attempted 1769/8690 = 20%, 4043 KB/s], Decompressed: 12
+2026-10-28T15:12:20.8623178Z Downloaded: 2092 file(s) [attempted 2092/8690 = 24%, 9937 KB/s], Decompressed: 12
+2026-10-28T15:12:20.9681728Z Downloaded: 2339 file(s) [attempted 2339/8690 = 26%, 14319 KB/s], Decompressed: 12
+2026-10-28T15:12:21.0837130Z Downloaded: 2594 file(s) [attempted 2594/8690 = 29%, 5456 KB/s], Decompressed: 12
+2026-10-28T15:12:21.2134146Z Downloaded: 2841 file(s) [attempted 2841/8690 = 32%, 17012 KB/s], Decompressed: 12
+2026-10-28T15:12:21.3173294Z Downloaded: 3113 file(s) [attempted 3113/8690 = 35%, 21702 KB/s], Decompressed: 12
+2026-10-28T15:12:21.4177893Z Downloaded: 3328 file(s) [attempted 3328/8690 = 38%, 17137 KB/s], Decompressed: 12
+2026-10-28T15:12:21.5070626Z Downloaded: 3519 file(s) [attempted 3519/8690 = 40%, 619 KB/s], Decompressed: 12
+2026-10-28T15:12:21.6362303Z Downloaded: 3755 file(s) [attempted 3755/8690 = 43%, 3211 KB/s], Decompressed: 158
+2026-10-28T15:12:21.6923163Z Downloaded: 3985 file(s) [attempted 3985/8690 = 45%, 1577 KB/s], Decompressed: 158
+2026-10-28T15:12:21.8024316Z Downloaded: 4197 file(s) [attempted 4197/8690 = 48%, 1421 KB/s], Decompressed: 158
+2026-10-28T15:12:21.9482502Z Downloaded: 4441 file(s) [attempted 4441/8690 = 51%, 1032 KB/s], Decompressed: 158
+2026-10-28T15:12:22.0300387Z Downloaded: 4649 file(s) [attempted 4649/8690 = 53%, 1104 KB/s], Decompressed: 158
+2026-10-28T15:12:22.1152493Z Downloaded: 4847 file(s) [attempted 4847/8690 = 55%, 1697 KB/s], Decompressed: 158
+2026-10-28T15:12:22.2094476Z Downloaded: 5105 file(s) [attempted 5105/8690 = 58%, 874 KB/s], Decompressed: 158
+2026-10-28T15:12:22.3137631Z Downloaded: 5308 file(s) [attempted 5308/8690 = 61%, 8109 KB/s], Decompressed: 158
+2026-10-28T15:12:22.4147978Z Downloaded: 5562 file(s) [attempted 5562/8690 = 64%, 13824 KB/s], Decompressed: 158
+2026-10-28T15:12:22.5353715Z Downloaded: 5770 file(s) [attempted 5770/8690 = 66%, 4617 KB/s], Decompressed: 158
+2026-10-28T15:12:22.6240378Z Downloaded: 6033 file(s) [attempted 6033/8690 = 69%, 5420 KB/s], Decompressed: 158
+2026-10-28T15:12:22.7250806Z Downloaded: 6261 file(s) [attempted 6261/8690 = 72%, 3494 KB/s], Decompressed: 158
+2026-10-28T15:12:22.8201298Z Downloaded: 6471 file(s) [attempted 6471/8690 = 74%, 11694 KB/s], Decompressed: 158
+2026-10-28T15:12:22.9500827Z Downloaded: 6706 file(s) [attempted 6706/8690 = 77%, 823 KB/s], Decompressed: 158
+2026-10-28T15:12:23.0813034Z Downloaded: 6951 file(s) [attempted 6951/8690 = 79%, 607 KB/s], Decompressed: 158
+2026-10-28T15:12:23.1210391Z Downloaded: 7207 file(s) [attempted 7207/8690 = 82%, 4962 KB/s], Decompressed: 158
+2026-10-28T15:12:23.2250080Z Downloaded: 7399 file(s) [attempted 7399/8690 = 85%, 3386 KB/s], Decompressed: 158
+2026-10-28T15:12:23.3221347Z Downloaded: 7680 file(s) [attempted 7680/8690 = 88%, 6939 KB/s], Decompressed: 158
+2026-10-28T15:12:23.4270739Z Downloaded: 7930 file(s) [attempted 7930/8690 = 91%, 4159 KB/s], Decompressed: 158
+2026-10-28T15:12:23.5257819Z Downloaded: 8137 file(s) [attempted 8137/8690 = 93%, 1439 KB/s], Decompressed: 158
+2026-10-28T15:12:23.6303391Z Downloaded: 8359 file(s) [attempted 8359/8690 = 96%, 6841 KB/s], Decompressed: 158
+2026-10-28T15:12:23.9765813Z Downloaded: 8571 file(s) [attempted 8571/8690 = 98%, 14076 KB/s], Decompressed: 158
+2026-10-28T15:12:23.9796526Z Downloaded: 8690 file(s) [attempted 8690/8690 = 100%, 732 KB/s], Decompressed: 158
+2026-10-28T15:12:23.9829691Z Downloaded: 8690 file(s) [attempted 8690/8690 = 100%, 732 KB/s], Decompressed: 158
+2026-10-28T15:13:46.0250226Z Decompressed 8690 file(s)
+2026-10-28T15:13:46.0260078Z Already decompressed 8690 file(s)
+2026-10-28T15:13:46.1979406Z ##[group]Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+2026-10-28T15:13:46.1979854Z with:
+2026-10-28T15:13:46.1980205Z   name: proof-stage-4
+2026-10-28T15:13:46.1980496Z   path: incoming
+2026-10-28T15:13:46.1980829Z   merge-multiple: false
+2026-10-28T15:13:46.1981189Z   repository: KitaKen1/e8-leech-crystallization-ci-20261016
+2026-10-28T15:13:46.1981557Z   run-id: 40647149094
+2026-10-28T15:13:46.1981874Z env:
+2026-10-28T15:13:46.1982134Z   LEAN_NUM_THREADS: 1
+2026-10-28T15:13:46.1982418Z   PYTHONOPTIMIZE: 0
+2026-10-28T15:13:46.1982705Z ##[endgroup]
+2026-10-28T15:13:46.7988146Z Downloading single artifact
+2026-10-28T15:13:46.8206399Z (node:2968) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-28T15:13:46.8207660Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-28T15:13:46.9978871Z Preparing to download the following artifacts:
+2026-10-28T15:13:46.9980125Z - proof-stage-4 (ID: 12826991716, Size: 370855900, Expected Digest: sha256:6aafba37745c5cef86bc766a9367c915e3ece4a61291cb22ca009f4040450094)
+2026-10-28T15:13:47.1875883Z Redirecting to blob download url: https://productionresultssa31.blob.core.windows.net/actions-results/444ea6b2-5785-8b2c-92d2-5f94eb1887a2/workflow-job-run-e8eb4c8f-4fd6-53f4-bfd0-47c9ab18df1c/artifacts/e80aa5d10aa57e93e0fe0fad7710cb50ad7338edf691877dbc32fa3ffea380b4.zip
+2026-10-28T15:13:47.1881620Z Starting download of artifact to: /home/runner/work/e8-leech-crystallization-ci-20261016/e8-leech-crystallization-ci-20261016/incoming
+2026-10-28T15:13:47.4704983Z (node:2968) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-10-28T15:13:53.2240539Z SHA256 digest of downloaded artifact is 6aafba37745c5cef86bc766a9367c915e3ece4a61291cb22ca009f4040450094
+2026-10-28T15:13:53.2259978Z Artifact download completed successfully.
+2026-10-28T15:13:53.2269593Z Total of 1 artifact(s) downloaded
+2026-10-28T15:13:53.2270456Z Download artifact has finished successfully
+2026-10-28T15:13:53.2775743Z ##[group]Run tar --zstd -xf incoming/proof.tar.zst
+2026-10-28T15:13:53.2776525Z [36;1mtar --zstd -xf incoming/proof.tar.zst[0m
+2026-10-28T15:13:53.3615834Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-28T15:13:53.3616450Z env:
+2026-10-28T15:13:53.3616759Z   LEAN_NUM_THREADS: 1
+2026-10-28T15:13:53.3617182Z   PYTHONOPTIMIZE: 0
+2026-10-28T15:13:53.3617591Z ##[endgroup]
+2026-10-28T15:14:07.4097462Z ##[group]Run python3 -u lean/comparator/build-stage.py 5
+2026-10-28T15:14:07.4098201Z [36;1mpython3 -u lean/comparator/build-stage.py 5[0m
+2026-10-28T15:14:07.4136210Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-28T15:14:07.4136665Z env:
+2026-10-28T15:14:07.4136908Z   LEAN_NUM_THREADS: 1
+2026-10-28T15:14:07.4137223Z   PYTHONOPTIMIZE: 0
+2026-10-28T15:14:07.4137519Z ##[endgroup]
+2026-10-28T15:14:52.3227757Z E8Leech.KronLeechH2Sign 0 42.6
+2026-10-28T15:15:09.7908081Z E8Leech.KronLeechH2K 0 16.9
+2026-10-28T15:15:33.7900571Z E8Leech.KronLeechH2SignK 0 24.5
+2026-10-28T15:15:41.4375495Z E8Leech.KronLeechH2Lin 0 7.6
+2026-10-28T15:16:02.0157319Z E8Leech.KronLUAtom 0 20.6
+2026-10-28T15:16:26.7047260Z E8Leech.KronLUData 0 24.6
+2026-10-28T15:17:01.8201646Z E8Leech.KronLUProg 0 35.1
+2026-10-28T15:17:49.3413556Z E8Leech.KronLURegs1 0 47.5
+2026-10-28T15:18:26.2282802Z E8Leech.KronLURegs2 0 36.9
+2026-10-28T15:19:17.6573280Z E8Leech.KronLURegs3 0 51.4
+2026-10-28T15:19:52.3017972Z E8Leech.KronLURegs4 0 34.6
+2026-10-28T15:20:33.0983538Z E8Leech.KronLURegs5 0 40.8
+2026-10-28T15:21:14.2462006Z E8Leech.KronLURegs6 0 41.1
+2026-10-28T15:21:58.3455232Z E8Leech.KronLURegs7 0 44.1
+2026-10-28T15:22:44.8572789Z E8Leech.KronLURegs8 0 46.5
+2026-10-28T15:23:38.9955883Z E8Leech.KronLURegs9 0 54.1
+2026-10-28T15:24:25.4096129Z E8Leech.KronLURegs10 0 46.4
+2026-10-28T15:25:10.9249820Z E8Leech.KronLURegs11 0 45.5
+2026-10-28T15:25:54.2321117Z E8Leech.KronLURegs12 0 43.3
+2026-10-28T15:26:11.1066787Z E8Leech.KronLURegs13 0 16.9
+2026-10-28T15:26:20.9616630Z E8Leech.KronLURegs 0 9.8
+2026-10-28T15:29:16.2521716Z E8Leech.KronLUCheck1 0 175.3
+2026-10-28T15:32:59.5831391Z E8Leech.KronLUCheck2 0 223.3
+2026-10-28T15:36:43.1562686Z E8Leech.KronLUCheck3 0 223.6
+2026-10-28T15:40:19.7770625Z E8Leech.KronLUCheck4 0 216.6
+2026-10-28T15:44:00.1134709Z E8Leech.KronLUCheck5 0 220.3
+2026-10-28T15:47:19.9761224Z E8Leech.KronLUCheck6 0 199.8
+2026-10-28T15:50:09.6079686Z E8Leech.KronLUCheck7 0 169.6
+2026-10-28T15:52:30.9544292Z E8Leech.KronLUCheck8 0 141.3
+2026-10-28T15:52:53.9380114Z E8Leech.KronLUModel 0 23.0
+2026-10-28T15:53:24.1314130Z E8Leech.KronLUCover1 0 30.2
+2026-10-28T15:53:50.6228516Z E8Leech.KronLUCover2 0 26.5
+2026-10-28T15:54:26.8383725Z E8Leech.KronLUCover3 0 36.2
+2026-10-28T15:55:00.7465765Z E8Leech.KronLUCover4 0 33.9
+2026-10-28T15:55:31.7486345Z E8Leech.KronLUCover5 0 31.0
+2026-10-28T15:55:45.1092972Z E8Leech.KronLUCover6 0 13.3
+2026-10-28T15:55:49.6500064Z E8Leech.KronLU 0 4.5
+2026-10-28T15:55:57.1456212Z E8Leech.KronLUStrip 0 7.5
+2026-10-28T15:56:14.5907879Z E8Leech.KronLWData 0 17.3
+2026-10-28T15:56:48.0474621Z E8Leech.KronLWProg 0 33.4
+2026-10-28T15:57:33.4517482Z E8Leech.KronLWRegs1 0 45.4
+2026-10-28T15:58:09.6340558Z E8Leech.KronLWRegs2 0 36.2
+2026-10-28T15:58:59.5420545Z E8Leech.KronLWRegs3 0 49.9
+2026-10-28T15:59:33.2116289Z E8Leech.KronLWRegs4 0 33.6
+2026-10-28T16:00:14.1070577Z E8Leech.KronLWRegs5 0 40.9
+2026-10-28T16:00:55.6077013Z E8Leech.KronLWRegs6 0 41.5
+2026-10-28T16:01:40.8192287Z E8Leech.KronLWRegs7 0 45.2
+2026-10-28T16:02:29.9499736Z E8Leech.KronLWRegs8 0 49.1
+2026-10-28T16:03:22.6812563Z E8Leech.KronLWRegs9 0 52.7
+2026-10-28T16:04:08.7925705Z E8Leech.KronLWRegs10 0 46.1
+2026-10-28T16:04:51.8013269Z E8Leech.KronLWRegs11 0 43.0
+2026-10-28T16:05:28.6388124Z E8Leech.KronLWRegs12 0 36.8
+2026-10-28T16:05:40.9007601Z E8Leech.KronLWRegs13 0 12.2
+2026-10-28T16:05:51.0112182Z E8Leech.KronLWRegs 0 10.1
+2026-10-28T16:08:45.9492818Z E8Leech.KronLWCheck1 0 174.9
+2026-10-28T16:12:24.9950663Z E8Leech.KronLWCheck2 0 219.0
+2026-10-28T16:15:58.8488147Z E8Leech.KronLWCheck3 0 213.8
+2026-10-28T16:19:23.9879757Z E8Leech.KronLWCheck4 0 205.1
+2026-10-28T16:23:04.3931995Z E8Leech.KronLWCheck5 0 220.4
+2026-10-28T16:26:22.7630780Z E8Leech.KronLWCheck6 0 198.4
+2026-10-28T16:29:36.1170977Z E8Leech.KronLWCheck7 0 193.3
+2026-10-28T16:31:36.0898240Z E8Leech.KronLWCheck8 0 120.0
+2026-10-28T16:32:11.7111394Z E8Leech.KronLWModel 0 35.6
+2026-10-28T16:32:43.6214197Z E8Leech.KronLWCover1 0 31.9
+2026-10-28T16:33:24.1507492Z E8Leech.KronLWCover2 0 40.5
+2026-10-28T16:33:56.5575902Z E8Leech.KronLWCover3 0 32.4
+2026-10-28T16:34:15.7343634Z E8Leech.KronLWCover4 0 19.2
+2026-10-28T16:34:20.4742428Z E8Leech.KronLW 0 4.7
+2026-10-28T16:34:29.4290957Z E8Leech.KronLBData 0 8.9
+2026-10-28T16:35:04.9952768Z E8Leech.KronLBCheck 0 35.6
+2026-10-28T16:35:11.9906681Z E8Leech.KronLBModel 0 7.0
+2026-10-28T16:35:17.0307990Z E8Leech.KronLBCoverBD 0 5.0
+2026-10-28T16:35:39.6176273Z E8Leech.KronLBCoverBI 0 22.6
+2026-10-28T16:35:45.4122673Z E8Leech.KronLB 0 5.8
+2026-10-28T16:35:50.8047819Z E8Leech.LeechKernelInequalitiesProof 0 5.4
+2026-10-28T16:36:02.1664313Z E8Leech.LeechBlockLower 0 11.3
+2026-10-28T16:36:09.0679029Z E8Leech.LeechTruncLinear 0 6.9
+2026-10-28T16:36:14.4633459Z E8Leech.LeechBlockBoundsProof 0 5.4
+2026-10-28T16:36:19.4044404Z E8Leech.FourierCompactSupport 0 4.9
+2026-10-28T16:36:25.8990935Z E8Leech.LeechFourierReduction 0 6.5
+2026-10-28T16:36:35.4017908Z E8Leech.LeechFourierProfile 0 9.5
+2026-10-28T16:36:40.7948549Z E8Leech.LeechFourierAxis 0 5.4
+2026-10-28T16:36:53.8582425Z E8Leech.LeechCuspContour 0 13.0
+2026-10-28T16:37:04.2136965Z E8Leech.LeechContourBounds 0 10.3
+2026-10-28T16:37:10.2576302Z E8Leech.LeechCuspParts 0 6.0
+2026-10-28T16:37:21.7119766Z E8Leech.LeechCuspShift 0 11.4
+2026-10-28T16:37:26.9544794Z E8Leech.LeechContourDefs 0 5.2
+2026-10-28T16:37:35.0517661Z E8Leech.LeechKernelPoles 0 8.1
+2026-10-28T16:37:40.4920058Z E8Leech.LeechContourIdentity 0 5.4
+2026-10-28T16:37:46.8409796Z E8Leech.LeechContourCauchy 0 6.3
+2026-10-28T16:37:52.1802019Z E8Leech.LeechContourAssembly 0 5.3
+2026-10-28T16:37:59.4279366Z E8Leech.LeechContourFinal 0 7.2
+2026-10-28T16:38:04.4662080Z E8Leech.LeechFourierIdentityProof 0 5.0
+2026-10-28T16:38:09.7116226Z E8Leech.LeechCrystallization 0 5.2
+2026-10-28T16:38:15.9527350Z E8Leech.LatticeShiftLaw 0 6.2
+2026-10-28T16:38:34.6222180Z E8Leech.GeneralGammaScales 0 18.7
+2026-10-28T16:38:39.8639972Z E8Leech.GeneralGammaTransfer 0 5.2
+2026-10-28T16:38:45.2646497Z E8Leech.GeneralGammaCrystallization 0 5.3
+2026-10-28T16:38:53.7207917Z E8Leech.CKMRVKernelMeasurable 0 8.4
+2026-10-28T16:39:03.3841161Z E8Leech.GaussianCertificateMeasurable 0 9.6
+2026-10-28T16:39:09.0811890Z E8Leech.GaussianBaseline 0 5.7
+2026-10-28T16:39:14.8800609Z E8Leech.GaussianMixtureGap 0 5.8
+2026-10-28T16:39:22.5849269Z E8Leech.GaussianSlackDuality 0 7.7
+2026-10-28T16:39:28.2329864Z E8Leech.GaussianSeparatedKernelBlock 0 5.6
+2026-10-28T16:39:34.2811859Z E8Leech.GaussianE8QuadraticSlack 0 6.0
+2026-10-28T16:39:43.4394944Z E8Leech.LeechStrictCuspLead 0 9.1
+2026-10-28T16:39:50.5910801Z E8Leech.GaussianLeechQuadraticSlack 0 7.1
+2026-10-28T16:39:54.5777254Z E8Leech.GeneralGammaPotentialTransfer 0 4.0
+2026-10-28T16:40:00.2754106Z E8Leech.GaussianMixtureAtomCrystallization 0 5.7
+2026-10-28T16:40:05.8222297Z E8Leech.MeasurableQuadraticSlack 0 5.5
+2026-10-28T16:40:11.4718280Z E8Leech.GaussianMixtureCrystallization 0 5.6
+2026-10-28T16:40:18.0720299Z E8Leech.E8KernelGrowthNearOne 0 6.6
+2026-10-28T16:40:23.6201156Z E8Leech.GaussianGapRightLimit 0 5.5
+2026-10-28T16:40:29.8699801Z E8Leech.E8UniformSlackNearPi 0 6.2
+2026-10-28T16:40:35.5176908Z E8Leech.E8GaussianPiCrystallization 0 5.6
+2026-10-28T16:40:40.6576229Z E8Leech.UniformCuspExpansion 0 5.1
+2026-10-28T16:40:47.8103580Z E8Leech.LeechCuspUniformBounds 0 7.1
+2026-10-28T16:40:56.2163982Z E8Leech.LeechKernelUniform 0 8.4
+2026-10-28T16:41:02.4179899Z E8Leech.LeechKernelGrowthNearOne 0 6.2
+2026-10-28T16:41:10.0721300Z E8Leech.LeechUniformTruncatedProfile 0 7.6
+2026-10-28T16:41:16.3210701Z E8Leech.LeechUniformSlackNearPi 0 6.2
+2026-10-28T16:41:22.1203768Z E8Leech.LeechGaussianPiCrystallization 0 5.8
+2026-10-28T16:41:27.4627023Z E8Leech.LatticeCompactLimit 0 5.3
+2026-10-28T16:41:32.0027806Z E8Leech.ZeroExcessLocalCrystals 0 4.5
+2026-10-28T16:41:37.6010382Z E8Leech.ZeroExcessLatticeContainment 0 5.6
+2026-10-28T16:41:43.6520017Z E8Leech.LatticeDensitySaturation 0 6.0
+2026-10-28T16:41:50.0527820Z E8Leech.AffineLatticeDifferences 0 6.4
+2026-10-28T16:41:56.0525176Z E8Leech.LatticeContainerUniqueness 0 6.0
+2026-10-28T16:42:01.6517794Z E8Leech.ZeroExcessUniqueContainer 0 5.6
+2026-10-28T16:42:04.9376681Z E8Leech.FiniteAtomicSupport 0 3.3
+2026-10-28T16:42:10.8363023Z E8Leech.TernaryLatticeReconstruction 0 5.9
+2026-10-28T16:42:17.3370165Z E8Leech.TernaryWindowCounts 0 6.5
+2026-10-28T16:42:22.9869795Z E8Leech.MeasurableTernaryReconstruction 0 5.6
+2026-10-28T16:42:28.7836281Z E8Leech.ZeroExcessMeasurableContainer 0 5.8
+2026-10-28T16:42:32.6210715Z E8Leech.ConfigurationCountRigidity 0 3.8
+2026-10-28T16:42:38.1685241Z E8Leech.AffineLatticeCountBound 0 5.5
+2026-10-28T16:42:44.5687724Z E8Leech.StationaryLatticeIntensity 0 6.4
+2026-10-28T16:42:50.2681849Z E8Leech.ZeroExcessExactLattice 0 5.7
+2026-10-28T16:42:56.1187741Z E8Leech.IsometricLatticeEnergy 0 5.8
+2026-10-28T16:43:01.6157057Z E8Leech.ZeroExcessLatticeEquivalence 0 5.5
+2026-10-28T16:43:06.9124568Z E8Leech.GaussianMixtureFiniteMeasure 0 5.3
+2026-10-28T16:43:14.0142713Z E8Leech.RotatedLatticeLaw 0 7.1
+2026-10-28T16:43:19.5121277Z E8Leech.StationaryLawMixture 0 5.5
+2026-10-28T16:43:26.0644755Z E8Leech.OrientationMixtureLaw 0 6.5
+2026-10-28T16:43:33.2163893Z E8Leech.LatticePhaseAveraging 0 7.1
+2026-10-28T16:43:40.0169314Z E8Leech.LatticePhaseLawUniqueness 0 6.8
+2026-10-28T16:43:45.9666801Z E8Leech.CountableOrientationClassification 0 5.9
+2026-10-28T16:43:55.7256407Z E8Leech.RotatingPhaseWindow 0 9.7
+2026-10-28T16:43:58.8612946Z E8Leech.InvariantDensityAveraging 0 3.1
+2026-10-28T16:44:08.1180354Z E8Leech.GeneralOrientationClassification 0 9.2
+2026-10-28T16:44:15.5730308Z E8Leech.GramFrameOrientation 0 7.4
+2026-10-28T16:44:21.4715867Z E8Leech.LatticeCovolumeInclusion 0 5.9
+2026-10-28T16:44:24.6573371Z E8Leech.FinitePiKernel 0 3.2
+2026-10-28T16:44:32.0094358Z E8Leech.AnchoredOrientationKernel 0 7.3
+2026-10-28T16:44:38.9627411Z E8Leech.LatticeOrientationCandidates 0 6.9
+2026-10-28T16:44:42.1469600Z E8Leech.FiniteKernelNormalization 0 3.2
+2026-10-28T16:44:47.6450721Z E8Leech.ConfigurationAnchorKernel 0 5.5
+2026-10-28T16:44:53.7959264Z E8Leech.GlobalOrientationKernel 0 6.1
+2026-10-28T16:44:56.9303435Z E8Leech.AeInvariantDensityAveraging 0 3.1
+2026-10-28T16:45:09.1937390Z E8Leech.KernelPhaseAveraging 0 12.3
+2026-10-28T16:45:15.3919384Z E8Leech.ExactLatticeLawClassification 0 6.2
+2026-10-28T16:45:20.6392173Z E8Leech.ZeroExcessLawClassification 0 5.2
+2026-10-28T16:45:25.7853831Z E8Leech 0 5.1
+2026-10-28T16:45:31.2352040Z FCSolution 0 5.4
+2026-10-28T16:45:49.3690258Z E8Leech.Audit 0 18.1
+2026-10-28T16:45:54.4659083Z FCAudit 0 5.1
+2026-10-28T16:45:54.7581111Z Traceback (most recent call last):
+2026-10-28T16:45:54.7589850Z   File "/home/runner/work/e8-leech-crystallization-ci-20261016/e8-leech-crystallization-ci-20261016/lean/comparator/check-all-axioms.py", line 7, in <module>
+2026-10-28T16:45:54.7599422Z     assert expected<=observed.keys(),sorted(expected-observed.keys())
+2026-10-28T16:45:54.7618210Z            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-10-28T16:45:54.7628938Z AssertionError: ["E8Leech.HasExp3.cuspS'", "E8Leech.Kron.Corner.lg0R_eq'", "E8Leech.Kron.Corner.lg1R_eq'", "E8Leech.Kron.Corner.lg2R_eq'", "E8Leech.Kron.IExpr.dzn_succ'", "E8Leech.Kron.LCorner.lg0R_eq'", "E8Leech.Kron.LCorner.lg1R_eq'", "E8Leech.Kron.LCorner.lg2R_eq'", "E8Leech.Kron.LR.gen_ok'", "E8Leech.Kron.LR.lg0R_eq'", "E8Leech.Kron.LR.lg1R_eq'", "E8Leech.Kron.LR.lg2R_eq'", "E8Leech.Kron.LT.lg0R_eq'", "E8Leech.Kron.LT.lg1R_eq'", "E8Leech.Kron.LT.lg2R_eq'", "E8Leech.Kron.RR.gen_ok'", "E8Leech.Kron.RR.lg0R_eq'", "E8Leech.Kron.RR.lg1R_eq'", "E8Leech.Kron.RR.lg2R_eq'", "E8Leech.Kron.TInv.gen_ok'", "E8Leech.Kron.TInv.lg0R_eq'", "E8Leech.Kron.TInv.lg1R_eq'", "E8Leech.Kron.TInv.lg2R_eq'", "E8Leech.Kron.TInv.rd0RD_eq'", "E8Leech.Kron.TInv.rd1RD_eq'", "E8Leech.Kron.forall_mem_nil'", "E8Leech.Kron.hasDerivAt_sq_mul_evalB'", "E8Leech.coe_T_inv_smul'", "E8Leech.continuousOn_ckmrvEightMinusKernel_imagPt'", "E8Leech.continuousOn_ckmrvEightPlusKernel_imagPt'", "E8Leech.continuousOn_ckmrvLeechMinusKernel_imagPt'", "E8Leech.continuousOn_ckmrvLeechPlusKernel_imagPt'", "E8Leech.e8_exists_gaussianSchwartzCertificate'", "E8Leech.eightPlusTauCoeff_zero'", "E8Leech.gaussHat_twentyFour'", "E8Leech.hasResidueAt_hatKernel_semicircle'_S", "E8Leech.hasResidueAt_hatKernel_semicircle'_self", "E8Leech.hasResidueAt_leechHatKernel_semicircle'_S", "E8Leech.hasResidueAt_leechHatKernel_semicircle'_self", "E8Leech.im_le_norm'", "E8Leech.isBigO_snd_of_isBigO'", "E8Leech.kleinModularJ_imagPt_ne_zero'", "E8Leech.numReps'_eq_ncard", "E8Leech.res_hat_sigma_semicircle'", "E8Leech.res_hat_tau_semicircle'", "E8Leech.res_leechHat_sigma_semicircle'", "E8Leech.res_leechHat_tau_semicircle'", "E8Leech.slash_T_inv_apply'", "E8Leech.uPath'", "E8Leech.vPath'"]
+2026-10-28T16:45:54.8865959Z Traceback (most recent call last):
+2026-10-28T16:45:54.8869503Z   File "/home/runner/work/e8-leech-crystallization-ci-20261016/e8-leech-crystallization-ci-20261016/lean/comparator/build-stage.py", line 32, in <module>
+2026-10-28T16:45:54.8870884Z     subprocess.run(['python3',str(root/'comparator/check-all-axioms.py'),str(record.parent/'E8Leech.Audit.log'),str(record.parent/'all-axioms.json')],check=True)
+2026-10-28T16:45:54.8871541Z   File "/usr/lib/python3.12/subprocess.py", line 571, in run
+2026-10-28T16:45:54.8919844Z     raise CalledProcessError(retcode, process.args,
+2026-10-28T16:45:54.8921906Z subprocess.CalledProcessError: Command '['python3', '/home/runner/work/e8-leech-crystallization-ci-20261016/e8-leech-crystallization-ci-20261016/lean/comparator/check-all-axioms.py', '/home/runner/work/e8-leech-crystallization-ci-20261016/e8-leech-crystallization-ci-20261016/build-receipt/E8Leech.Audit.log', '/home/runner/work/e8-leech-crystallization-ci-20261016/e8-leech-crystallization-ci-20261016/build-receipt/all-axioms.json']' returned non-zero exit status 1.
+2026-10-28T16:45:54.9630641Z ##[error]Process completed with exit code 1.
+2026-10-28T16:45:55.0672824Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-10-28T16:45:55.0675152Z with:
+2026-10-28T16:45:55.0677291Z   name: build-stage-5-receipts
+2026-10-28T16:45:55.0677617Z   path: build-receipt/
+2026-10-28T16:45:55.0679977Z   retention-days: 90
+2026-10-28T16:45:55.0686689Z   if-no-files-found: warn
+2026-10-28T16:45:55.0696821Z   compression-level: 6
+2026-10-28T16:45:55.0699507Z   overwrite: false
+2026-10-28T16:45:55.0716587Z   include-hidden-files: false
+2026-10-28T16:45:55.0726783Z env:
+2026-10-28T16:45:55.0729251Z   LEAN_NUM_THREADS: 1
+2026-10-28T16:45:55.0736315Z   PYTHONOPTIMIZE: 0
+2026-10-28T16:45:55.0737828Z ##[endgroup]
+2026-10-28T16:45:55.5192081Z (node:14008) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-28T16:45:55.5193217Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-28T16:45:55.7239836Z With the provided path, there will be 929 files uploaded
+2026-10-28T16:45:55.7240373Z Artifact name is valid!
+2026-10-28T16:45:55.7240616Z Root directory input is valid!
+2026-10-28T16:45:56.0998872Z Beginning upload of artifact content to blob storage
+2026-10-28T16:45:57.0867550Z (node:14008) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-28T16:45:57.6032913Z Uploaded bytes 3301785
+2026-10-28T16:45:57.6535168Z Finished uploading artifact content to blob storage!
+2026-10-28T16:45:57.6536472Z SHA256 digest of uploaded artifact zip is cb3d7f99b6a9c060950fd934a9969721449b3eebc0d855b3ef4a1544babc381b
+2026-10-28T16:45:57.6537334Z Finalizing artifact upload
+2026-10-28T16:45:58.1571819Z Artifact build-stage-5-receipts.zip successfully finalized. Artifact ID 12833174017
+2026-10-28T16:45:58.1573014Z Artifact build-stage-5-receipts has been successfully uploaded! Final size is 3301785 bytes. Artifact ID is 12833174017
+2026-10-28T16:45:58.1580589Z Artifact download URL: https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094/artifacts/12833174017
+2026-10-28T16:45:58.1904102Z Post job cleanup.
+2026-10-28T16:45:58.2829677Z [command]/usr/bin/git version
+2026-10-28T16:45:58.2868828Z git version 2.55.0
+2026-10-28T16:45:58.2905047Z Temporarily overriding HOME='/home/runner/work/_temp/167cc850-0d70-4de8-bd11-1cdbf9336736' before making global git config changes
+2026-10-28T16:45:58.2906349Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-28T16:45:58.2909697Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/e8-leech-crystallization-ci-20261016/e8-leech-crystallization-ci-20261016
+2026-10-28T16:45:58.2955074Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-28T16:45:58.2987623Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-28T16:45:58.3334585Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-28T16:45:58.3364457Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-28T16:45:58.3545807Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-28T16:45:58.3572990Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-28T16:45:58.3940941Z Cleaning up orphan processes
+2026-10-28T16:45:58.4664282Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

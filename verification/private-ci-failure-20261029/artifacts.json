@@ -1,0 +1,222 @@
+[
+  {
+    "id": 12833174017,
+    "node_id": "MDg6QXJ0aWZhY3QxMjgzMzE3NDAxNw==",
+    "name": "build-stage-5-receipts",
+    "size_in_bytes": 3301785,
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12833174017",
+    "archive_download_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12833174017/zip",
+    "expired": false,
+    "digest": "sha256:cb3d7f99b6a9c060950fd934a9969721449b3eebc0d855b3ef4a1544babc381b",
+    "created_at": "2026-10-28T16:45:57Z",
+    "updated_at": "2026-10-28T16:45:57Z",
+    "expires_at": "2027-01-26T06:58:47Z",
+    "workflow_run": {
+      "id": 40647149094,
+      "repository_id": 1422215556,
+      "head_repository_id": 1422215556,
+      "head_branch": "publication-test",
+      "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be"
+    }
+  },
+  {
+    "id": 12827240942,
+    "node_id": "MDg6QXJ0aWZhY3QxMjgyNzI0MDk0Mg==",
+    "name": "build-stage-4-receipts",
+    "size_in_bytes": 2052955,
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12827240942",
+    "archive_download_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12827240942/zip",
+    "expired": false,
+    "digest": "sha256:364ae6f41722a21ac82383ba5104d924c27b25590c86b4fcf4467077c9f7fa4e",
+    "created_at": "2026-10-28T15:06:48Z",
+    "updated_at": "2026-10-28T15:06:48Z",
+    "expires_at": "2027-01-26T06:58:47Z",
+    "workflow_run": {
+      "id": 40647149094,
+      "repository_id": 1422215556,
+      "head_repository_id": 1422215556,
+      "head_branch": "publication-test",
+      "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be"
+    }
+  },
+  {
+    "id": 12826991716,
+    "node_id": "MDg6QXJ0aWZhY3QxMjgyNjk5MTcxNg==",
+    "name": "proof-stage-4",
+    "size_in_bytes": 370855900,
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12826991716",
+    "archive_download_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12826991716/zip",
+    "expired": false,
+    "digest": "sha256:6aafba37745c5cef86bc766a9367c915e3ece4a61291cb22ca009f4040450094",
+    "created_at": "2026-10-28T15:06:46Z",
+    "updated_at": "2026-10-28T15:06:46Z",
+    "expires_at": "2026-10-30T15:06:42Z",
+    "workflow_run": {
+      "id": 40647149094,
+      "repository_id": 1422215556,
+      "head_repository_id": 1422215556,
+      "head_branch": "publication-test",
+      "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be"
+    }
+  },
+  {
+    "id": 12818515699,
+    "node_id": "MDg6QXJ0aWZhY3QxMjgxODUxNTY5OQ==",
+    "name": "build-stage-3-receipts",
+    "size_in_bytes": 1614677,
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12818515699",
+    "archive_download_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12818515699/zip",
+    "expired": false,
+    "digest": "sha256:f06bd155fbccc5a472464c22da8a0c108f16288b268ff485a23568e18fb26aef",
+    "created_at": "2026-10-28T13:06:12Z",
+    "updated_at": "2026-10-28T13:06:12Z",
+    "expires_at": "2027-01-26T06:58:47Z",
+    "workflow_run": {
+      "id": 40647149094,
+      "repository_id": 1422215556,
+      "head_repository_id": 1422215556,
+      "head_branch": "publication-test",
+      "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be"
+    }
+  },
+  {
+    "id": 12818097202,
+    "node_id": "MDg6QXJ0aWZhY3QxMjgxODA5NzIwMg==",
+    "name": "proof-stage-3",
+    "size_in_bytes": 294358771,
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12818097202",
+    "archive_download_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12818097202/zip",
+    "expired": false,
+    "digest": "sha256:c5655577b2d10e82a9874389b0eff03e3f58e1a345244bffe2f9251bed9b5ec9",
+    "created_at": "2026-10-28T13:06:10Z",
+    "updated_at": "2026-10-28T13:06:10Z",
+    "expires_at": "2026-10-30T13:06:07Z",
+    "workflow_run": {
+      "id": 40647149094,
+      "repository_id": 1422215556,
+      "head_repository_id": 1422215556,
+      "head_branch": "publication-test",
+      "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be"
+    }
+  },
+  {
+    "id": 12812235093,
+    "node_id": "MDg6QXJ0aWZhY3QxMjgxMjIzNTA5Mw==",
+    "name": "build-stage-2-receipts",
+    "size_in_bytes": 812731,
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12812235093",
+    "archive_download_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12812235093/zip",
+    "expired": false,
+    "digest": "sha256:40d29ee04f65760598527aec64174b2bc1ed7c1768ffde0904b85b11b1723876",
+    "created_at": "2026-10-28T11:15:24Z",
+    "updated_at": "2026-10-28T11:15:24Z",
+    "expires_at": "2027-01-26T06:58:47Z",
+    "workflow_run": {
+      "id": 40647149094,
+      "repository_id": 1422215556,
+      "head_repository_id": 1422215556,
+      "head_branch": "publication-test",
+      "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be"
+    }
+  },
+  {
+    "id": 12811064392,
+    "node_id": "MDg6QXJ0aWZhY3QxMjgxMTA2NDM5Mg==",
+    "name": "proof-stage-2",
+    "size_in_bytes": 177538041,
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12811064392",
+    "archive_download_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12811064392/zip",
+    "expired": false,
+    "digest": "sha256:c0b60813311629b31dbcb065845431b5cf2263929cc1f0e8657a91022b06a71f",
+    "created_at": "2026-10-28T11:15:22Z",
+    "updated_at": "2026-10-28T11:15:22Z",
+    "expires_at": "2026-10-30T11:15:19Z",
+    "workflow_run": {
+      "id": 40647149094,
+      "repository_id": 1422215556,
+      "head_repository_id": 1422215556,
+      "head_branch": "publication-test",
+      "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be"
+    }
+  },
+  {
+    "id": 12807552008,
+    "node_id": "MDg6QXJ0aWZhY3QxMjgwNzU1MjAwOA==",
+    "name": "proof-stage-1",
+    "size_in_bytes": 125746950,
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12807552008",
+    "archive_download_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12807552008/zip",
+    "expired": false,
+    "digest": "sha256:5fa4e61b96d1092819e894dc7adb43fcd27223802a964e4d92ef81fa403eeb6b",
+    "created_at": "2026-10-28T10:04:33Z",
+    "updated_at": "2026-10-28T10:04:33Z",
+    "expires_at": "2026-10-30T10:04:31Z",
+    "workflow_run": {
+      "id": 40647149094,
+      "repository_id": 1422215556,
+      "head_repository_id": 1422215556,
+      "head_branch": "publication-test",
+      "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be"
+    }
+  },
+  {
+    "id": 12807462009,
+    "node_id": "MDg6QXJ0aWZhY3QxMjgwNzQ2MjAwOQ==",
+    "name": "build-stage-1-receipts",
+    "size_in_bytes": 512043,
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12807462009",
+    "archive_download_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12807462009/zip",
+    "expired": false,
+    "digest": "sha256:e8cc321967a6240be7870554a79f882398f49897ea441db3c8aaf2f0871e0e03",
+    "created_at": "2026-10-28T10:04:34Z",
+    "updated_at": "2026-10-28T10:04:34Z",
+    "expires_at": "2027-01-26T06:58:47Z",
+    "workflow_run": {
+      "id": 40647149094,
+      "repository_id": 1422215556,
+      "head_repository_id": 1422215556,
+      "head_branch": "publication-test",
+      "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be"
+    }
+  },
+  {
+    "id": 12798118936,
+    "node_id": "MDg6QXJ0aWZhY3QxMjc5ODExODkzNg==",
+    "name": "build-stage-0-receipts",
+    "size_in_bytes": 40661,
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12798118936",
+    "archive_download_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12798118936/zip",
+    "expired": false,
+    "digest": "sha256:ccc7586a3522b3ebcbc8265297865da9dddb7971fd6f7d9d2beea4c1106ac0a9",
+    "created_at": "2026-10-28T07:15:54Z",
+    "updated_at": "2026-10-28T07:15:54Z",
+    "expires_at": "2027-01-26T06:58:47Z",
+    "workflow_run": {
+      "id": 40647149094,
+      "repository_id": 1422215556,
+      "head_repository_id": 1422215556,
+      "head_branch": "publication-test",
+      "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be"
+    }
+  },
+  {
+    "id": 12797569965,
+    "node_id": "MDg6QXJ0aWZhY3QxMjc5NzU2OTk2NQ==",
+    "name": "proof-stage-0",
+    "size_in_bytes": 11197976,
+    "url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12797569965",
+    "archive_download_url": "https://api.github.com/repos/KitaKen1/e8-leech-crystallization-ci-20261016/actions/artifacts/12797569965/zip",
+    "expired": false,
+    "digest": "sha256:1c4226458bdd09be83169f17b60116df46a108f4e0fefc7dc83bdb4f8db3862b",
+    "created_at": "2026-10-28T07:15:52Z",
+    "updated_at": "2026-10-28T07:15:52Z",
+    "expires_at": "2026-10-30T07:15:49Z",
+    "workflow_run": {
+      "id": 40647149094,
+      "repository_id": 1422215556,
+      "head_repository_id": 1422215556,
+      "head_branch": "publication-test",
+      "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be"
+    }
+  }
+]
