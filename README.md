@@ -23,7 +23,7 @@ of the [proof note](PDF/e8-leech-stationary-crystallization.pdf), Sections 1 and
 > $`C\delta^\gamma`$, to the isometric image of a finite subset of $`\Lambda`$;
 > and
 >
-> $$\#(\Xi\cap\overline B_R)\ge(1-CR^{-1/2})\operatorname{vol}(\overline B_R).$$
+> $$\#(\Xi\cap\overline B_R)\ge(1-CR^{-1/2})\mathrm{vol}(\overline B_R).$$
 
 Here the ordered Riesz energy and lattice energy are
 

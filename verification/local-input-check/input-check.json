@@ -21,5 +21,5 @@
   "fc_draft_primary_statement_count": 2,
   "fc_draft_semantic_check_script": "lean/comparator/check-fc-draft.py --compile",
   "proof_bridge_does_not_import_challenge": true,
-  "pins_sha256": "177af7218dc77d357937323cc1cd09f9ae2968b776ea2dea9942544d2dd958ec"
+  "pins_sha256": "51619745ee5cb4f1f8076c377c0ece0258deac87b04e69ec72b9ff38dac32fce"
 }

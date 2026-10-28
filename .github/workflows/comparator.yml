@@ -2,7 +2,7 @@ name: E8 Leech publication verification
 on:
   push:
     branches: [main, publication-test]
-    paths: ['lean/**', 'leanWithoutComparator/**', 'FClikelean/**', '.github/workflows/comparator.yml']
+    paths: ['README.md', 'lean/**', 'leanWithoutComparator/**', 'FClikelean/**', '.github/workflows/comparator.yml']
   workflow_dispatch:
 permissions:
   contents: read
