@@ -275,6 +275,10 @@ jobs:
           path: build-receipt/
           retention-days: 90
   comparator:
+    strategy:
+      fail-fast: false
+      matrix:
+        group: [e8, leech, lattice-law]
     needs: build_5
     if: ${{ always() && needs.build_5.result == 'success' }}
     runs-on: ubuntu-24.04
@@ -317,14 +321,17 @@ jobs:
         env:
           COMPARATOR_TOOLS: ${{ runner.temp }}/comparator-tools
         run: bash lean/comparator/install-tools.sh
-      - name: Compare all 13 targets, audit permitted axioms and replay the builtin kernel
+      - name: Check complete and disjoint target partition
+        run: python3 lean/comparator/test_comparison_groups.py
+      - name: Compare target group, audit permitted axioms and replay the builtin kernel
         env:
           COMPARATOR_TOOLS: ${{ runner.temp }}/comparator-tools
-        run: bash lean/comparator/run-check.sh
+          COMPARISON_GROUP: ${{ matrix.group }}
+        run: bash lean/comparator/run-check.sh "$COMPARISON_GROUP"
       - if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: comparator-receipt
+          name: comparator-receipt-${{ matrix.group }}
           path: comparator-receipt/
           retention-days: 90
   replay:

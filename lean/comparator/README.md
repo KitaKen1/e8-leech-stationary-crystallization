@@ -2,10 +2,12 @@
 
 Run `python3 lean/comparator/check-inputs.py` from the repository root for source
 pins, target isolation and the shared proof-source identities.
-The configured workflow builds `lean/`, compares all 13 targets in
-[comparator.json](../comparator.json), audits permitted axioms and replays the
-exported solution in Lean's builtin kernel. A separate fresh replay job checks
-the complete FCSolution environment.
+The configured workflow builds `lean/` and compares all 13 targets in
+[comparator.json](../comparator.json) in three required jobs: six E₈ targets,
+six Leech targets and the stationary lattice-law target. Each job audits
+permitted axioms and replays its complete exported dependency closure in Lean's
+builtin kernel. A separate fresh replay job checks the complete FCSolution
+environment.
 
 The proof, reference, Comparator and Lean4export use Lean 4.33.1. Dependency
 revisions and the two checker toolchain-only changes from 4.33.0 to 4.33.1 are
@@ -57,11 +59,20 @@ matching build inputs, rechecks the full axiom audit, and then reruns FC checks,
 Comparator and the independent fresh kernel replay. It does not label restored
 proof objects as a new clean source build.
 
-Comparator's sandboxed CLI budget is 340 minutes, inside its 360-minute job
-budget. The previous 280-minute bound killed the run, while the independent
-fresh replay completed in 4:54:27. Comparator source, all 13 comparisons, permitted
-axioms and sandbox restrictions are unchanged. CLI output is line-buffered so
-future logs show which verification phase is running.
+Each Comparator job has a sandboxed CLI budget of 340 minutes, inside its
+360-minute job budget. Both earlier single-job attempts timed out, including
+[the 340-minute retry](https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40821237822).
+Its log reached `Running Lean default kernel on solution.` before the timeout;
+the separate fresh replay succeeded in 3:58:03. Increasing the single-job limit
+did not resolve the failure.
+
+[comparison_groups.py](comparison_groups.py) now partitions the canonical
+configuration into the three groups. It rejects missing, duplicate or unassigned
+targets and copies every other configuration field unchanged. The matrix runs
+the unmodified upstream Comparator separately on each group, including its
+builtin kernel replay. All three matrix jobs and the independent full fresh
+replay must succeed. Each artifact records the canonical configuration hash and
+the exact partition. Grouped execution has not yet passed CI.
 
 The 29 October 2026 repair fixes apostrophes in the axiom-log parser. In the
 previous run all 928 modules compiled; the final Python audit rejected 50 report
@@ -79,7 +90,7 @@ JSON parser, Linux sandbox and fresh replay are not certified by those local
 receipts.
 
 [Original-manuscript review](../../verification/original-statement-review.json)
-is incomplete. The earlier private CI run was cancelled; the current revision
-has no successful private/public CI or archive yet. The author reauthorized
+is incomplete. The initial private CI run was cancelled, and later retries failed;
+there is no successful complete private/public CI or archive yet. The author reauthorized
 formal CI on 28 October 2026, with private CI preceding public CI. See
 [PUBLICATION-MANIFEST.json](../../PUBLICATION-MANIFEST.json) for the actual status.

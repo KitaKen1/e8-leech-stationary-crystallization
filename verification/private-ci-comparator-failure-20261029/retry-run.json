@@ -1,0 +1,30 @@
+{
+  "run": {
+    "id": 40821237822,
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40821237822",
+    "head_sha": "7e12bf22e694f5a4ce2c1e4ba9e68e68f2c1ac29",
+    "status": "in_progress",
+    "conclusion": null,
+    "run_attempt": 1
+  },
+  "jobs": [
+    {
+      "name": "build_5",
+      "status": "in_progress",
+      "conclusion": null,
+      "current_steps": [
+        "Run bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3"
+      ],
+      "completed_steps": [
+        "Set up job",
+        "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "Run python3 lean/comparator/check-inputs.py",
+        "Require source run for complete-build reuse"
+      ],
+      "failed_steps": []
+    }
+  ],
+  "complete_build_source_run": 40776017899,
+  "comparator_runtime_limit_minutes": 340,
+  "comparator_job_limit_minutes": 360
+}

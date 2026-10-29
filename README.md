@@ -221,19 +221,25 @@ classify the stationary laws at zero excess.
 The [workflow](.github/workflows/comparator.yml) is configured to build six
 stages from source on fresh Linux runners, compare the reference statements and
 dependent definitions, audit permitted axioms and replay the solution in Lean's
-builtin kernel. A separate job performs a fresh Lean-kernel replay.
+builtin kernel. Comparator runs in three required groups (six E₈ targets,
+six Leech targets and one lattice-law target); their union is checked against
+the canonical list of 13 targets. A separate job performs a full fresh
+Lean-kernel replay.
 `enable_nanoda` is false; no independent kernel implementation is certified.
 
 ### Certification Within 90 days: CI results
 
 **Formal CI was reauthorized by the author on 28 October 2026.** The earlier
-private run was cancelled. The revised candidate is being prepared for private
-CI first; public CI will follow only after success at the same candidate commit.
+private run was cancelled. Subsequent private retries failed, most recently
+during Comparator's builtin kernel replay at the 340-minute time limit.
+The source build, axiom audit and independent full fresh replay succeeded.
+The grouped Comparator retry still requires a successful result; public CI
+will follow only after complete private success at the same candidate commit.
 
 | Candidate check | Actual status |
 |---|---|
 | Earlier private candidate | Cancelled; recorded in [ci-hold.json](verification/ci-hold.json). |
-| Current local revision: private Linux CI | Not run. |
+| Private Linux CI | [Previous retry failed](https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40821237822); grouped retry pending. |
 | Current local revision: public Linux CI | Not run. |
 
 The current order is local formal-input checks, private CI, then public CI.

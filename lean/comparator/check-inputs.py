@@ -2,6 +2,7 @@
 """Check immutable targets, definition isolation and byte-identical proof distributions."""
 from pathlib import Path
 import argparse,hashlib,json,re,subprocess,sys
+from comparison_groups import split_config
 ROOT=Path(__file__).resolve().parents[2]
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def require(p,msg):
@@ -18,6 +19,7 @@ def main():
  for name,h in pins['files_sha256'].items():require((ROOT/name).is_file() and sha(ROOT/name)==h,'Pinned file changed: '+name)
  require(cfg['theorem_names']==pins['targets'] and len(cfg['theorem_names'])==13,'Incomplete target list')
  require(cfg['permitted_axioms']==['propext','Classical.choice','Quot.sound'],'Unexpected axiom permissions')
+ split_config(cfg)
  modules=json.loads((ROOT/'lean/comparator/reference-definition-modules.json').read_text())
  refs=[(ROOT/'lean'/(m.replace('.','/')+'.lean')).read_text() for m in modules]
  law=(ROOT/'lean/FCTargetDefinitions.lean').read_text();reference='\n'.join(refs)+'\n'+law;challenge=(ROOT/'lean/Challenge.lean').read_text();solution=(ROOT/'lean/FCSolution.lean').read_text();draft=(ROOT/'FClikelean/E8Leech.lean').read_text()

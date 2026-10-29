@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "workflow_matrix_groups": [
+    "e8",
+    "leech",
+    "lattice-law"
+  ],
+  "group_target_counts": [
+    6,
+    6,
+    1
+  ],
+  "canonical_targets_covered_exactly_once": 13,
+  "all_groups_require_builtin_kernel": true,
+  "all_groups_and_full_fresh_replay_required": true,
+  "proof_reference_config_and_build_inputs_unchanged_from": "7e12bf22e694f5a4ce2c1e4ba9e68e68f2c1ac29",
+  "group_rejection_tests": 7,
+  "axiom_parser_regression_tests": 4,
+  "ci_success_claimed": false
+}
