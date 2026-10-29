@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "expected_warning_count": 2,
+  "observed_warning_count": 2,
+  "controls": [
+    "missing AMS tag",
+    "forbidden direct Mathlib import"
+  ],
+  "copyright_header_linter_enabled": false,
+  "upstream_commit": "c77fdd446d23539302aa73bcfae4a9fa962b8382"
+}

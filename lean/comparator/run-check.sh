@@ -8,11 +8,11 @@ cd "$PUB_ROOT/lean"
 # Pinned upstream Comparator under real Linux Landlock and systemd restrictions.
 sudo systemd-run --wait --collect --pipe --uid="$(id -u)" --gid="$(id -g)" \
   --property='RestrictAddressFamilies=~AF_UNIX' --property=NoNewPrivileges=yes \
-  --property=RuntimeMaxSec=280min --working-directory="$PUB_ROOT/lean" \
+  --property=RuntimeMaxSec=340min --working-directory="$PUB_ROOT/lean" \
   --setenv="PATH=$PATH" --setenv="HOME=$HOME" \
   --setenv="COMPARATOR_LANDRUN=$COMPARATOR_TOOLS/bin/landrun" \
   --setenv="COMPARATOR_LEAN4EXPORT=$COMPARATOR_TOOLS/lean4export/.lake/build/bin/lean4export" \
-  -- "$HOME/.elan/bin/lake" env "$COMPARATOR_TOOLS/comparator/.lake/build/bin/comparator" comparator.json \
+  -- "$HOME/.elan/bin/lake" env stdbuf -oL -eL "$COMPARATOR_TOOLS/comparator/.lake/build/bin/comparator" comparator.json \
   2>&1 | tee "$PUB_ROOT/comparator-receipt/comparator.log"
 grep -Fxq 'Lean default kernel accepts the solution' "$PUB_ROOT/comparator-receipt/comparator.log"
 grep -Fxq 'Your solution is okay!' "$PUB_ROOT/comparator-receipt/comparator.log"

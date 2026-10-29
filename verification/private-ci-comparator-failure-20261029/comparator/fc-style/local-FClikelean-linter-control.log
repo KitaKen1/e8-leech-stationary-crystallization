@@ -1,0 +1,6 @@
+/home/runner/work/e8-leech-crystallization-ci-20261016/e8-leech-crystallization-ci-20261016/lean/.lake/fc-upstream/FormalConjectures/Paper/E8LeechLinterControl.lean:4:14: warning: Direct imports from 'Mathlib' (such as 'Mathlib.Data.Nat.Basic') are disallowed in 'FormalConjectures'. Use 'import FormalConjecturesUtil' instead.
+
+Note: This linter can be disabled with `set_option linter.style.imports false`
+/home/runner/work/e8-leech-crystallization-ci-20261016/e8-leech-crystallization-ci-20261016/lean/.lake/fc-upstream/FormalConjectures/Paper/E8LeechLinterControl.lean:20:0: warning: Missing AMS attribute.
+
+Note: This linter can be disabled with `set_option linter.style.ams_attribute false`

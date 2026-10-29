@@ -11,6 +11,9 @@ import urllib.request
 
 root = Path(__file__).resolve().parents[2]
 run_id = sys.argv[1]
+complete_build = os.environ.get('RESUME_COMPLETE_BUILD', 'false') == 'true'
+stage_count = 6 if complete_build else 5
+artifact_name = 'proof-stage-5' if complete_build else 'proof-stage-4'
 if not re.fullmatch(r'[1-9][0-9]*', run_id):
     raise SystemExit('Resume run ID must be a positive integer')
 repo = os.environ['GITHUB_REPOSITORY']
@@ -35,14 +38,14 @@ run = api('actions/runs/' + run_id)
 if run['path'] != '.github/workflows/comparator.yml' or run['status'] != 'completed':
     raise SystemExit('Resume source is not a completed verification workflow')
 jobs = api('actions/runs/' + run_id + '/jobs?per_page=100')['jobs']
-for stage in range(5):
+for stage in ([5] if complete_build else range(5)):
     matches = [job for job in jobs if job['name'] == 'build_' + str(stage)]
     if len(matches) != 1 or matches[0]['conclusion'] != 'success':
         raise SystemExit('Source build stage did not succeed: ' + str(stage))
 artifacts = api('actions/runs/' + run_id + '/artifacts?per_page=100')['artifacts']
-matches = [a for a in artifacts if a['name'] == 'proof-stage-4' and not a['expired']]
+matches = [a for a in artifacts if a['name'] == artifact_name and not a['expired']]
 if len(matches) != 1:
-    raise SystemExit('Missing or expired stage-4 artifact')
+    raise SystemExit('Missing or expired artifact: ' + artifact_name)
 source_commit = run['head_sha']
 required_inputs = ['lean/lean-toolchain', 'lean/lake-manifest.json', 'lean/lakefile.toml',
                    'lean/comparator/build-plan.json', 'lean/comparator/shared-proof-sources.json']
@@ -52,10 +55,12 @@ for name in required_inputs:
         raise SystemExit('Resume build input changed: ' + name)
 plan = json.loads((root / 'lean/comparator/build-plan.json').read_text())
 receipt = json.loads((root / 'build-receipt/build.json').read_text())
-expected = [module for stage in plan['stages'][:5] for module in stage]
-if (receipt.get('complete_stages') != 5 or
+expected = [module for stage in plan['stages'][:stage_count] for module in stage]
+if (receipt.get('complete_stages') != stage_count or
         [record['module'] for record in receipt['modules']] != expected):
-    raise SystemExit('Restored receipt does not cover the first five complete stages')
+    raise SystemExit('Restored receipt does not cover the required complete stages')
+if complete_build and not receipt.get('success'):
+    raise SystemExit('Complete source build did not succeed')
 objects = 0
 for record in receipt['modules']:
     source = root / 'lean' / record['source']
@@ -72,7 +77,9 @@ result = dict(success=True, source_repository=repo, source_run_id=int(run_id),
               source_run_attempt=run['run_attempt'], source_artifact_id=matches[0]['id'],
               source_artifact_digest=matches[0].get('digest'),
               verified_build_inputs=required_inputs, source_modules_verified=len(expected),
-              compiled_objects_verified=objects, resumed_at_stage=5,
-              subsequent_source_build_and_comparator_and_replay_required=True)
+              compiled_objects_verified=objects, complete_build_reused=complete_build,
+              resumed_at_stage='verification' if complete_build else 5,
+              subsequent_source_build_required=not complete_build,
+              comparator_and_fresh_replay_required=True)
 (root / 'build-receipt/resume-provenance.json').write_text(json.dumps(result, indent=2) + '\n')
 print(json.dumps(result))

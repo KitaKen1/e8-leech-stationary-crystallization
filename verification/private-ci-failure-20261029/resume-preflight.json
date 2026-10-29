@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "source_repository": "KitaKen1/e8-leech-crystallization-ci-20261016",
+  "source_run_id": 40647149094,
+  "source_commit": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+  "current_commit": "358cdadeca6c6f3079196dc65a326dc1df7a0941",
+  "source_run_attempt": 1,
+  "source_artifact_id": 12826991716,
+  "source_artifact_digest": "sha256:6aafba37745c5cef86bc766a9367c915e3ece4a61291cb22ca009f4040450094",
+  "verified_build_inputs": [
+    "lean/lean-toolchain",
+    "lean/lake-manifest.json",
+    "lean/lakefile.toml",
+    "lean/comparator/build-plan.json",
+    "lean/comparator/shared-proof-sources.json"
+  ],
+  "source_modules_verified": 762,
+  "compiled_objects_verified": 1184,
+  "resumed_at_stage": 5,
+  "subsequent_source_build_and_comparator_and_replay_required": true,
+  "modified_object_rejection_control_passed": true
+}

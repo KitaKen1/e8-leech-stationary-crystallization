@@ -1,0 +1,2706 @@
+Running as unit: run-u20.service
+Building Challenge
+⚠ [3279/3280] Replayed Challenge
+warning: Challenge.lean:8:8: declaration uses `sorry`
+warning: Challenge.lean:20:8: declaration uses `sorry`
+warning: Challenge.lean:24:8: declaration uses `sorry`
+warning: Challenge.lean:30:8: declaration uses `sorry`
+warning: Challenge.lean:37:8: declaration uses `sorry`
+warning: Challenge.lean:44:8: declaration uses `sorry`
+warning: Challenge.lean:54:8: declaration uses `sorry`
+warning: Challenge.lean:66:8: declaration uses `sorry`
+warning: Challenge.lean:70:8: declaration uses `sorry`
+warning: Challenge.lean:76:8: declaration uses `sorry`
+warning: Challenge.lean:83:8: declaration uses `sorry`
+warning: Challenge.lean:90:8: declaration uses `sorry`
+warning: Challenge.lean:100:8: declaration uses `sorry`
+Build completed successfully (3280 jobs).
+Exporting #[E8LeechFC.e8_quantitative_crystallization, E8LeechFC.e8_gaussian_crystallization, E8LeechFC.e8_positiveGaussianMixture_crystallization, E8LeechFC.e8_riesz_zero_excess_iff_ae_isometric_lattice, E8LeechFC.e8_gaussian_zero_excess_iff_ae_isometric_lattice, E8LeechFC.e8_positiveGaussianMixture_zero_excess_iff_ae_isometric_lattice, E8LeechFC.leech_quantitative_crystallization, E8LeechFC.leech_gaussian_crystallization, E8LeechFC.leech_positiveGaussianMixture_crystallization, E8LeechFC.leech_riesz_zero_excess_iff_ae_isometric_lattice, E8LeechFC.leech_gaussian_zero_excess_iff_ae_isometric_lattice, E8LeechFC.leech_positiveGaussianMixture_zero_excess_iff_ae_isometric_lattice, E8LeechFC.stationary_exact_lattice_law, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from Challenge
+Building FCSolution
+ℹ [3005/3096] Replayed E8Leech.Deletion
+info: E8Leech/Deletion.lean:72:0: 'E8Leech.badPoints_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: E8Leech/Deletion.lean:73:0: 'E8Leech.keptPoints_separated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: E8Leech/Deletion.lean:74:0: 'E8Leech.balance_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: E8Leech/Deletion.lean:75:0: 'E8Leech.deletion_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: E8Leech/Deletion.lean:76:0: 'E8Leech.exponent_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: E8Leech/Deletion.lean:77:0: 'E8Leech.general_exponent_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3331/3386] Replayed E8Leech.BRRScales
+info: E8Leech/BRRScales.lean:142:12: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [4047/4126] Replayed SpherePacking.Basic.SpherePacking
+warning: SpherePacking/Basic/SpherePacking.lean:7:0: 'Mathlib.Data.Real.StarOrdered' has been deprecated: please replace this import by
+
+import Mathlib.Algebra.Order.Star.Real
+warning: SpherePacking/Basic/SpherePacking.lean:59:130: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SpherePacking/Basic/SpherePacking.lean:59:157: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SpherePacking/Basic/SpherePacking.lean:59:112: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SpherePacking/Basic/SpherePacking.lean:59:130: Unused tactic linter: `simp [Function.comp_def]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/Basic/SpherePacking.lean:59:157: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/Basic/SpherePacking.lean:344:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Basic/SpherePacking.lean:368:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Basic/SpherePacking.lean:381:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Basic/SpherePacking.lean:394:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4049/4126] Replayed SpherePacking.ForMathlib.Encard
+warning: SpherePacking/ForMathlib/Encard.lean:35:57: `ENat.one_le_iff_ne_zero` has been deprecated: Use `Order.one_le_iff_ne_zero` instead
+
+Note: The updated constant has a different type:
+  ∀ {α : Type u_1} {x : α} [inst : PartialOrder α] [inst_1 : AddMonoidWithOne α] [NeZero 1] [SuccAddOrder α]
+    [IsBotZeroClass α], 1 ≤ x ↔ x ≠ 0
+instead of
+  ∀ {n : ℕ∞}, 1 ≤ n ↔ n ≠ 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_le_iff_ne_zero` to `Order.one_le_iff_ne_zero x`).
+⚠ [4051/4126] Replayed SpherePacking.Basic.PeriodicPacking.Auxiliary
+warning: SpherePacking/Basic/PeriodicPacking/Auxiliary.lean:91:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Basic/PeriodicPacking/Auxiliary.lean:262:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Basic/PeriodicPacking/Auxiliary.lean:291:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Basic/PeriodicPacking/Auxiliary.lean:309:97: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Set.mem_toFinset]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Basic/PeriodicPacking/Auxiliary.lean:309:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SpherePacking/Basic/PeriodicPacking/Auxiliary.lean:324:101: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Basic/PeriodicPacking/Auxiliary.lean:324:91: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SpherePacking/Basic/PeriodicPacking/Auxiliary.lean:424:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4052/4126] Replayed SpherePacking.Basic.PeriodicPacking.Theorem22
+warning: SpherePacking/Basic/PeriodicPacking/Theorem22.lean:278:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Basic/PeriodicPacking/Theorem22.lean:314:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4053/4126] Replayed SpherePacking.Basic.PeriodicPacking.DensityFormula
+warning: SpherePacking/Basic/PeriodicPacking/DensityFormula.lean:169:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Basic/PeriodicPacking/DensityFormula.lean:196:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Basic/PeriodicPacking/DensityFormula.lean:197:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4054/4126] Replayed SpherePacking.Basic.PeriodicPacking.PeriodicConstant
+warning: SpherePacking/Basic/PeriodicPacking/PeriodicConstant.lean:29:43: `EuclideanSpace.norm_single` has been deprecated: Use `PiLp.norm_single` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ℝ≥0∞) {ι : Type u_2} (β : ι → Type u_4) [hp : Fact (1 ≤ p)] [inst : Fintype ι]
+    [inst_1 : (i : ι) → SeminormedAddCommGroup (β i)] [inst_2 : DecidableEq ι] (i : ι) (b : β i),
+    ‖PiLp.single p i b‖ = ‖b‖
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] [inst_2 : Fintype ι] (i : ι) (a : 𝕜),
+    ‖single i a‖ = ‖a‖
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.norm_single` to `PiLp.norm_single x`).
+warning: SpherePacking/Basic/PeriodicPacking/PeriodicConstant.lean:202:46: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [4064/4126] Replayed SpherePacking.Basic.PeriodicPacking.BoundaryControl
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:178:52: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:197:31: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:208:29: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:352:27: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:353:29: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:380:5: `MeasureTheory.measure_diff` has been deprecated: Use `MeasureTheory.measure_sdiff` instead
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:419:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:420:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:458:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:461:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:500:85: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hnumReps, hPsep]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:500:106: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:500:106: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:614:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Basic/PeriodicPacking/BoundaryControl.lean:886:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4065/4126] Replayed SpherePacking.Dim8.E8.Basic
+warning: SpherePacking/Dim8/E8/Basic.lean:67:44: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/Dim8/E8/Basic.lean:71:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/Dim8/E8/Basic.lean:84:67: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/Dim8/E8/Basic.lean:110:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/Dim8/E8/Basic.lean:141:45: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/Dim8/E8/Basic.lean:145:45: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/Dim8/E8/Basic.lean:276:6: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
+⚠ [4066/4126] Replayed SpherePacking.Dim8.E8.Packing
+warning: SpherePacking/Dim8/E8/Packing.lean:125:29: This simp argument is unused:
+  AddSubgroupClass.coe_norm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [dist_eq_norm, AddSubgroupClass.coe_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim8/E8/Packing.lean:125:56: This simp argument is unused:
+  AddSubgroupClass.coe_sub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [dist_eq_norm, AddSubgroupClass.coe_norm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4073/4126] Replayed SpherePacking.CohnElkies.PoissonSummationLattices.PoissonSummation
+warning: SpherePacking/CohnElkies/PoissonSummationLattices/PoissonSummation.lean:130:5: Ambiguous namespace `UnitAddTorus`: it is interpreted as `_root_.SchwartzMap.UnitAddTorus` because this `open` occurs inside `namespace SchwartzMap.PoissonSummation.Standard`, while `_root_.UnitAddTorus` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.SchwartzMap.UnitAddTorus`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: SpherePacking/CohnElkies/PoissonSummationLattices/PoissonSummation.lean:247:5: Ambiguous namespace `UnitAddTorus`: it is interpreted as `_root_.SchwartzMap.UnitAddTorus` because this `open` occurs inside `namespace SchwartzMap.PoissonSummation.Standard`, while `_root_.UnitAddTorus` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.SchwartzMap.UnitAddTorus`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+⚠ [4074/4126] Replayed SpherePacking.CohnElkies.PoissonSummationSchwartz.Basic
+warning: SpherePacking/CohnElkies/PoissonSummationSchwartz/Basic.lean:21:5: Ambiguous namespace `UnitAddTorus`: it is interpreted as `_root_.SchwartzMap.UnitAddTorus` because this `open` occurs inside `namespace SchwartzMap.PoissonSummation.Standard`, while `_root_.UnitAddTorus` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.SchwartzMap.UnitAddTorus`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: SpherePacking/CohnElkies/PoissonSummationSchwartz/Basic.lean:82:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4075/4126] Replayed SpherePacking.CohnElkies.PoissonSummationSchwartz.PoissonSummation
+warning: SpherePacking/CohnElkies/PoissonSummationSchwartz/PoissonSummation.lean:27:5: Ambiguous namespace `UnitAddTorus`: it is interpreted as `_root_.SchwartzMap.UnitAddTorus` because this `open` occurs inside `namespace SchwartzMap.PoissonSummation.Standard`, while `_root_.UnitAddTorus` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.SchwartzMap.UnitAddTorus`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: SpherePacking/CohnElkies/PoissonSummationSchwartz/PoissonSummation.lean:65:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/CohnElkies/PoissonSummationSchwartz/PoissonSummation.lean:251:12: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/CohnElkies/PoissonSummationSchwartz/PoissonSummation.lean:346:43: Unused tactic linter: `simp [PoissonSummation.Standard.coe_equivIntVec, Function.comp_def]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/CohnElkies/PoissonSummationSchwartz/PoissonSummation.lean:346:113: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/CohnElkies/PoissonSummationSchwartz/PoissonSummation.lean:346:43: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SpherePacking/CohnElkies/PoissonSummationSchwartz/PoissonSummation.lean:346:113: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SpherePacking/CohnElkies/PoissonSummationSchwartz/PoissonSummation.lean:346:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [4079/4126] Replayed SpherePacking.CohnElkies.LPBoundAux
+warning: SpherePacking/CohnElkies/LPBoundAux.lean:51:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4080/4126] Replayed SpherePacking.CohnElkies.LPBoundCalcLemmas
+warning: SpherePacking/CohnElkies/LPBoundCalcLemmas.lean:47:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4081/4126] Replayed SpherePacking.CohnElkies.LPBoundSwapSums
+warning: SpherePacking/CohnElkies/LPBoundSwapSums.lean:54:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4083/4126] Replayed SpherePacking.CohnElkies.LPBoundReindex
+warning: SpherePacking/CohnElkies/LPBoundReindex.lean:97:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4091/4126] Replayed SpherePacking.ModularForms.SlashActionAuxil
+warning: SpherePacking/ModularForms/SlashActionAuxil.lean:80:8: This simp argument is unused:
+  specialLinearGroup_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [negI]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4104/4126] Replayed SpherePacking.ModularForms.SummableLemmas.G2
+warning: SpherePacking/ModularForms/SummableLemmas/G2.lean:27:9: `summable_of_finite_support` has been deprecated: Use `summable_of_hasFiniteSupport` instead
+⚠ [4109/4126] Replayed SpherePacking.ModularForms.CSqrt
+warning: SpherePacking/ModularForms/CSqrt.lean:64:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [4112/4126] Replayed SpherePacking.ForMathlib.AtImInfty
+warning: SpherePacking/ForMathlib/AtImInfty.lean:12:32: `setOf` has been deprecated: Use `Set.ofPred` instead
+⚠ [4114/4170] Replayed SpherePacking.ModularForms.SummableLemmas.QExpansion
+warning: SpherePacking/ModularForms/SummableLemmas/QExpansion.lean:100:6: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/ModularForms/SummableLemmas/QExpansion.lean:193:26: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/ModularForms/SummableLemmas/QExpansion.lean:193:26: This simp argument is unused:
+  mem_setOf_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [smul_eq_mul, neg_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/SummableLemmas/QExpansion.lean:227:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/ModularForms/SummableLemmas/QExpansion.lean:227:13: This simp argument is unused:
+  mem_setOf_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [one_div, norm_pow, norm_neg, one_mem, CStarRing.norm_of_mem_unitary, one_pow, RCLike.norm_natCast,
+    one_mul, norm_inv, norm_mul, norm_div, Real.norm_eq_abs, norm_zpow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/SummableLemmas/QExpansion.lean:261:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/ModularForms/SummableLemmas/QExpansion.lean:261:13: This simp argument is unused:
+  mem_setOf_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [one_div, norm_pow, norm_neg, one_mem, CStarRing.norm_of_mem_unitary, one_pow, RCLike.norm_natCast,
+    one_mul, norm_inv, norm_mul, norm_div, Real.norm_eq_abs, norm_zpow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/SummableLemmas/QExpansion.lean:363:38: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/ModularForms/SummableLemmas/QExpansion.lean:458:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/ModularForms/SummableLemmas/QExpansion.lean:458:53: `Set.coe_setOf` has been deprecated: Use `Set.coe_ofPred` instead
+warning: SpherePacking/ModularForms/SummableLemmas/QExpansion.lean:462:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/ModularForms/SummableLemmas/QExpansion.lean:474:33: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/ModularForms/SummableLemmas/QExpansion.lean:458:53: This simp argument is unused:
+  coe_setOf
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.cast_le, one_div, mem_setOf_eq, image_univ, Subtype.forall, Int.cast_natCast] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4117/4170] Replayed SpherePacking.ModularForms.E2.Transform
+warning: SpherePacking/ModularForms/E2/Transform.lean:66:4: This simp argument is unused:
+  ge_iff_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [one_div, mul_inv_rev, Pi.add_apply, eventually_atTop]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/E2/Transform.lean:116:5: `ModularGroup.coe` has been deprecated: use GL(2, ℝ)
+warning: SpherePacking/ModularForms/E2/Transform.lean:116:31: `ModularGroup.coe` has been deprecated: use GL(2, ℝ)
+warning: SpherePacking/ModularForms/E2/Transform.lean:117:8: `ModularGroup.coe` has been deprecated: use GL(2, ℝ)
+warning: SpherePacking/ModularForms/E2/Transform.lean:253:23: This simp argument is unused:
+  inv_inj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [inv_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4119/4170] Replayed SpherePacking.ModularForms.Eta
+warning: SpherePacking/ModularForms/Eta.lean:66:160: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SpherePacking/ModularForms/Eta.lean:66:194: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SpherePacking/ModularForms/Eta.lean:66:142: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SpherePacking/ModularForms/Eta.lean:66:160: Unused tactic linter: `simp [etaSP, Function.comp_def]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/ModularForms/Eta.lean:66:194: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/ModularForms/Eta.lean:300:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/ModularForms/Eta.lean:303:35: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/ModularForms/Eta.lean:306:33: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/ModularForms/Eta.lean:328:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [4120/4170] Replayed SpherePacking.ModularForms.Delta.Basic
+warning: SpherePacking/ModularForms/Delta/Basic.lean:128:54: `PNat.one_le` has been deprecated: use `one_le`
+⚠ [4121/4170] Replayed SpherePacking.ModularForms.ResToImagAxis
+warning: SpherePacking/ModularForms/ResToImagAxis.lean:60:6: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+warning: SpherePacking/ModularForms/ResToImagAxis.lean:70:8: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+warning: SpherePacking/ModularForms/ResToImagAxis.lean:70:8: This simp argument is unused:
+  Set.restrict
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ResToImagAxis, z, ht]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/ResToImagAxis.lean:162:88: Unused tactic linter: `(funext s; simp)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/ModularForms/ResToImagAxis.lean:162:88: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [4122/4170] Replayed SpherePacking.ModularForms.Delta.ImagAxis
+warning: SpherePacking/ModularForms/Delta/ImagAxis.lean:136:62: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/ModularForms/Delta/ImagAxis.lean:146:10: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/ModularForms/Delta/ImagAxis.lean:150:36: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [4123/4170] Replayed SpherePacking.ModularForms.Eisensteinqexpansions
+warning: SpherePacking/ModularForms/Eisensteinqexpansions.lean:230:136: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Function.uncurry, mul_assoc, mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/Eisensteinqexpansions.lean:309:38: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [one_div, PNat.val_ofNat, neg_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4124/4170] Replayed SpherePacking.ModularForms.QExpansionLemmas.LimitsAtInfinity
+warning: SpherePacking/ModularForms/QExpansionLemmas/LimitsAtInfinity.lean:2:0: 'Mathlib.Data.Real.StarOrdered' has been deprecated: please replace this import by
+
+import Mathlib.Algebra.Order.Star.Real
+⚠ [4126/4170] Replayed SpherePacking.ModularForms.QExpansionLemmas.QExpansionAlgebra
+warning: SpherePacking/ModularForms/QExpansionLemmas/QExpansionAlgebra.lean:2:0: 'Mathlib.Data.Real.StarOrdered' has been deprecated: please replace this import by
+
+import Mathlib.Algebra.Order.Star.Real
+⚠ [4128/4170] Replayed SpherePacking.ModularForms.EisensteinBase
+warning: SpherePacking/ModularForms/EisensteinBase.lean:145:9: `summable_of_finite_support` has been deprecated: Use `summable_of_hasFiniteSupport` instead
+warning: SpherePacking/ModularForms/EisensteinBase.lean:270:42: `ContinuousMultilinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/ModularForms/EisensteinBase.lean:287:33: `MultilinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/ModularForms/EisensteinBase.lean:270:42: This simp argument is unused:
+  ContinuousMultilinearMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [qq, qExpansion2, smul_eq_mul, ContinuousMultilinearMap.mkPiAlgebraFin_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/EisensteinBase.lean:607:11: `DifferentiableOn.finset_prod` has been deprecated: Use `DifferentiableOn.finsetProd` instead
+warning: SpherePacking/ModularForms/EisensteinBase.lean:633:12: `differentiableWithinAt_id'` has been deprecated: Use `differentiableWithinAt_fun_id` instead
+warning: SpherePacking/ModularForms/EisensteinBase.lean:658:31: This simp argument is unused:
+  Finset.Nat.antidiagonal_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [PowerSeries.coeff_mul, antidiagonal_one, E4_q_exp_zero, E4_q_exp_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/EisensteinBase.lean:869:83: `PNat.one_le` has been deprecated: use `one_le`
+⚠ [4130/4170] Replayed SpherePacking.Dim8.MagicFunction.a.Basic
+warning: SpherePacking/Dim8/MagicFunction/a/Basic.lean:192:21: The namespace `a` is duplicated in the declaration `MagicFunction.a.RadialFunctions.a`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+⚠ [4132/4170] Replayed SpherePacking.ForMathlib.IteratedDeriv
+warning: SpherePacking/ForMathlib/IteratedDeriv.lean:154:8: `iteratedFDeriv_add_apply'` has been deprecated: Use `fun_iteratedFDeriv_add_apply` instead
+warning: SpherePacking/ForMathlib/IteratedDeriv.lean:155:4: `iteratedFDeriv_add_apply'` has been deprecated: Use `fun_iteratedFDeriv_add_apply` instead
+warning: SpherePacking/ForMathlib/IteratedDeriv.lean:156:4: `iteratedFDeriv_add_apply'` has been deprecated: Use `fun_iteratedFDeriv_add_apply` instead
+warning: SpherePacking/ForMathlib/IteratedDeriv.lean:157:4: `iteratedFDeriv_add_apply'` has been deprecated: Use `fun_iteratedFDeriv_add_apply` instead
+warning: SpherePacking/ForMathlib/IteratedDeriv.lean:158:4: `iteratedFDeriv_add_apply'` has been deprecated: Use `fun_iteratedFDeriv_add_apply` instead
+⚠ [4136/4170] Replayed SpherePacking.ModularForms.CuspFormIsoModforms
+warning: SpherePacking/ModularForms/CuspFormIsoModforms.lean:2:0: Use `Mathlib.NumberTheory.ModularForms.LevelOne.Basic` instead.
+'Mathlib.NumberTheory.ModularForms.LevelOne' has been deprecated: please replace this import by
+
+import Mathlib.NumberTheory.ModularForms.LevelOne.Basic
+⚠ [4143/4170] Replayed SpherePacking.ModularForms.JacobiTheta
+warning: SpherePacking/ModularForms/JacobiTheta.lean:2:0: 'Mathlib.Algebra.Field.Power' has been deprecated: please replace this import by
+
+import Mathlib.Algebra.Ring.Int.Parity
+warning: SpherePacking/ModularForms/JacobiTheta.lean:2:0: 'Mathlib.Data.Real.StarOrdered' has been deprecated: please replace this import by
+
+import Mathlib.Algebra.Order.Star.Real
+warning: SpherePacking/ModularForms/JacobiTheta.lean:2:0: Use `Mathlib.NumberTheory.ModularForms.LevelOne.Basic` instead.
+'Mathlib.NumberTheory.ModularForms.LevelOne' has been deprecated: please replace this import by
+
+import Mathlib.NumberTheory.ModularForms.LevelOne.Basic
+warning: SpherePacking/ModularForms/JacobiTheta.lean:713:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/ModularForms/JacobiTheta.lean:995:104: This simp argument is unused:
+  H₂
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Function.comp_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/JacobiTheta.lean:995:108: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [H₂]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/JacobiTheta.lean:995:129: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/ModularForms/JacobiTheta.lean:995:129: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SpherePacking/ModularForms/JacobiTheta.lean:999:104: This simp argument is unused:
+  H₃
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Function.comp_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/JacobiTheta.lean:999:108: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [H₃]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/JacobiTheta.lean:999:129: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/ModularForms/JacobiTheta.lean:999:129: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SpherePacking/ModularForms/JacobiTheta.lean:1003:104: This simp argument is unused:
+  H₄
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Function.comp_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/JacobiTheta.lean:1003:108: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [H₄]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/JacobiTheta.lean:1003:129: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/ModularForms/JacobiTheta.lean:1003:129: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [4145/4170] Replayed SpherePacking.ModularForms.Lv1Lv2Identities
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:121:146: `ModularForm.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:121:128: This simp argument is unused:
+  diff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [thetaE4_MF, ModularForm.sub_apply, sub_eq_add_neg, Function.comp_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:121:134: This simp argument is unused:
+  thetaE4_MF
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [diff, ModularForm.sub_apply, sub_eq_add_neg, Function.comp_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:121:146: This simp argument is unused:
+  ModularForm.sub_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [diff, thetaE4_MF, sub_eq_add_neg, Function.comp_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:121:169: This simp argument is unused:
+  sub_eq_add_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [diff, thetaE4_MF, ModularForm.sub_apply, Function.comp_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:121:185: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [diff, thetaE4_MF, ModularForm.sub_apply, sub_eq_add_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:121:206: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:121:206: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:227:146: `ModularForm.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:227:128: This simp argument is unused:
+  diff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [thetaE6_MF, ModularForm.sub_apply, sub_eq_add_neg, Function.comp_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:227:134: This simp argument is unused:
+  thetaE6_MF
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [diff, ModularForm.sub_apply, sub_eq_add_neg, Function.comp_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:227:146: This simp argument is unused:
+  ModularForm.sub_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [diff, thetaE6_MF, sub_eq_add_neg, Function.comp_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:227:169: This simp argument is unused:
+  sub_eq_add_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [diff, thetaE6_MF, ModularForm.sub_apply, Function.comp_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:227:185: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [diff, thetaE6_MF, ModularForm.sub_apply, sub_eq_add_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:227:206: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/ModularForms/Lv1Lv2Identities.lean:227:206: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [4146/4170] Replayed SpherePacking.ModularForms.Derivative
+warning: SpherePacking/ModularForms/Derivative.lean:206:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: SpherePacking/ModularForms/Derivative.lean:430:126: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ofComplex_apply_of_im_pos hmob_im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/Derivative.lean:430:147: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/ModularForms/Derivative.lean:430:147: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SpherePacking/ModularForms/Derivative.lean:430:67: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SpherePacking/ModularForms/Derivative.lean:1156:18: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [4148/4170] Replayed SpherePacking.ModularForms.Eisenstein
+warning: SpherePacking/ModularForms/Eisenstein.lean:72:23: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hcoeff, hqpow, mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4150/4170] Replayed SpherePacking.MagicFunction.PolyFourierCoeffBound
+warning: SpherePacking/MagicFunction/PolyFourierCoeffBound.lean:626:43: This simp argument is unused:
+  ge_iff_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [isBigO_iff, eventually_atTop]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4154/4170] Replayed SpherePacking.ModularForms.DimGenCongLevels.Basic
+warning: SpherePacking/ModularForms/DimGenCongLevels/Basic.lean:31:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/Basic.lean:32:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/Basic.lean:35:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/Basic.lean:44:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/Basic.lean:45:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4156/4170] Replayed SpherePacking.ModularForms.DimGenCongLevels.FiniteDimensional
+warning: SpherePacking/ModularForms/DimGenCongLevels/FiniteDimensional.lean:69:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4159/4191] Replayed SpherePacking.ModularForms.DimGenCongLevels.NormReduction
+warning: SpherePacking/ModularForms/DimGenCongLevels/NormReduction.lean:48:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/NormReduction.lean:69:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/NormReduction.lean:96:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/NormReduction.lean:97:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/NormReduction.lean:98:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4160/4191] Replayed SpherePacking.ModularForms.DimGenCongLevels.NormTransfer
+warning: SpherePacking/ModularForms/DimGenCongLevels/NormTransfer.lean:42:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/NormTransfer.lean:43:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/NormTransfer.lean:103:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/NormTransfer.lean:104:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/NormTransfer.lean:146:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/NormTransfer.lean:147:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/NormTransfer.lean:148:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimGenCongLevels/NormTransfer.lean:149:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4161/4191] Replayed SpherePacking.ModularForms.DimensionFormulas
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:2:0: Use `Mathlib.NumberTheory.ModularForms.LevelOne.Basic` instead.
+'Mathlib.NumberTheory.ModularForms.LevelOne' has been deprecated: please replace this import by
+
+import Mathlib.NumberTheory.ModularForms.LevelOne.Basic
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:60:47: `ModularForm.IsGLPos.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:76:43: `ModularForm.IsGLPos.coe_smul` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul` to `FunLike.coe_smul x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:76:73: `ModularForm.coe_sub` has been deprecated: Use `FunLike.coe_sub` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sub` to `FunLike.coe_sub x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:113:26: `CuspForm.coe_smul` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul` to `FunLike.coe_smul x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:131:32: `ModularForm.IsGLPos.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:139:43: `ModularForm.IsGLPos.coe_smul` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul` to `FunLike.coe_smul x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:139:73: `ModularForm.coe_sub` has been deprecated: Use `FunLike.coe_sub` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sub` to `FunLike.coe_sub x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:244:37: `ModularForm.IsGLPos.coe_smul` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul` to `FunLike.coe_smul x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:257:37: `ModularForm.IsGLPos.coe_smul` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul` to `FunLike.coe_smul x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:294:17: `ModularForm.IsGLPos.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:299:26: `ModularForm.IsGLPos.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:304:30: `ModularForm.IsGLPos.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:294:48: This simp argument is unused:
+  Int.reduceAdd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [IsGLPos.smul_apply, sub_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:339:15: `ModularForm.coe_sub` has been deprecated: Use `FunLike.coe_sub` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sub` to `FunLike.coe_sub x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:341:15: `ModularForm.IsGLPos.coe_smul` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul` to `FunLike.coe_smul x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:437:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:492:10: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:495:10: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:499:8: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:531:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:541:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:543:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:547:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:590:17: `ModularForm.coe_eq_zero_iff` has been deprecated: Use `FunLike.coe_zero_iff` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_eq_zero_iff` to `FunLike.coe_zero_iff x`).
+warning: SpherePacking/ModularForms/DimensionFormulas.lean:592:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4167/4191] Replayed SpherePacking.Integration.DifferentiationUnderIntegral
+warning: SpherePacking/Integration/DifferentiationUnderIntegral.lean:113:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Integration/DifferentiationUnderIntegral.lean:267:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4182/4191] Replayed SpherePacking.Dim8.MagicFunction.a.IntegralEstimates.BoundingAux
+warning: SpherePacking/Dim8/MagicFunction/a/IntegralEstimates/BoundingAux.lean:284:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4185/4191] Replayed SpherePacking.Dim8.MagicFunction.b.Psi
+warning: SpherePacking/Dim8/MagicFunction/b/Psi.lean:94:43: This simp argument is unused:
+  zpow_two
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [SL_slash_apply, S, denom, sl_moeb, pow_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim8/MagicFunction/b/Psi.lean:122:62: This simp argument is unused:
+  zpow_two
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [SL_slash_apply, ModularGroup.S_mul_T, denom, sl_moeb, pow_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4188/4287] Replayed SpherePacking.Dim8.MagicFunction.a.Schwartz.Basic
+warning: SpherePacking/Dim8/MagicFunction/a/Schwartz/Basic.lean:572:54: `SchwartzMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+warning: SpherePacking/Dim8/MagicFunction/a/Schwartz/Basic.lean:572:54: This simp argument is unused:
+  SchwartzMap.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [a, a', MagicFunction.a.RadialFunctions.I₁, MagicFunction.a.RadialFunctions.I₂,
+    MagicFunction.a.RadialFunctions.I₃, MagicFunction.a.RadialFunctions.I₄, MagicFunction.a.RadialFunctions.I₅,
+    MagicFunction.a.RadialFunctions.I₆, schwartzMap_multidimensional_of_schwartzMap_real, hr, add_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4189/4287] Replayed SpherePacking.Dim8.MagicFunction.b.Basic
+warning: SpherePacking/Dim8/MagicFunction/b/Basic.lean:118:21: The namespace `b` is duplicated in the declaration `MagicFunction.b.RadialFunctions.b`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+⚠ [4192/4287] Replayed SpherePacking.Dim8.MagicFunction.b.Schwartz.PsiExpBounds.PsiSDecay
+warning: SpherePacking/Dim8/MagicFunction/b/Schwartz/PsiExpBounds/PsiSDecay.lean:84:12: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+warning: SpherePacking/Dim8/MagicFunction/b/Schwartz/PsiExpBounds/PsiSDecay.lean:88:19: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+warning: SpherePacking/Dim8/MagicFunction/b/Schwartz/PsiExpBounds/PsiSDecay.lean:92:12: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+warning: SpherePacking/Dim8/MagicFunction/b/Schwartz/PsiExpBounds/PsiSDecay.lean:93:33: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+⚠ [4203/4287] Replayed SpherePacking.Dim8.MagicFunction.b.Schwartz.SmoothJ5
+warning: SpherePacking/Dim8/MagicFunction/b/Schwartz/SmoothJ5.lean:74:10: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+⚠ [4223/4287] Replayed SpherePacking.Dim8.MagicFunction.a.Eigenfunction.PermI5Integrability
+warning: SpherePacking/Dim8/MagicFunction/a/Eigenfunction/PermI5Integrability.lean:227:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim8/MagicFunction/a/Eigenfunction/PermI5Integrability.lean:269:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4228/4287] Replayed SpherePacking.Dim8.MagicFunction.a.SpecialValues
+warning: SpherePacking/Dim8/MagicFunction/a/SpecialValues.lean:823:11: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [4232/4287] Replayed SpherePacking.Basic.Domains.WedgeSet
+warning: SpherePacking/Basic/Domains/WedgeSet.lean:44:55: `Set.setOf_and` has been deprecated: Use `Set.ofPred_and` instead
+⚠ [4265/4287] Replayed SpherePacking.Dim8.MagicFunction.b.Eigenfunction.PermJ12Regularity
+warning: SpherePacking/Dim8/MagicFunction/b/Eigenfunction/PermJ12Regularity.lean:173:12: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [4271/4287] Replayed SpherePacking.Dim8.MagicFunction.b.Eigenfunction.PermJ5Integrability
+warning: SpherePacking/Dim8/MagicFunction/b/Eigenfunction/PermJ5Integrability.lean:171:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim8/MagicFunction/b/Eigenfunction/PermJ5Integrability.lean:234:49: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: SpherePacking/Dim8/MagicFunction/b/Eigenfunction/PermJ5Integrability.lean:221:8: Unused tactic linter: `change ‖(s : ℂ) ^ (-4 : ℤ)‖ = s ^ (-4 : ℤ)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [4275/4287] Replayed SpherePacking.ForMathlib.CauchyGoursat.OpenRectangular
+warning: SpherePacking/ForMathlib/CauchyGoursat/OpenRectangular.lean:47:13: `NormedAddCommGroup.tendsto_nhds_zero` has been deprecated: Use `NormedAddGroup.tendsto_nhds_zero` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.tendsto_nhds_zero` to `NormedAddGroup.tendsto_nhds_zero x`).
+warning: SpherePacking/ForMathlib/CauchyGoursat/OpenRectangular.lean:47:69: This simp argument is unused:
+  ge_iff_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [NormedAddCommGroup.tendsto_nhds_zero, eventually_atTop]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4304/4410] Replayed SpherePacking.Dim8.MagicFunction.g.CohnElkies.LaplaceA.TailDeformation
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/LaplaceA/TailDeformation.lean:37:78: `MeasureTheory.Integrable.neg'` has been deprecated: Use `MeasureTheory.Integrable.fun_neg` instead
+⚠ [4314/4410] Replayed SpherePacking.Dim8.MagicFunction.g.CohnElkies.AnotherIntegral.B.BPrimeExtension
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/AnotherIntegral/B/BPrimeExtension.lean:113:10: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/AnotherIntegral/B/BPrimeExtension.lean:114:9: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/AnotherIntegral/B/BPrimeExtension.lean:405:14: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/AnotherIntegral/B/BPrimeExtension.lean:406:13: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+⚠ [4316/4410] Replayed SpherePacking.Dim8.MagicFunction.g.CohnElkies.LaplaceB.Basic
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/LaplaceB/Basic.lean:169:16: This simp argument is unused:
+  zpow_two
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pow_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4321/4410] Replayed SpherePacking.Dim8.MagicFunction.g.CohnElkies.RealValued
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/RealValued.lean:37:11: `SchwartzMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/RealValued.lean:37:34: `SchwartzMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/RealValued.lean:37:11: This simp argument is unused:
+  SchwartzMap.sub_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [g, SchwartzMap.smul_apply, smul_eq_mul, Complex.sub_im, Complex.mul_im, a_pureImag (x := x),
+    b_pureImag (x := x), div_eq_mul_inv, Complex.mul_re]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/RealValued.lean:37:34: This simp argument is unused:
+  SchwartzMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [g, SchwartzMap.sub_apply, smul_eq_mul, Complex.sub_im, Complex.mul_im, a_pureImag (x := x),
+    b_pureImag (x := x), div_eq_mul_inv, Complex.mul_re]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/RealValued.lean:51:8: `SchwartzMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/RealValued.lean:51:31: `SchwartzMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/RealValued.lean:51:8: This simp argument is unused:
+  SchwartzMap.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [SchwartzMap.smul_apply, smul_eq_mul, Complex.add_im, Complex.mul_im, a_pureImag (x := x),
+    b_pureImag (x := x), div_eq_mul_inv, Complex.mul_re]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/RealValued.lean:51:31: This simp argument is unused:
+  SchwartzMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [SchwartzMap.add_apply, smul_eq_mul, Complex.add_im, Complex.mul_im, a_pureImag (x := x),
+    b_pureImag (x := x), div_eq_mul_inv, Complex.mul_re]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4322/4410] Replayed SpherePacking.Dim8.MagicFunction.g.CohnElkies.IntegralA
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/IntegralA.lean:56:35: `SchwartzMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/IntegralA.lean:56:58: `SchwartzMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/IntegralA.lean:56:35: This simp argument is unused:
+  SchwartzMap.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [gRadial, sub_eq_add_neg, SchwartzMap.smul_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/IntegralA.lean:56:58: This simp argument is unused:
+  SchwartzMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [gRadial, sub_eq_add_neg, SchwartzMap.add_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/IntegralA.lean:175:4: Unused tactic linter: `change
+  ((↑π * Complex.I) / 8640 : ℂ) * ((4 * (Complex.I : ℂ)) * ((Real.sin (π * u / 2)) ^ (2 : ℕ) : ℂ) * IA) +
+      (-(Complex.I / (240 * (↑π)) : ℂ)) * ((-4 * (Complex.I : ℂ)) * ((Real.sin (π * u / 2)) ^ (2 : ℕ) : ℂ) * IB) =
+    (π / 2160 : ℂ) * ((Real.sin (π * u / 2)) ^ (2 : ℕ) : ℂ) * (-IA + (-(36 / (π ^ (2 : ℕ)) : ℝ) : ℂ) * IB)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [4323/4410] Replayed SpherePacking.Dim8.MagicFunction.g.CohnElkies.IntegralB
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/IntegralB.lean:347:10: `SchwartzMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/IntegralB.lean:347:33: `SchwartzMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/IntegralB.lean:347:10: This simp argument is unused:
+  SchwartzMap.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [SchwartzMap.smul_apply, smul_eq_mul, ha, hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim8/MagicFunction/g/CohnElkies/IntegralB.lean:347:33: This simp argument is unused:
+  SchwartzMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [SchwartzMap.add_apply, smul_eq_mul, ha, hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4327/4410] Replayed SpherePacking.ModularForms.FG.L10OverAsymptotics
+warning: SpherePacking/ModularForms/FG/L10OverAsymptotics.lean:270:15: `summable_of_finite_support` has been deprecated: Use `summable_of_hasFiniteSupport` instead
+⚠ [4347/4410] Replayed SpherePacking.Dim24.Inequalities.AppendixA.EisensteinSeriesBounds
+warning: SpherePacking/Dim24/Inequalities/AppendixA/EisensteinSeriesBounds.lean:81:10: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hcoeff, qParam_pow_eq_qterm z n]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Inequalities/AppendixA/EisensteinSeriesBounds.lean:98:10: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hcoeff, qParam_pow_eq_qterm z n]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4373/4410] Replayed SpherePacking.Dim24.MagicFunction.B.Defs.J5Smooth
+warning: SpherePacking/Dim24/MagicFunction/B/Defs/J5Smooth.lean:61:10: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+warning: SpherePacking/Dim24/MagicFunction/B/Defs/J5Smooth.lean:78:9: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+⚠ [4384/4410] Replayed SpherePacking.Dim24.MagicFunction.B.PureImag
+warning: SpherePacking/Dim24/MagicFunction/B/PureImag.lean:124:26: This simp argument is unused:
+  hpow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [map_mul, conj_ψI, hpow', hzSconj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4391/4410] Replayed SpherePacking.Dim24.MagicFunction.B.Eigen.PermJ12Regularity
+warning: SpherePacking/Dim24/MagicFunction/B/Eigen/PermJ12Regularity.lean:101:12: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [4394/4493] Replayed SpherePacking.Dim24.MagicFunction.A.Eigen.PermI12Measurability
+warning: SpherePacking/Dim24/MagicFunction/A/Eigen/PermI12Measurability.lean:110:6: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+⚠ [4396/4493] Replayed SpherePacking.Dim24.MagicFunction.A.Eigen.PermI12ProductIntegrability
+warning: SpherePacking/Dim24/MagicFunction/A/Eigen/PermI12ProductIntegrability.lean:73:6: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+⚠ [4399/4493] Replayed SpherePacking.Dim24.MagicFunction.A.Eigen.PermI12ContourDeformation
+warning: SpherePacking/Dim24/MagicFunction/A/Eigen/PermI12ContourDeformation.lean:60:72: `SchwartzMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+⚠ [4400/4493] Replayed SpherePacking.Dim24.MagicFunction.A.Eigen.PermI56ChangeOfVariables
+warning: SpherePacking/Dim24/MagicFunction/A/Eigen/PermI56ChangeOfVariables.lean:120:8: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [4401/4493] Replayed SpherePacking.Dim24.MagicFunction.A.Eigen.PermI56KernelSetup
+warning: SpherePacking/Dim24/MagicFunction/A/Eigen/PermI56KernelSetup.lean:42:11: Use `@[fun_prop]` instead
+warning: SpherePacking/Dim24/MagicFunction/A/Eigen/PermI56KernelSetup.lean:164:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: SpherePacking/Dim24/MagicFunction/A/Eigen/PermI56KernelSetup.lean:361:8: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: SpherePacking/Dim24/MagicFunction/A/Eigen/PermI56KernelSetup.lean:383:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/MagicFunction/A/Eigen/PermI56KernelSetup.lean:387:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/MagicFunction/A/Eigen/PermI56KernelSetup.lean:390:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4412/4493] Replayed SpherePacking.Dim24.MagicFunction.B.Eigen.PermJ5Integrability
+warning: SpherePacking/Dim24/MagicFunction/B/Eigen/PermJ5Integrability.lean:97:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/MagicFunction/B/Eigen/PermJ5Integrability.lean:152:51: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: SpherePacking/Dim24/MagicFunction/B/Eigen/PermJ5Integrability.lean:140:8: Unused tactic linter: `change ‖(s : ℂ) ^ (-12 : ℤ)‖ = s ^ (-12 : ℤ)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [4413/4493] Replayed SpherePacking.Dim24.MagicFunction.B.Eigen.PermJ5
+warning: SpherePacking/Dim24/MagicFunction/B/Eigen/PermJ5.lean:66:48: `SchwartzMap.neg_apply` has been deprecated: Use `neg_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `neg_apply x`).
+⚠ [4414/4493] Replayed SpherePacking.Dim24.MagicFunction.F.RealValued
+warning: SpherePacking/Dim24/MagicFunction/F/RealValued.lean:40:21: `SchwartzMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+warning: SpherePacking/Dim24/MagicFunction/F/RealValued.lean:40:44: `SchwartzMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/Dim24/MagicFunction/F/RealValued.lean:40:21: This simp argument is unused:
+  SchwartzMap.sub_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [f, c₁, c₂, SchwartzMap.smul_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/MagicFunction/F/RealValued.lean:40:44: This simp argument is unused:
+  SchwartzMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [f, c₁, c₂, SchwartzMap.sub_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/MagicFunction/F/RealValued.lean:64:15: `SchwartzMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+warning: SpherePacking/Dim24/MagicFunction/F/RealValued.lean:64:38: `SchwartzMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/Dim24/MagicFunction/F/RealValued.lean:64:15: This simp argument is unused:
+  SchwartzMap.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hFf, SchwartzMap.smul_apply, smul_eq_mul, Complex.add_im, hIm₁, hIm₂]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/MagicFunction/F/RealValued.lean:64:38: This simp argument is unused:
+  SchwartzMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hFf, SchwartzMap.add_apply, smul_eq_mul, Complex.add_im, hIm₁, hIm₂]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4419/4493] Replayed SpherePacking.Dim24.MagicFunction.A.SpecialValues.Aux02
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Aux02.lean:40:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4422/4493] Replayed SpherePacking.Dim24.MagicFunction.A.SpecialValues.Aux04
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Aux04.lean:46:6: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+⚠ [4423/4493] Replayed SpherePacking.Dim24.MagicFunction.A.SpecialValues.Varphi1A
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Varphi1A.lean:134:10: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hcoeff, hqpow, mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Varphi1A.lean:604:15: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [f, hcoeff, hqpow, mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4424/4493] Replayed SpherePacking.Dim24.MagicFunction.A.SpecialValues.Varphi1B
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Varphi1B.lean:83:15: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [f, hcoeff, hqpow, mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Varphi1B.lean:282:7: `DifferentiableOn.finset_prod` has been deprecated: Use `DifferentiableOn.finsetProd` instead
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Varphi1B.lean:310:8: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [4462/4493] Replayed SpherePacking.Dim24.MagicFunction.A.SpecialValues.Final.DerivTwoLaurent.Varphi2ConstCoeff
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Final/DerivTwoLaurent/Varphi2ConstCoeff.lean:100:15: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [f, hcoeff, hqparam, qz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Final/DerivTwoLaurent/Varphi2ConstCoeff.lean:215:15: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [f, hcoeff, hqparam, qz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Final/DerivTwoLaurent/Varphi2ConstCoeff.lean:326:15: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [f, hcoeff, hqparam, qz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Final/DerivTwoLaurent/Varphi2ConstCoeff.lean:443:15: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [f, hcoeff, hqparam, qz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4465/4493] Replayed SpherePacking.Dim24.MagicFunction.A.SpecialValues.Final.DerivTwoLaurent.AvaluesRemainderLargeBound
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Final/DerivTwoLaurent/AvaluesRemainderLargeBound.lean:263:13: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Final/DerivTwoLaurent/AvaluesRemainderLargeBound.lean:625:13: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+⚠ [4476/4493] Replayed SpherePacking.Dim24.MagicFunction.F.ProfileComplex.A2
+warning: SpherePacking/Dim24/MagicFunction/F/ProfileComplex/A2.lean:72:22: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+warning: SpherePacking/Dim24/MagicFunction/F/ProfileComplex/A2.lean:89:22: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+⚠ [4478/4493] Replayed SpherePacking.Dim24.MagicFunction.F.ProfileComplex.B
+warning: SpherePacking/Dim24/MagicFunction/F/ProfileComplex/B.lean:149:22: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+warning: SpherePacking/Dim24/MagicFunction/F/ProfileComplex/B.lean:195:22: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+⚠ [4479/4493] Replayed SpherePacking.Dim24.MagicFunction.A.SpecialValues.Final.DerivFour
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Final/DerivFour.lean:138:11: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Final/DerivFour.lean:181:11: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+⚠ [4481/4493] Replayed SpherePacking.Dim24.MagicFunction.B.SpecialValues.Derivatives.Rectangle
+warning: SpherePacking/Dim24/MagicFunction/B/SpecialValues/Derivatives/Rectangle.lean:68:37: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [4483/4609] Replayed SpherePacking.Dim24.MagicFunction.A.SpecialValues.Final.DerivTwoLaurent.AvaluesEqAvaluesImpl
+warning: SpherePacking/Dim24/MagicFunction/A/SpecialValues/Final/DerivTwoLaurent/AvaluesEqAvaluesImpl.lean:877:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [4499/4609] Replayed SpherePacking.Dim24.MagicFunction.B.SpecialValues.Derivatives.CuspCoefficient.H4
+warning: SpherePacking/Dim24/MagicFunction/B/SpecialValues/Derivatives/CuspCoefficient/H4.lean:52:13: `tendsto_finset_sum` has been deprecated: Use `tendsto_finsetSum` instead
+⚠ [4506/4609] Replayed SpherePacking.Dim24.MagicFunction.F.Zero
+warning: SpherePacking/Dim24/MagicFunction/F/Zero.lean:43:27: `SchwartzMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+warning: SpherePacking/Dim24/MagicFunction/F/Zero.lean:43:50: `SchwartzMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/Dim24/MagicFunction/F/Zero.lean:43:27: This simp argument is unused:
+  SchwartzMap.sub_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [f, a_zero, b_zero, SchwartzMap.smul_apply, smul_eq_mul, div_eq_mul_inv, mul_assoc, mul_left_comm,
+    mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/MagicFunction/F/Zero.lean:43:50: This simp argument is unused:
+  SchwartzMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [f, a_zero, b_zero, SchwartzMap.sub_apply, smul_eq_mul, div_eq_mul_inv, mul_assoc, mul_left_comm,
+    mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/MagicFunction/F/Zero.lean:60:65: `SchwartzMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+warning: SpherePacking/Dim24/MagicFunction/F/Zero.lean:61:4: `SchwartzMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/Dim24/MagicFunction/F/Zero.lean:60:65: This simp argument is unused:
+  SchwartzMap.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [-FourierTransform.fourierCLE_apply, hF0, a_zero, b_zero, SchwartzMap.smul_apply, smul_eq_mul,
+    div_eq_mul_inv, mul_assoc, mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/MagicFunction/F/Zero.lean:61:4: This simp argument is unused:
+  SchwartzMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [-FourierTransform.fourierCLE_apply, hF0, a_zero, b_zero, SchwartzMap.add_apply, smul_eq_mul,
+    div_eq_mul_inv, mul_assoc, mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4526/4609] Replayed SpherePacking.Dim24.Inequalities.AppendixA.BLeadingNumLowerBound.ConvolutionAlgebra
+warning: SpherePacking/Dim24/Inequalities/AppendixA/BLeadingNumLowerBound/ConvolutionAlgebra.lean:89:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [4537/4609] Replayed SpherePacking.Dim24.Inequalities.AppendixA.Polynomials.CoeffsVarphiInt
+warning: SpherePacking/Dim24/Inequalities/AppendixA/Polynomials/CoeffsVarphiInt.lean:21:2: `@[expose]` has no effect; this declaration would be exposed by default
+⚠ [4568/4609] Replayed SpherePacking.Dim24.MagicFunction.F.Laplace.B.SubLeadingBounds.DeltaDivQLowerBound
+warning: SpherePacking/Dim24/MagicFunction/F/Laplace/B/SubLeadingBounds/DeltaDivQLowerBound.lean:79:11: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+⚠ [4573/4609] Replayed SpherePacking.Dim24.MagicFunction.F.Laplace.Equality.A.Defs
+warning: SpherePacking/Dim24/MagicFunction/F/Laplace/Equality/A/Defs.lean:116:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4577/4609] Replayed SpherePacking.Dim24.MagicFunction.F.Laplace.Equality.A.GVIntegralDecomposition
+warning: SpherePacking/Dim24/MagicFunction/F/Laplace/Equality/A/GVIntegralDecomposition.lean:58:5: Ambiguous namespace `Complex`: it is interpreted as `_root_.SpherePacking.Dim24.Complex` because this `open` occurs inside `namespace SpherePacking.Dim24.LaplaceTmp.LaplaceEqA`, while `_root_.Complex` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.SpherePacking.Dim24.Complex`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: SpherePacking/Dim24/MagicFunction/F/Laplace/Equality/A/GVIntegralDecomposition.lean:110:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/MagicFunction/F/Laplace/Equality/A/GVIntegralDecomposition.lean:117:10: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+warning: SpherePacking/Dim24/MagicFunction/F/Laplace/Equality/A/GVIntegralDecomposition.lean:277:10: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+warning: SpherePacking/Dim24/MagicFunction/F/Laplace/Equality/A/GVIntegralDecomposition.lean:345:14: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+⚠ [4581/4609] Replayed SpherePacking.Dim24.MagicFunction.F.Laplace.Profiles.BProfile.IntegralLemmas
+warning: SpherePacking/Dim24/MagicFunction/F/Laplace/Profiles/BProfile/IntegralLemmas.lean:109:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4596/4733] Replayed SpherePacking.Dim24.MagicFunction.F.Laplace.Fourier.Continuation.IntegrandSetup
+warning: SpherePacking/Dim24/MagicFunction/F/Laplace/Fourier/Continuation/IntegrandSetup.lean:58:5: Ambiguous namespace `Complex`: it is interpreted as `_root_.SpherePacking.Dim24.Complex` because this `open` occurs inside `namespace SpherePacking.Dim24.LaplaceTmp.LaplaceFourierCont.LaplaceBKernelAnalytic`, while `_root_.Complex` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.SpherePacking.Dim24.Complex`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+⚠ [4597/4733] Replayed SpherePacking.Dim24.MagicFunction.F.Laplace.Fourier.Continuation.BKernelBounds
+warning: SpherePacking/Dim24/MagicFunction/F/Laplace/Fourier/Continuation/BKernelBounds.lean:23:5: Ambiguous namespace `Complex`: it is interpreted as `_root_.SpherePacking.Dim24.Complex` because this `open` occurs inside `namespace SpherePacking.Dim24.LaplaceTmp.LaplaceFourierCont.LaplaceBKernelAnalytic`, while `_root_.Complex` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.SpherePacking.Dim24.Complex`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+⚠ [4598/4733] Replayed SpherePacking.Dim24.MagicFunction.F.Laplace.Fourier.Continuation.LaplaceSplit
+warning: SpherePacking/Dim24/MagicFunction/F/Laplace/Fourier/Continuation/LaplaceSplit.lean:102:24: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+⚠ [4602/4733] Replayed SpherePacking.Dim24.MagicFunction.F.Laplace.B.SubLeadingContinuation.TailIntegrand
+warning: SpherePacking/Dim24/MagicFunction/F/Laplace/B/SubLeadingContinuation/TailIntegrand.lean:219:22: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+warning: SpherePacking/Dim24/MagicFunction/F/Laplace/B/SubLeadingContinuation/TailIntegrand.lean:309:22: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+⚠ [4603/4733] Replayed SpherePacking.Dim24.MagicFunction.F.Laplace.B.SubLeadingContinuation.Analyticity
+warning: SpherePacking/Dim24/MagicFunction/F/Laplace/B/SubLeadingContinuation/Analyticity.lean:353:6: `Set.diff_eq` has been deprecated: Use `Set.sdiff_eq` instead
+⚠ [4614/4733] Replayed SpherePacking.Dim24.Inequalities.VarphiNeg.GeOne.Negativity
+warning: SpherePacking/Dim24/Inequalities/VarphiNeg/GeOne/Negativity.lean:83:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [4633/4733] Replayed SpherePacking.Dim24.Inequalities.Ineq2.GeOne.AppendixA.TruncPos
+warning: SpherePacking/Dim24/Inequalities/Ineq2/GeOne/AppendixA/TruncPos.lean:149:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [4665/4733] Replayed SpherePacking.Dim24.Inequalities.Ineq2.LeOne.Trunc
+warning: SpherePacking/Dim24/Inequalities/Ineq2/LeOne/Trunc.lean:159:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [4671/4733] Replayed SpherePacking.Dim24.MagicFunction.F.Sign.Auxiliary
+warning: SpherePacking/Dim24/MagicFunction/F/Sign/Auxiliary.lean:39:5: Ambiguous namespace `Complex`: it is interpreted as `_root_.SpherePacking.Dim24.Complex` because this `open` occurs inside `namespace SpherePacking.Dim24`, while `_root_.Complex` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.SpherePacking.Dim24.Complex`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+⚠ [4672/4733] Replayed SpherePacking.Dim24.MagicFunction.F.Sign.SignConditions
+warning: SpherePacking/Dim24/MagicFunction/F/Sign/SignConditions.lean:18:5: Ambiguous namespace `Complex`: it is interpreted as `_root_.SpherePacking.Dim24.Complex` because this `open` occurs inside `namespace SpherePacking.Dim24`, while `_root_.Complex` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.SpherePacking.Dim24.Complex`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: SpherePacking/Dim24/MagicFunction/F/Sign/SignConditions.lean:293:37: `EuclideanSpace.norm_single` has been deprecated: Use `PiLp.norm_single` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) {ι : Type u_2} (β : ι → Type u_4) [hp : Fact (1 ≤ p)] [inst : Fintype ι]
+    [inst_1 : (i : ι) → SeminormedAddCommGroup (β i)] [inst_2 : DecidableEq ι] (i : ι) (b : β i),
+    ‖PiLp.single p i b‖ = ‖b‖
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] [inst_2 : Fintype ι] (i : ι) (a : 𝕜),
+    ‖EuclideanSpace.single i a‖ = ‖a‖
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.norm_single` to `PiLp.norm_single x`).
+warning: SpherePacking/Dim24/MagicFunction/F/Sign/SignConditions.lean:293:37: This simp argument is unused:
+  EuclideanSpace.norm_single
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4673/4733] Replayed SpherePacking.Dim24.MagicFunction.F.Scaled
+warning: SpherePacking/Dim24/MagicFunction/F/Scaled.lean:25:17: Ambiguous namespace `Complex`: it is interpreted as `_root_.SpherePacking.Dim24.Complex` because this `open` occurs inside `namespace SpherePacking.Dim24`, while `_root_.Complex` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.SpherePacking.Dim24.Complex`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+⚠ [4675/4733] Replayed SpherePacking.Dim24.MagicFunction.F.UpperBound
+warning: SpherePacking/Dim24/MagicFunction/F/UpperBound.lean:23:17: Ambiguous namespace `Complex`: it is interpreted as `_root_.SpherePacking.Dim24.Complex` because this `open` occurs inside `namespace SpherePacking.Dim24`, while `_root_.Complex` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.SpherePacking.Dim24.Complex`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+ℹ [4762/4914] Replayed E8Leech.TaylorModelBench
+info: E8Leech/TaylorModelBench.lean:27:0: type checking took 5.16s
+info: E8Leech/TaylorModelBench.lean:30:0: type checking took 5.76s
+info: stderr:
+cumulative profiling times:
+	.olean serialization 18.4ms
+	attribute application 0.0454ms
+	compilation (IR) 0.207ms
+	compilation (LCNF base) 12.4ms
+	compilation (LCNF impure) 0.927ms
+	compilation (LCNF mono) 1.35ms
+	elaboration 8.6ms
+	fix level params 0.0357ms
+	instantiate metavars 0.0391ms
+	let-to-have transformation 0.0244ms
+	linting 17ms
+	module linting 0.000992ms
+	overlappingInstancesLinter 1.18ms
+	parsing 1.82ms
+	process pre-definitions 3.15ms
+	share common exprs 0.14ms
+	tactic execution 0.873ms
+	tacticAnalysis 3.03ms
+	type checking 10.9s
+	typeclass inference 5.94ms
+⚠ [4932/5017] Replayed SpherePacking.Dim24.LeechLattice.Instances
+warning: SpherePacking/Dim24/LeechLattice/Instances.lean:134:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4937/5017] Replayed SpherePacking.Dim24.LeechLattice.Basis
+warning: SpherePacking/Dim24/LeechLattice/Basis.lean:163:18: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
+⚠ [4941/5017] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.Classify.CE.ContactSet
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/CE/ContactSet.lean:174:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4944/5017] Replayed SpherePacking.Dim24.Uniqueness.Input.Roots
+warning: SpherePacking/Dim24/Uniqueness/Input/Roots.lean:62:17: Ambiguous namespace `Complex`: it is interpreted as `_root_.SpherePacking.Dim24.Complex` because this `open` occurs inside `namespace SpherePacking.Dim24.UniquenessRootsAux`, while `_root_.Complex` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.SpherePacking.Dim24.Complex`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: SpherePacking/Dim24/Uniqueness/Input/Roots.lean:69:19: Ambiguous namespace `Complex`: it is interpreted as `_root_.SpherePacking.Dim24.Complex` because this `open` occurs inside `namespace SpherePacking.Dim24.UniquenessRootsLaplaceAux`, while `_root_.Complex` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.SpherePacking.Dim24.Complex`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: SpherePacking/Dim24/Uniqueness/Input/Roots.lean:475:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: SpherePacking/Dim24/Uniqueness/Input/Roots.lean:806:19: `EuclideanSpace.norm_single` has been deprecated: Use `PiLp.norm_single` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) {ι : Type u_2} (β : ι → Type u_4) [hp : Fact (1 ≤ p)] [inst : Fintype ι]
+    [inst_1 : (i : ι) → SeminormedAddCommGroup (β i)] [inst_2 : DecidableEq ι] (i : ι) (b : β i),
+    ‖PiLp.single p i b‖ = ‖b‖
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] [inst_2 : Fintype ι] (i : ι) (a : 𝕜),
+    ‖EuclideanSpace.single i a‖ = ‖a‖
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.norm_single` to `PiLp.norm_single x`).
+warning: SpherePacking/Dim24/Uniqueness/Input/Roots.lean:806:19: This simp argument is unused:
+  EuclideanSpace.norm_single
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [axisVec, Real.norm_eq_abs, abs_eq_self.mpr hr0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4945/5017] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.Lemmas
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Lemmas.lean:42:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4946/5017] Replayed SpherePacking.CohnElkies.EqualityCaseCommute
+warning: SpherePacking/CohnElkies/EqualityCaseCommute.lean:53:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4947/5017] Replayed SpherePacking.CohnElkies.EqualityCaseVanishing
+warning: SpherePacking/CohnElkies/EqualityCaseVanishing.lean:54:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/CohnElkies/EqualityCaseVanishing.lean:74:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/CohnElkies/EqualityCaseVanishing.lean:122:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/CohnElkies/EqualityCaseVanishing.lean:236:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/CohnElkies/EqualityCaseVanishing.lean:320:35: `Set.compl_setOf` has been deprecated: Use `Set.compl_ofPred` instead
+warning: SpherePacking/CohnElkies/EqualityCaseVanishing.lean:362:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/CohnElkies/EqualityCaseVanishing.lean:593:35: `Set.compl_setOf` has been deprecated: Use `Set.compl_ofPred` instead
+⚠ [4948/5017] Replayed SpherePacking.Dim24.Uniqueness.Input.EqualityCase
+warning: SpherePacking/Dim24/Uniqueness/Input/EqualityCase.lean:58:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [4974/5017] Replayed SpherePacking.Dim24.Uniqueness.BS81.LP.Gegenbauer24.ZonalKernelPSD
+warning: SpherePacking/Dim24/Uniqueness/BS81/LP/Gegenbauer24/ZonalKernelPSD.lean:428:20: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/LP/Gegenbauer24/ZonalKernelPSD.lean:435:5: `Submodule.inner_orthogonalProjection_eq_of_mem_right` has been deprecated: Use `Submodule.inner_orthogonalProjectionOnto_eq_of_mem_right` instead
+⚠ [4982/5017] Replayed SpherePacking.Dim24.Uniqueness.BS81.LP.Gegenbauer24.PSD.FischerDecompositionFixed
+warning: SpherePacking/Dim24/Uniqueness/BS81/LP/Gegenbauer24/PSD/FischerDecompositionFixed.lean:67:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/LP/Gegenbauer24/PSD/FischerDecompositionFixed.lean:68:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/LP/Gegenbauer24/PSD/FischerDecompositionFixed.lean:106:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/LP/Gegenbauer24/PSD/FischerDecompositionFixed.lean:108:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/LP/Gegenbauer24/PSD/FischerDecompositionFixed.lean:114:7: `Submodule.isCompl_orthogonal_of_hasOrthogonalProjection` has been deprecated: Use `Submodule.isCompl_orthogonal` instead
+⚠ [4985/5017] Replayed SpherePacking.Dim24.Uniqueness.BS81.LP.Gegenbauer24.AdditionTheoremFixed.HarmonicProjection24Proj
+warning: SpherePacking/Dim24/Uniqueness/BS81/LP/Gegenbauer24/AdditionTheoremFixed/HarmonicProjection24Proj.lean:269:9: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/LP/Gegenbauer24/AdditionTheoremFixed/HarmonicProjection24Proj.lean:272:11: `Submodule.coe_orthogonalProjection_apply` has been deprecated: Use `Submodule.coe_orthogonalProjectionOnto_apply` instead
+⚠ [4998/5017] Replayed SpherePacking.Dim24.Uniqueness.BS81.Thm14.Design.SphereAvgMoments
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/SphereAvgMoments.lean:223:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/SphereAvgMoments.lean:341:12: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+⚠ [4999/5017] Replayed SpherePacking.Dim24.Uniqueness.BS81.Thm14.Design.SphereAvg24Lemmas
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/SphereAvg24Lemmas.lean:43:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/SphereAvg24Lemmas.lean:69:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/SphereAvg24Lemmas.lean:123:7: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/SphereAvg24Lemmas.lean:135:17: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+⚠ [5000/5017] Replayed SpherePacking.Dim24.Uniqueness.BS81.Thm14.Design.SphereAvgFourthMoment24Final
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/SphereAvgFourthMoment24Final.lean:106:29: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/SphereAvgFourthMoment24Final.lean:108:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/SphereAvgFourthMoment24Final.lean:120:16: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/SphereAvgFourthMoment24Final.lean:122:59: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/SphereAvgFourthMoment24Final.lean:122:75: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/SphereAvgFourthMoment24Final.lean:543:14: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+⚠ [5011/5124] Replayed SpherePacking.Dim24.Uniqueness.BS81.Thm15.Lemma17.InnerProducts
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Lemma17/InnerProducts.lean:123:50: Unused tactic linter: `done` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [5012/5124] Replayed SpherePacking.Dim24.Uniqueness.BS81.Thm15.Lemma17.Bound
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Lemma17/Bound.lean:113:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Lemma17/Bound.lean:114:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5016/5124] Replayed SpherePacking.Dim24.Uniqueness.BS81.Thm14.CommonNeighbors44.Moments.Core
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/CommonNeighbors44/Moments/Core.lean:86:29: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/CommonNeighbors44/Moments/Core.lean:91:12: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/CommonNeighbors44/Moments/Core.lean:328:7: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/CommonNeighbors44/Moments/Core.lean:343:9: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/CommonNeighbors44/Moments/Core.lean:346:10: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/CommonNeighbors44/Moments/Core.lean:392:15: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/CommonNeighbors44/Moments/Core.lean:585:11: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/CommonNeighbors44/Moments/Core.lean:725:9: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/CommonNeighbors44/Moments/Core.lean:1073:30: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/CommonNeighbors44/Moments/Core.lean:1083:12: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/CommonNeighbors44/Moments/Core.lean:1084:12: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/CommonNeighbors44/Moments/Core.lean:1086:12: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/CommonNeighbors44/Moments/Core.lean:1087:12: `Set.restrict` has been deprecated: Use `Set.domRestrict` instead
+⚠ [5025/5124] Replayed SpherePacking.Dim24.Uniqueness.BS81.Thm15.Dn.MinVec
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/MinVec.lean:36:14: `Set.setOf_or` has been deprecated: Use `Set.ofPred_or` instead
+⚠ [5027/5124] Replayed SpherePacking.Dim24.Uniqueness.BS81.Thm15.Dn.Basic
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Basic.lean:57:52: `EuclideanSpace.single_apply` has been deprecated: Use `PiLp.single_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2} [inst : DecidableEq ι] [inst_1 : Zero 𝕜] (i : ι) (a : 𝕜) (j : ι),
+    (PiLp.single p i a).ofLp j = if j = i then a else 0
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] (i : ι) (a : 𝕜) (j : ι),
+    (EuclideanSpace.single i a).ofLp j = if j = i then a else 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.single_apply` to `PiLp.single_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Basic.lean:64:21: `EuclideanSpace.norm_single` has been deprecated: Use `PiLp.norm_single` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) {ι : Type u_2} (β : ι → Type u_4) [hp : Fact (1 ≤ p)] [inst : Fintype ι]
+    [inst_1 : (i : ι) → SeminormedAddCommGroup (β i)] [inst_2 : DecidableEq ι] (i : ι) (b : β i),
+    ‖PiLp.single p i b‖ = ‖b‖
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] [inst_2 : Fintype ι] (i : ι) (a : 𝕜),
+    ‖EuclideanSpace.single i a‖ = ‖a‖
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.norm_single` to `PiLp.norm_single x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Basic.lean:64:21: `EuclideanSpace.norm_single` has been deprecated: Use `PiLp.norm_single` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) {ι : Type u_2} (β : ι → Type u_4) [hp : Fact (1 ≤ p)] [inst : Fintype ι]
+    [inst_1 : (i : ι) → SeminormedAddCommGroup (β i)] [inst_2 : DecidableEq ι] (i : ι) (b : β i),
+    ‖PiLp.single p i b‖ = ‖b‖
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] [inst_2 : Fintype ι] (i : ι) (a : 𝕜),
+    ‖EuclideanSpace.single i a‖ = ‖a‖
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.norm_single` to `PiLp.norm_single x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Basic.lean:67:21: `EuclideanSpace.norm_single` has been deprecated: Use `PiLp.norm_single` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) {ι : Type u_2} (β : ι → Type u_4) [hp : Fact (1 ≤ p)] [inst : Fintype ι]
+    [inst_1 : (i : ι) → SeminormedAddCommGroup (β i)] [inst_2 : DecidableEq ι] (i : ι) (b : β i),
+    ‖PiLp.single p i b‖ = ‖b‖
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] [inst_2 : Fintype ι] (i : ι) (a : 𝕜),
+    ‖EuclideanSpace.single i a‖ = ‖a‖
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.norm_single` to `PiLp.norm_single x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Basic.lean:67:21: `EuclideanSpace.norm_single` has been deprecated: Use `PiLp.norm_single` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) {ι : Type u_2} (β : ι → Type u_4) [hp : Fact (1 ≤ p)] [inst : Fintype ι]
+    [inst_1 : (i : ι) → SeminormedAddCommGroup (β i)] [inst_2 : DecidableEq ι] (i : ι) (b : β i),
+    ‖PiLp.single p i b‖ = ‖b‖
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] [inst_2 : Fintype ι] (i : ι) (a : 𝕜),
+    ‖EuclideanSpace.single i a‖ = ‖a‖
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.norm_single` to `PiLp.norm_single x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Basic.lean:57:52: This simp argument is unused:
+  EuclideanSpace.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [eStd, EuclideanSpace.inner_single_left, hij']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Basic.lean:64:21: This simp argument is unused:
+  EuclideanSpace.norm_single
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [u, eStd, norm_smul, abs_of_nonneg (Real.sqrt_nonneg 2)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Basic.lean:67:21: This simp argument is unused:
+  EuclideanSpace.norm_single
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [v, eStd, norm_smul, abs_of_nonneg (Real.sqrt_nonneg 2)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Basic.lean:133:18: `EuclideanSpace.norm_single` has been deprecated: Use `PiLp.norm_single` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) {ι : Type u_2} (β : ι → Type u_4) [hp : Fact (1 ≤ p)] [inst : Fintype ι]
+    [inst_1 : (i : ι) → SeminormedAddCommGroup (β i)] [inst_2 : DecidableEq ι] (i : ι) (b : β i),
+    ‖PiLp.single p i b‖ = ‖b‖
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] [inst_2 : Fintype ι] (i : ι) (a : 𝕜),
+    ‖EuclideanSpace.single i a‖ = ‖a‖
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.norm_single` to `PiLp.norm_single x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Basic.lean:133:18: This simp argument is unused:
+  EuclideanSpace.norm_single
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [eStd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [5028/5124] Replayed SpherePacking.Dim24.Uniqueness.BS81.Thm15.Dn.Lemma18Count
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:126:59: `EuclideanSpace.single_apply` has been deprecated: Use `PiLp.single_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2} [inst : DecidableEq ι] [inst_1 : Zero 𝕜] (i : ι) (a : 𝕜) (j : ι),
+    (PiLp.single p i a).ofLp j = if j = i then a else 0
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] (i : ι) (a : 𝕜) (j : ι),
+    (EuclideanSpace.single i a).ofLp j = if j = i then a else 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.single_apply` to `PiLp.single_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:128:59: `EuclideanSpace.single_apply` has been deprecated: Use `PiLp.single_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2} [inst : DecidableEq ι] [inst_1 : Zero 𝕜] (i : ι) (a : 𝕜) (j : ι),
+    (PiLp.single p i a).ofLp j = if j = i then a else 0
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] (i : ι) (a : 𝕜) (j : ι),
+    (EuclideanSpace.single i a).ofLp j = if j = i then a else 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.single_apply` to `PiLp.single_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:143:59: `EuclideanSpace.single_apply` has been deprecated: Use `PiLp.single_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2} [inst : DecidableEq ι] [inst_1 : Zero 𝕜] (i : ι) (a : 𝕜) (j : ι),
+    (PiLp.single p i a).ofLp j = if j = i then a else 0
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] (i : ι) (a : 𝕜) (j : ι),
+    (EuclideanSpace.single i a).ofLp j = if j = i then a else 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.single_apply` to `PiLp.single_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:145:59: `EuclideanSpace.single_apply` has been deprecated: Use `PiLp.single_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2} [inst : DecidableEq ι] [inst_1 : Zero 𝕜] (i : ι) (a : 𝕜) (j : ι),
+    (PiLp.single p i a).ofLp j = if j = i then a else 0
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] (i : ι) (a : 𝕜) (j : ι),
+    (EuclideanSpace.single i a).ofLp j = if j = i then a else 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.single_apply` to `PiLp.single_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:217:63: `EuclideanSpace.single_apply` has been deprecated: Use `PiLp.single_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2} [inst : DecidableEq ι] [inst_1 : Zero 𝕜] (i : ι) (a : 𝕜) (j : ι),
+    (PiLp.single p i a).ofLp j = if j = i then a else 0
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] (i : ι) (a : 𝕜) (j : ι),
+    (EuclideanSpace.single i a).ofLp j = if j = i then a else 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.single_apply` to `PiLp.single_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:229:63: `EuclideanSpace.single_apply` has been deprecated: Use `PiLp.single_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2} [inst : DecidableEq ι] [inst_1 : Zero 𝕜] (i : ι) (a : 𝕜) (j : ι),
+    (PiLp.single p i a).ofLp j = if j = i then a else 0
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] (i : ι) (a : 𝕜) (j : ι),
+    (EuclideanSpace.single i a).ofLp j = if j = i then a else 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.single_apply` to `PiLp.single_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:239:63: `EuclideanSpace.single_apply` has been deprecated: Use `PiLp.single_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2} [inst : DecidableEq ι] [inst_1 : Zero 𝕜] (i : ι) (a : 𝕜) (j : ι),
+    (PiLp.single p i a).ofLp j = if j = i then a else 0
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] (i : ι) (a : 𝕜) (j : ι),
+    (EuclideanSpace.single i a).ofLp j = if j = i then a else 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.single_apply` to `PiLp.single_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:293:63: `EuclideanSpace.single_apply` has been deprecated: Use `PiLp.single_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2} [inst : DecidableEq ι] [inst_1 : Zero 𝕜] (i : ι) (a : 𝕜) (j : ι),
+    (PiLp.single p i a).ofLp j = if j = i then a else 0
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] (i : ι) (a : 𝕜) (j : ι),
+    (EuclideanSpace.single i a).ofLp j = if j = i then a else 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.single_apply` to `PiLp.single_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:344:59: `EuclideanSpace.single_apply` has been deprecated: Use `PiLp.single_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2} [inst : DecidableEq ι] [inst_1 : Zero 𝕜] (i : ι) (a : 𝕜) (j : ι),
+    (PiLp.single p i a).ofLp j = if j = i then a else 0
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] (i : ι) (a : 𝕜) (j : ι),
+    (EuclideanSpace.single i a).ofLp j = if j = i then a else 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.single_apply` to `PiLp.single_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:347:59: `EuclideanSpace.single_apply` has been deprecated: Use `PiLp.single_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2} [inst : DecidableEq ι] [inst_1 : Zero 𝕜] (i : ι) (a : 𝕜) (j : ι),
+    (PiLp.single p i a).ofLp j = if j = i then a else 0
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] (i : ι) (a : 𝕜) (j : ι),
+    (EuclideanSpace.single i a).ofLp j = if j = i then a else 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.single_apply` to `PiLp.single_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:363:58: `EuclideanSpace.single_apply` has been deprecated: Use `PiLp.single_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2} [inst : DecidableEq ι] [inst_1 : Zero 𝕜] (i : ι) (a : 𝕜) (j : ι),
+    (PiLp.single p i a).ofLp j = if j = i then a else 0
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] (i : ι) (a : 𝕜) (j : ι),
+    (EuclideanSpace.single i a).ofLp j = if j = i then a else 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.single_apply` to `PiLp.single_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:126:59: This simp argument is unused:
+  EuclideanSpace.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [vec, eStd, EuclideanSpace.inner_single_left, hi0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:128:59: This simp argument is unused:
+  EuclideanSpace.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [vec, eStd, EuclideanSpace.inner_single_left, hi1, i1_ne_i0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:143:59: This simp argument is unused:
+  EuclideanSpace.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [vec, eStd, EuclideanSpace.inner_single_left, hi0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:145:59: This simp argument is unused:
+  EuclideanSpace.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [vec, eStd, EuclideanSpace.inner_single_left, hi1, i1_ne_i0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:217:63: This simp argument is unused:
+  EuclideanSpace.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [a1, w, eStd, EuclideanSpace.inner_single_left, hj']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:229:63: This simp argument is unused:
+  EuclideanSpace.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [a1, w, eStd, EuclideanSpace.inner_single_left, hi'']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:239:63: This simp argument is unused:
+  EuclideanSpace.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [a0, w, eStd, EuclideanSpace.inner_single_left, hj0']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:293:63: This simp argument is unused:
+  EuclideanSpace.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [a0, w, eStd, EuclideanSpace.inner_single_left, hi0'']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:344:59: This simp argument is unused:
+  EuclideanSpace.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [vec, eStd, EuclideanSpace.inner_single_left, hi0']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Dn/Lemma18Count.lean:347:59: This simp argument is unused:
+  EuclideanSpace.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [vec, eStd, EuclideanSpace.inner_single_left, hi0', hneq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [5037/5124] Replayed SpherePacking.Dim24.Uniqueness.BS81.CodingTheory.GolayDefs
+warning: SpherePacking/Dim24/Uniqueness/BS81/CodingTheory/GolayDefs.lean:297:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/CodingTheory/GolayDefs.lean:378:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5047/5124] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.Classify.EvenUnimodular.FiniteShells
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/EvenUnimodular/FiniteShells.lean:30:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5051/5124] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.Classify.DualLatticeFinite
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/DualLatticeFinite.lean:68:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/DualLatticeFinite.lean:86:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/DualLatticeFinite.lean:108:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/DualLatticeFinite.lean:109:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/DualLatticeFinite.lean:126:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/DualLatticeFinite.lean:127:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/DualLatticeFinite.lean:128:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/DualLatticeFinite.lean:129:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5052/5124] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.Classify.DualCovolume
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/DualCovolume.lean:80:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/DualCovolume.lean:81:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/DualCovolume.lean:148:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/DualCovolume.lean:149:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/DualCovolume.lean:206:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/DualCovolume.lean:207:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5059/5124] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.Classify.Niemeier.IsZLatticeOfUnimodular
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/IsZLatticeOfUnimodular.lean:41:2: `@[expose]` has no effect; this declaration would be exposed by default
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/IsZLatticeOfUnimodular.lean:55:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/IsZLatticeOfUnimodular.lean:70:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5060/5124] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.Classify.Niemeier.FullRank.OrthogonalDecomp
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/FullRank/OrthogonalDecomp.lean:35:2: `@[expose]` has no effect; this declaration would be exposed by default
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/FullRank/OrthogonalDecomp.lean:37:2: `@[expose]` has no effect; this declaration would be exposed by default
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/FullRank/OrthogonalDecomp.lean:48:5: `Submodule.isCompl_orthogonal_of_hasOrthogonalProjection` has been deprecated: Use `Submodule.isCompl_orthogonal` instead
+⚠ [5063/5124] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.Classify.Niemeier.FullRank.InfiniteVolume
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/FullRank/InfiniteVolume.lean:219:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/FullRank/InfiniteVolume.lean:220:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/FullRank/InfiniteVolume.lean:224:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/FullRank/InfiniteVolume.lean:266:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/FullRank/InfiniteVolume.lean:267:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5064/5124] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.Classify.Niemeier.FullRank.UnimodularIsZLattice
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/FullRank/UnimodularIsZLattice.lean:40:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5065/5124] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.Classify.Niemeier.RootlessCase.ThetaEquality
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/RootlessCase/ThetaEquality.lean:523:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/RootlessCase/ThetaEquality.lean:526:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5067/5124] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.Classify.Niemeier.RootlessCase.ThetaExtremal
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/RootlessCase/ThetaExtremal.lean:47:8: This simp argument is unused:
+  Finset.Nat.antidiagonal_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [E4_q_exp_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Niemeier/RootlessCase/ThetaExtremal.lean:53:8: This simp argument is unused:
+  Finset.Nat.antidiagonal_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [E4_q_exp_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [5092/5124] Replayed SpherePacking.Dim24.Uniqueness.BS81.Thm15.Lemma21.Isometry.CodeIsGolayCountFinal
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Lemma21/Isometry/CodeIsGolayCountFinal.lean:938:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm15/Lemma21/Isometry/CodeIsGolayCountFinal.lean:939:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5098/5124] Replayed SpherePacking.Dim24.Uniqueness.BS81.CodingTheory.GolayUniqueness.Weight8Count
+warning: SpherePacking/Dim24/Uniqueness/BS81/CodingTheory/GolayUniqueness/Weight8Count.lean:30:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5102/5124] Replayed SpherePacking.Dim24.Uniqueness.BS81.CodingTheory.BiplaneParams
+warning: SpherePacking/Dim24/Uniqueness/BS81/CodingTheory/BiplaneParams.lean:250:4: Unused tactic linter: `change (Finset.univ.sum (fun y : Point => D.lam x y)) = 25` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/CodingTheory/BiplaneParams.lean:319:6: Unused tactic linter: `change
+  ((Finset.univ : Finset Point).sum (fun y : Point => (D.lam x y : ℤ))) =
+    (D.lam x x : ℤ) + ∑ y ∈ (Finset.univ.erase x), (D.lam x y : ℤ)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/CodingTheory/BiplaneParams.lean:381:6: Unused tactic linter: `change
+  ((Finset.univ : Finset Point).sum (fun y : Point => (D.lam x y : ℤ) ^ 2)) =
+    (D.lam x x : ℤ) ^ 2 + ∑ y ∈ (Finset.univ.erase x), (D.lam x y : ℤ) ^ 2` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [5144/5213] Replayed SpherePacking.Dim24.Uniqueness.BS81.CodingTheory.WittDesignUniqueTheory.ClassicalWitt.DesignCodeCard
+warning: SpherePacking/Dim24/Uniqueness/BS81/CodingTheory/WittDesignUniqueTheory/ClassicalWitt/DesignCodeCard.lean:129:9: `LinearMap.BilinForm.IsOrtho` has been deprecated: Use `B x y = 0`.
+warning: SpherePacking/Dim24/Uniqueness/BS81/CodingTheory/WittDesignUniqueTheory/ClassicalWitt/DesignCodeCard.lean:144:9: `LinearMap.BilinForm.IsOrtho` has been deprecated: Use `B x y = 0`.
+warning: SpherePacking/Dim24/Uniqueness/BS81/CodingTheory/WittDesignUniqueTheory/ClassicalWitt/DesignCodeCard.lean:145:9: `LinearMap.BilinForm.IsOrtho` has been deprecated: Use `B x y = 0`.
+⚠ [5161/5213] Replayed SpherePacking.Dim24.Uniqueness.BS81.Thm14.DistanceDistribution.DeriveEq11FromMomentsFinal
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/DistanceDistribution/DeriveEq11FromMomentsFinal.lean:230:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/DistanceDistribution/DeriveEq11FromMomentsFinal.lean:231:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5167/5213] Replayed SpherePacking.Dim24.Uniqueness.BS81.Thm14.Design.MvPolyEval24Deriv
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/MvPolyEval24Deriv.lean:70:31: `ContinuousLinearMap.sum_apply` has been deprecated: Use `_root_.sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `_root_.sum_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/MvPolyEval24Deriv.lean:70:62: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/MvPolyEval24Deriv.lean:141:22: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/MvPolyEval24Deriv.lean:141:53: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/MvPolyEval24Deriv.lean:70:31: This simp argument is unused:
+  ContinuousLinearMap.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [fderivEvalPoly24, S, ContinuousLinearMap.smul_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/MvPolyEval24Deriv.lean:70:62: This simp argument is unused:
+  ContinuousLinearMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [fderivEvalPoly24, S, ContinuousLinearMap.sum_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/MvPolyEval24Deriv.lean:141:22: This simp argument is unused:
+  ContinuousLinearMap.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h_apply, S, ContinuousLinearMap.smul_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/Design/MvPolyEval24Deriv.lean:141:53: This simp argument is unused:
+  ContinuousLinearMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h_apply, S, ContinuousLinearMap.add_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [5169/5213] Replayed SpherePacking.Dim24.Uniqueness.BS81.Thm14.AdditionTheorem.Bridge.HarmonicMeanZero24Gauss
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/AdditionTheorem/Bridge/HarmonicMeanZero24Gauss.lean:83:17: `EuclideanSpace.single_apply` has been deprecated: Use `PiLp.single_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ (p : ℝ≥0∞) (𝕜 : Type u_1) {ι : Type u_2} [inst : DecidableEq ι] [inst_1 : Zero 𝕜] (i : ι) (a : 𝕜) (j : ι),
+    (PiLp.single p i a).ofLp j = if j = i then a else 0
+instead of
+  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] (i : ι) (a : 𝕜) (j : ι),
+    (EuclideanSpace.single i a).ofLp j = if j = i then a else 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.single_apply` to `PiLp.single_apply x`).
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/AdditionTheorem/Bridge/HarmonicMeanZero24Gauss.lean:83:17: This simp argument is unused:
+  EuclideanSpace.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [e24]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/AdditionTheorem/Bridge/HarmonicMeanZero24Gauss.lean:453:10: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/AdditionTheorem/Bridge/HarmonicMeanZero24Gauss.lean:596:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/AdditionTheorem/Bridge/HarmonicMeanZero24Gauss.lean:598:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5172/5213] Replayed SpherePacking.Dim24.Uniqueness.BS81.Thm14.AdditionTheorem.IntegrableEvalPk24
+warning: SpherePacking/Dim24/Uniqueness/BS81/Thm14/AdditionTheorem/IntegrableEvalPk24.lean:58:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5185/5213] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.DualProps
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/DualProps.lean:49:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/DualProps.lean:120:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5315/5473] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.Classify.Overlattice.IndexCovolume
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Overlattice/IndexCovolume.lean:107:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Overlattice/IndexCovolume.lean:110:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Overlattice/IndexCovolume.lean:112:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Overlattice/IndexCovolume.lean:177:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Overlattice/IndexCovolume.lean:178:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Overlattice/IndexCovolume.lean:192:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/Overlattice/IndexCovolume.lean:194:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5316/5473] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.Classify.CE.LocalRigidity
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/CE/LocalRigidity.lean:92:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/CE/LocalRigidity.lean:115:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/CE/LocalRigidity.lean:116:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [5317/5473] Replayed SpherePacking.Dim24.Uniqueness.Rigidity.Classify.CE.GlobalRigidity
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/CE/GlobalRigidity.lean:195:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/CE/GlobalRigidity.lean:198:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: SpherePacking/Dim24/Uniqueness/Rigidity/Classify/CE/GlobalRigidity.lean:273:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+ℹ [5594/5629] Replayed E8Leech.TernaryLatticeReconstruction
+info: E8Leech/TernaryLatticeReconstruction.lean:26:24: Try this:
+  [apply] abel_nf
+info: E8Leech/TernaryLatticeReconstruction.lean:30:4: Try this:
+  [apply] abel_nf
+ℹ [5618/5629] Replayed E8Leech.AnchoredOrientationKernel
+info: E8Leech/AnchoredOrientationKernel.lean:55:27: Try this:
+  [apply] abel_nf
+Build completed successfully (5629 jobs).
+Finished with result: timeout
+Main processes terminated with: code=killed/status=TERM
+Service runtime: 4h 40min 146ms
+CPU time consumed: 4h 38min 39.233s
+Memory peak: 6.4G
+Memory swap peak: 2.5G

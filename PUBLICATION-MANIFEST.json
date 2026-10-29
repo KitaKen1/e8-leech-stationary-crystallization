@@ -1,19 +1,17 @@
 {
-  "status": "CI parser bug repaired; preparing source-hash-verified stage-5 resume",
+  "status": "Comparator hit its 280-minute runtime limit; budget fixed; preparing full-build reuse and verification retry",
   "publication_repository": "KitaKen1/e8-leech-stationary-crystallization",
   "private_repository": "KitaKen1/e8-leech-crystallization-ci-20261016",
   "existing_public_main_before_private_test": "57cd06a0056a7d9c83e16ef6153fdad469160100",
   "private_candidate_pushed": true,
   "public_candidate_pushed": false,
   "private_ci_run": {
-    "id": 40647149094,
-    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40647149094",
-    "head_sha": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+    "id": 40776017899,
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40776017899",
+    "head_sha": "358cdadeca6c6f3079196dc65a326dc1df7a0941",
     "status": "completed",
     "conclusion": "failure",
-    "run_attempt": 1,
-    "created_at": "2026-10-28T06:58:47Z",
-    "updated_at": "2026-10-28T16:46:07Z"
+    "run_attempt": 1
   },
   "public_ci_run": null,
   "required_order": [
@@ -46,7 +44,7 @@
   "local_upstream_api_comparison_passed": true,
   "local_comparison_uses_direct_constant_maps": true,
   "local_exported_json_parser_claimed": false,
-  "private_tested_commit": "ef18101969e8c2edfc44c2230e090f0f13cea5be",
+  "private_tested_commit": "358cdadeca6c6f3079196dc65a326dc1df7a0941",
   "ci_resume_requires_user_instruction": false,
   "statement_to_lean_review_complete": false,
   "private_ci_cancellation_requested": true,
@@ -86,9 +84,17 @@
       "reason": "README math rendering fix; superseded before the proof build",
       "cancellation_requested": true,
       "cancellation_confirmed": true
+    },
+    {
+      "id": 40775973069,
+      "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40775973069",
+      "head_sha": "358cdadeca6c6f3079196dc65a326dc1df7a0941",
+      "status": "in_progress",
+      "conclusion": null,
+      "run_attempt": 1
     }
   ],
-  "private_repository_head": "7af0d21e85519b4d764c49ba05dc7fd50c052857",
+  "private_repository_head": "358cdadeca6c6f3079196dc65a326dc1df7a0941",
   "readme_only_followup_commit": "7af0d21e85519b4d764c49ba05dc7fd50c052857",
   "readme_followup_proof_source_difference": false,
   "latest_repository_head_itself_ci_verified": false,
@@ -104,6 +110,17 @@
     "updated_at": "2026-10-28T16:46:07Z"
   },
   "ci_failure_diagnosis": "verification/private-ci-failure-20261029/diagnosis.json",
-  "ci_resume_source_run": 40647149094,
-  "ci_resume_stage": 5
+  "ci_resume_source_run": 40776017899,
+  "ci_resume_stage": 5,
+  "local_ci_resume_preflight": "verification/private-ci-failure-20261029/resume-preflight.json",
+  "local_ci_resume_preflight_passed": true,
+  "local_corrected_full_axiom_audit": "verification/private-ci-failure-20261029/repaired-full-axiom-audit.json",
+  "ci_resume_hash_verification_passed": true,
+  "ci_parser_regression_controls_passed": true,
+  "private_fresh_kernel_replay_passed": true,
+  "private_source_build_and_axiom_audit_passed": true,
+  "comparator_timeout_diagnosis": "verification/private-ci-comparator-failure-20261029/diagnosis.json",
+  "ci_resume_complete_build": true,
+  "successful_proof_build_run_id": 40776017899,
+  "private_fresh_kernel_replay_passed_for_commit": "358cdadeca6c6f3079196dc65a326dc1df7a0941"
 }

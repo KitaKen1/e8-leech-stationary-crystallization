@@ -1,0 +1,34 @@
+{
+  "run": {
+    "id": 40776017899,
+    "html_url": "https://github.com/KitaKen1/e8-leech-crystallization-ci-20261016/actions/runs/40776017899",
+    "head_sha": "358cdadeca6c6f3079196dc65a326dc1df7a0941",
+    "status": "in_progress",
+    "conclusion": null,
+    "run_attempt": 1
+  },
+  "jobs": [
+    {
+      "name": "build_5",
+      "status": "in_progress",
+      "conclusion": null,
+      "current_steps": [
+        "Compile dependency-ordered proof stage 5"
+      ],
+      "completed_steps": [
+        "Set up job",
+        "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "Run python3 lean/comparator/check-inputs.py",
+        "Run bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3",
+        "Run lake exe cache get",
+        "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+        "Run tar --zstd -xf incoming/proof.tar.zst",
+        "Verify earlier run, build inputs and restored source/object hashes",
+        "Regression and rejection controls for the axiom audit"
+      ],
+      "failed_steps": []
+    }
+  ],
+  "resume_source_run": 40647149094,
+  "resume_stage": 5
+}

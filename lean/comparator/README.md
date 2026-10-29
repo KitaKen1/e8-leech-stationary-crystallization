@@ -51,6 +51,18 @@ restored source and compiled object. Stage 5 is rebuilt from source, and the ful
 axiom audit, Comparator and fresh replay remain required. The new receipt records
 the source run, artifact and commit; reuse is not described as a new clean build.
 
+For a run whose complete `build_5` succeeded, `resume_complete_build=true`
+reuses `proof-stage-5` instead. It requires all 928 source/object receipts and
+matching build inputs, rechecks the full axiom audit, and then reruns FC checks,
+Comparator and the independent fresh kernel replay. It does not label restored
+proof objects as a new clean source build.
+
+Comparator's sandboxed CLI budget is 340 minutes, inside its 360-minute job
+budget. The previous 280-minute bound killed the run, while the independent
+fresh replay completed in 4:54:27. Comparator source, all 13 comparisons, permitted
+axioms and sandbox restrictions are unchanged. CLI output is line-buffered so
+future logs show which verification phase is running.
+
 The 29 October 2026 repair fixes apostrophes in the axiom-log parser. In the
 previous run all 928 modules compiled; the final Python audit rejected 50 report
 names containing apostrophes. Rechecking its actual logs with the corrected

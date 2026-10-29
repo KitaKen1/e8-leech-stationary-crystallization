@@ -10,6 +10,11 @@ on:
         required: false
         default: ''
         type: string
+      resume_complete_build:
+        description: 'Reuse a successful complete source build; rerun all verification jobs'
+        required: false
+        default: false
+        type: boolean
 permissions:
   contents: read
   actions: read
@@ -33,6 +38,11 @@ jobs:
         with:
           persist-credentials: false
       - run: python3 lean/comparator/check-inputs.py
+      - name: Require source run for complete-build reuse
+        env:
+          COMPLETE_BUILD: ${{ inputs.resume_complete_build }}
+          SOURCE_RUN: ${{ inputs.resume_run_id }}
+        run: test "$COMPLETE_BUILD" != true || test -n "$SOURCE_RUN"
       - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
       - run: lake exe cache get
         working-directory: lean
@@ -62,6 +72,11 @@ jobs:
         with:
           persist-credentials: false
       - run: python3 lean/comparator/check-inputs.py
+      - name: Require source run for complete-build reuse
+        env:
+          COMPLETE_BUILD: ${{ inputs.resume_complete_build }}
+          SOURCE_RUN: ${{ inputs.resume_run_id }}
+        run: test "$COMPLETE_BUILD" != true || test -n "$SOURCE_RUN"
       - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
       - run: lake exe cache get
         working-directory: lean
@@ -96,6 +111,11 @@ jobs:
         with:
           persist-credentials: false
       - run: python3 lean/comparator/check-inputs.py
+      - name: Require source run for complete-build reuse
+        env:
+          COMPLETE_BUILD: ${{ inputs.resume_complete_build }}
+          SOURCE_RUN: ${{ inputs.resume_run_id }}
+        run: test "$COMPLETE_BUILD" != true || test -n "$SOURCE_RUN"
       - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
       - run: lake exe cache get
         working-directory: lean
@@ -130,6 +150,11 @@ jobs:
         with:
           persist-credentials: false
       - run: python3 lean/comparator/check-inputs.py
+      - name: Require source run for complete-build reuse
+        env:
+          COMPLETE_BUILD: ${{ inputs.resume_complete_build }}
+          SOURCE_RUN: ${{ inputs.resume_run_id }}
+        run: test "$COMPLETE_BUILD" != true || test -n "$SOURCE_RUN"
       - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
       - run: lake exe cache get
         working-directory: lean
@@ -164,6 +189,11 @@ jobs:
         with:
           persist-credentials: false
       - run: python3 lean/comparator/check-inputs.py
+      - name: Require source run for complete-build reuse
+        env:
+          COMPLETE_BUILD: ${{ inputs.resume_complete_build }}
+          SOURCE_RUN: ${{ inputs.resume_run_id }}
+        run: test "$COMPLETE_BUILD" != true || test -n "$SOURCE_RUN"
       - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
       - run: lake exe cache get
         working-directory: lean
@@ -198,12 +228,17 @@ jobs:
         with:
           persist-credentials: false
       - run: python3 lean/comparator/check-inputs.py
+      - name: Require source run for complete-build reuse
+        env:
+          COMPLETE_BUILD: ${{ inputs.resume_complete_build }}
+          SOURCE_RUN: ${{ inputs.resume_run_id }}
+        run: test "$COMPLETE_BUILD" != true || test -n "$SOURCE_RUN"
       - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
       - run: lake exe cache get
         working-directory: lean
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
         with:
-          name: proof-stage-4
+          name: ${{ inputs.resume_complete_build && 'proof-stage-5' || 'proof-stage-4' }}
           path: incoming
           run-id: ${{ inputs.resume_run_id || github.run_id }}
           github-token: ${{ github.token }}
@@ -213,11 +248,18 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           RESUME_RUN_ID: ${{ inputs.resume_run_id }}
+          RESUME_COMPLETE_BUILD: ${{ inputs.resume_complete_build }}
         run: python3 lean/comparator/verify-resume.py "$RESUME_RUN_ID"
       - name: Regression and rejection controls for the axiom audit
         run: python3 lean/comparator/test_axiom_log.py
       - name: Compile dependency-ordered proof stage 5
+        if: ${{ !inputs.resume_complete_build }}
         run: python3 -u lean/comparator/build-stage.py 5
+      - name: Recheck the complete restored build's axiom audit
+        if: ${{ inputs.resume_complete_build }}
+        run: |
+          python3 lean/comparator/check-all-axioms.py build-receipt/E8Leech.Audit.log build-receipt/all-axioms.json
+          python3 lean/comparator/check-axioms.py build-receipt/FCAudit.log
       - name: Archive successful stage outputs
         run: tar --zstd -cf proof.tar.zst lean/.lake/build build-receipt
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
@@ -236,12 +278,17 @@ jobs:
     needs: build_5
     if: ${{ always() && needs.build_5.result == 'success' }}
     runs-on: ubuntu-24.04
-    timeout-minutes: 350
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           persist-credentials: false
       - run: python3 lean/comparator/check-inputs.py
+      - name: Require source run for complete-build reuse
+        env:
+          COMPLETE_BUILD: ${{ inputs.resume_complete_build }}
+          SOURCE_RUN: ${{ inputs.resume_run_id }}
+        run: test "$COMPLETE_BUILD" != true || test -n "$SOURCE_RUN"
       - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
       - run: lake exe cache get
         working-directory: lean
@@ -290,6 +337,11 @@ jobs:
         with:
           persist-credentials: false
       - run: python3 lean/comparator/check-inputs.py
+      - name: Require source run for complete-build reuse
+        env:
+          COMPLETE_BUILD: ${{ inputs.resume_complete_build }}
+          SOURCE_RUN: ${{ inputs.resume_run_id }}
+        run: test "$COMPLETE_BUILD" != true || test -n "$SOURCE_RUN"
       - run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 12 3
       - run: lake exe cache get
         working-directory: lean

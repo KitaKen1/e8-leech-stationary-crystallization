@@ -1,0 +1,2 @@
+'FCStyleProof.e8_quantitative_crystallization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FCStyleProof.leech_quantitative_crystallization' depends on axioms: [propext, Classical.choice, Quot.sound]

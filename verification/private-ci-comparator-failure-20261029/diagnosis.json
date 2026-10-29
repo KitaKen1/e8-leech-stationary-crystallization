@@ -1,0 +1,16 @@
+{
+  "failed_run_id": 40776017899,
+  "failed_job_id": 123172006492,
+  "cause": "systemd RuntimeMaxSec=280min expired; comparator process was terminated",
+  "previous_runtime_limit_minutes": 280,
+  "new_runtime_limit_minutes": 340,
+  "new_comparator_job_limit_minutes": 360,
+  "independent_fresh_replay_passed": true,
+  "independent_fresh_replay_elapsed": "4:54:27",
+  "successful_full_source_build_run_id": 40776017899,
+  "successful_source_modules": 928,
+  "comparator_success_claimed": false,
+  "public_publication_performed": false,
+  "formal_proof_sources_changed": false,
+  "verification_content_or_sandbox_weakened": false
+}

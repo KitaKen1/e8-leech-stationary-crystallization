@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "exit_code": 0,
+  "source_sha256": "56b19d7de9b31a0e66b0b96446698b5df1c4bb639bda8c347c35009e8df060f8",
+  "support_sha256": "3827fe54fe1821cb0e6173ca3eb9651e579300223fc72754e0aad805eed64d01",
+  "actual_fc_linter_checked": true,
+  "linter_options": [
+    "-Dwarn.sorry=false",
+    "-Dweak.linter.style.copyright.formalConjectures=false",
+    "-Dweak.linter.style.namespace=true",
+    "-Dweak.linter.style.stubs=true",
+    "-Dweak.linter.style.openClassical=true",
+    "-Dweak.linter.style.ams_attribute=true",
+    "-Dweak.linter.style.category_attribute=true",
+    "-Dweak.linter.style.conditional_formal_proof=true",
+    "-Dweak.linter.style.moduleDocstring=true",
+    "-Dweak.linter.style.latex_docstring=true",
+    "-Dweak.linter.style.imports=true",
+    "-Dweak.linter.privateModule=true"
+  ],
+  "upstream": {
+    "upstream_repository": "google-deepmind/formal-conjectures",
+    "upstream_commit": "c77fdd446d23539302aa73bcfae4a9fa962b8382",
+    "upstream_pinned_inputs": 259,
+    "utility_modules": 252,
+    "upstream_source_changes": [
+      "FormalConjecturesForMathlib.lean"
+    ],
+    "overlay_support_sha256": "3827fe54fe1821cb0e6173ca3eb9651e579300223fc72754e0aad805eed64d01",
+    "utility_source_sha256": "3a73749a2b247a1ad08820de102f0d32353bf6e519eb954de53e08553cdbc663"
+  },
+  "actual_fc_linter_negative_control_passed": true,
+  "copyright_header_linter_enabled": false,
+  "expected_statement_sorry_count": 2,
+  "proved_boundary_tests": [
+    "zero_mem_e8Set",
+    "zero_mem_leechSet"
+  ],
+  "imports_development_proof": false
+}

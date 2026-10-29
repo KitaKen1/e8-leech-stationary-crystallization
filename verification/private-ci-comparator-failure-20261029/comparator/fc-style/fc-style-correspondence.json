@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "static_checks_passed": true,
+  "problem_definition_count": 4,
+  "generic_definition_count": 6,
+  "primary_theorems": [
+    "e8_quantitative_crystallization",
+    "leech_quantitative_crystallization"
+  ],
+  "proved_boundary_tests": [
+    "zero_mem_e8Set",
+    "zero_mem_leechSet"
+  ],
+  "source_sha256": "56b19d7de9b31a0e66b0b96446698b5df1c4bb639bda8c347c35009e8df060f8",
+  "support_sha256": "3827fe54fe1821cb0e6173ca3eb9651e579300223fc72754e0aad805eed64d01",
+  "canonical_challenge_sha256": "1ce7c25d47f98f431baf01363ef0ef37126b140b9a8c9a5ca5abde49df732477",
+  "configuration_reference_sha256": "7698167abd0d43b260822bf701ef2c93aec97eaffce29eb49e828c3cc34af3bf",
+  "checker_sha256": "2830fa9349b20f1b68e984bd5cff324996e4139123d90e1e966f75a6d54281f7",
+  "semantic_correspondence_checked": true,
+  "original_manuscript_review_complete": false,
+  "actual_fc_linter_checked": true,
+  "copyright_header_linter_enabled": false,
+  "method": "Identical Configuration fields, kernel-checked counting sigma algebra and compact definition equalities, and change to exact canonical primary conclusions",
+  "upstream": {
+    "upstream_repository": "google-deepmind/formal-conjectures",
+    "upstream_commit": "c77fdd446d23539302aa73bcfae4a9fa962b8382",
+    "upstream_pinned_inputs": 259,
+    "utility_modules": 252,
+    "upstream_source_changes": [
+      "FormalConjecturesForMathlib.lean"
+    ],
+    "overlay_support_sha256": "3827fe54fe1821cb0e6173ca3eb9651e579300223fc72754e0aad805eed64d01",
+    "utility_source_sha256": "3a73749a2b247a1ad08820de102f0d32353bf6e519eb954de53e08553cdbc663"
+  },
+  "proof_bridge_sha256": "6242102ee829b0d26717e44e2c2f9bf043a8abcfca0bf0ce4ccf96fd705daa9b",
+  "elapsed_seconds": 282.67587715200006,
+  "axioms": {
+    "FCStyleProof.e8_quantitative_crystallization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FCStyleProof.leech_quantitative_crystallization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "draft_proof_holes_used": false,
+  "development_proof_objects_reused": true
+}
