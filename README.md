@@ -1,5 +1,7 @@
 # Lean proofs of quantitative stationary crystallization for E₈ and Leech lattices
 
+> **Tentative version.** The official version will be released soon.
+
 Quantitative stationary crystallization asks whether a point process whose energy
 is close to that of a lattice must look like that lattice on a large ball.
 The two primary Lean targets state the following measurable-subevent version
